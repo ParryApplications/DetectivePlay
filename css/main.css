@@ -232,11 +232,22 @@ a:hover {
     transition: all var(--transition-normal);
     display: flex;
     align-items: center;
+    outline: none !important;
 }
 
 .navbar-brand:hover {
     color: var(--gold) !important;
     transform: scale(1.05);
+}
+
+.navbar-brand:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-brand:active {
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 .navbar-brand i {

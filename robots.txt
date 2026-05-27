@@ -1,0 +1,19 @@
+# robots.txt for GiveJustice – Detective Mystery Game
+# https://givejustice.parryapplications.com/
+
+User-agent: *
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /Mysteries/
+Allow: /translations/
+
+# Disallow sensitive or unnecessary paths
+Disallow: /js/firebase-config.js
+
+# Sitemap location
+Sitemap: https://givejustice.parryapplications.com/sitemap.xml
+
+# Crawl-delay (optional, adjust as needed)
+Crawl-delay: 1

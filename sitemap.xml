@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Main Page -->
+    <url>
+        <loc>https://givejustice.parryapplications.com/</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://givejustice.parryapplications.com/?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="hi" href="https://givejustice.parryapplications.com/?lang=hi"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://givejustice.parryapplications.com/?lang=zh-CN"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://givejustice.parryapplications.com/?lang=ko"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://givejustice.parryapplications.com/?lang=ja"/>
+        <image:image>
+            <image:loc>https://givejustice.parryapplications.com/images/logo.svg</image:loc>
+            <image:title>GiveJustice – Detective Mystery Game Logo</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://givejustice.parryapplications.com/images/favicon.svg</image:loc>
+            <image:title>GiveJustice Favicon</image:title>
+        </image:image>
+    </url>
+    
+    <!-- CSS Resources -->
+    <url>
+        <loc>https://givejustice.parryapplications.com/css/main.css</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://givejustice.parryapplications.com/css/dashboard.css</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://givejustice.parryapplications.com/css/mystery.css</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://givejustice.parryapplications.com/css/investigation-board.css</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://givejustice.parryapplications.com/css/cards.css</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+</urlset>
