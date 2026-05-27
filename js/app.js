@@ -22,9 +22,8 @@ class DetectiveApp {
     async init() {
         console.log('Initializing Detective App...');
         
-        // Check screen size
-        this.checkScreenSize();
-        window.addEventListener('resize', () => this.checkScreenSize());
+        // Screen size is now handled purely by CSS media queries
+        // No JavaScript check needed
         
         // Initialize language manager
         await this.languageManager.init();
@@ -38,19 +37,6 @@ class DetectiveApp {
         console.log('Detective App initialized successfully');
     }
     
-    checkScreenSize() {
-        const width = window.innerWidth;
-        const deviceRestriction = document.getElementById('deviceRestriction');
-        const mainApp = document.getElementById('mainApp');
-        
-        if (width < 1024) {
-            if (deviceRestriction) deviceRestriction.style.display = 'flex';
-            if (mainApp) mainApp.style.display = 'none';
-        } else {
-            if (deviceRestriction) deviceRestriction.style.display = 'none';
-            if (mainApp) mainApp.style.display = 'block';
-        }
-    }
     
     setupEventListeners() {
         // Logo click - return to dashboard
