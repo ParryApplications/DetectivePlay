@@ -493,7 +493,11 @@ class DetectiveApp {
                     <h6>${this.languageManager.translate('result.redHerrings')}</h6>
                     <p>These clues were meant to mislead you:</p>
                     <ul class="evidence-list">
-                        ${redHerrings.map(item => `<li><i class="fas fa-times me-2" style="color:var(--crimson)"></i>${item}</li>`).join('')}
+                        ${redHerrings.map(item => {
+                            // Handle both string and object formats for red herrings
+                            const text = typeof item === 'string' ? item : (item[lang] || item.en || JSON.stringify(item));
+                            return `<li><i class="fas fa-times me-2" style="color:var(--crimson)"></i>${text}</li>`;
+                        }).join('')}
                     </ul>
                 ` : ''}
             </div>
