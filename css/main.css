@@ -1,0 +1,668 @@
+/* ===================================
+   GiveJustice - Main Styles
+   Detective Mystery Game
+   =================================== */
+
+/* ===================================
+   CSS Variables - Color Palette
+   =================================== */
+:root {
+    /* Primary Colors */
+    --deep-navy: #1a1f2e;
+    --charcoal: #2d3142;
+    --warm-amber: #d4a574;
+    --crimson: #8b0000;
+    --cream: #f4f1de;
+    
+    /* Secondary Colors */
+    --steel-blue: #4f5d75;
+    --olive: #6c6f4d;
+    --gold: #c9a961;
+    
+    /* Functional Colors */
+    --success: #2d6a4f;
+    --danger: #c1121f;
+    --warning: #f77f00;
+    --info: #4f5d75;
+    
+    /* Typography */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Source Sans Pro', sans-serif;
+    --font-mono: 'Courier Prime', monospace;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.5);
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
+
+/* ===================================
+   Global Styles
+   =================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--deep-navy);
+    color: var(--cream);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: var(--spacing-sm);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+p {
+    margin-bottom: var(--spacing-sm);
+}
+
+a {
+    color: var(--warm-amber);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--gold);
+}
+
+/* ===================================
+   Device Restriction Screen
+   =================================== */
+.device-restriction {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--deep-navy) 0%, var(--charcoal) 100%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    padding: var(--spacing-md);
+}
+
+.restriction-content {
+    text-align: center;
+    max-width: 600px;
+    padding: var(--spacing-xl);
+    background: rgba(45, 49, 66, 0.8);
+    border-radius: 10px;
+    box-shadow: var(--shadow-lg);
+    border: 2px solid var(--warm-amber);
+}
+
+.restriction-content i {
+    color: var(--warm-amber);
+    margin-bottom: var(--spacing-md);
+}
+
+.restriction-content h1 {
+    color: var(--cream);
+    margin-bottom: var(--spacing-md);
+    font-size: 2rem;
+}
+
+.restriction-content p {
+    color: var(--cream);
+    opacity: 0.9;
+    margin-bottom: var(--spacing-sm);
+}
+
+.current-size {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-sm);
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+}
+
+.current-size .fw-bold {
+    color: var(--warning);
+}
+
+/* Show restriction on small screens */
+@media (max-width: 1023px) {
+    .device-restriction {
+        display: flex !important;
+    }
+    
+    .main-app {
+        display: none !important;
+    }
+}
+
+/* ===================================
+   Main Application
+   =================================== */
+.main-app {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--deep-navy) 0%, #0f1419 100%);
+    position: relative;
+}
+
+/* Atmospheric Background Effect */
+.main-app::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(212, 165, 116, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(139, 0, 0, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ===================================
+   Navigation
+   =================================== */
+.navbar {
+    background: rgba(26, 31, 46, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid var(--warm-amber);
+    padding: var(--spacing-sm) var(--spacing-md);
+    box-shadow: var(--shadow-md);
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--warm-amber) !important;
+    transition: all var(--transition-normal);
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand:hover {
+    color: var(--gold) !important;
+    transform: scale(1.05);
+}
+
+.navbar-brand i {
+    color: var(--gold);
+}
+
+.navbar-logo {
+    height: 40px;
+    width: 40px;
+    transition: all var(--transition-normal);
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.navbar-brand:hover .navbar-logo {
+    box-shadow: 0 0 15px rgba(212, 165, 116, 0.6);
+    transform: rotate(5deg);
+}
+
+.dropdown-menu {
+    background: var(--charcoal);
+    border: 1px solid var(--warm-amber);
+    box-shadow: var(--shadow-md);
+}
+
+.dropdown-item {
+    color: var(--cream);
+    transition: all var(--transition-fast);
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-item:hover {
+    background: var(--steel-blue);
+    color: var(--warm-amber);
+}
+
+.btn-outline-light {
+    border-color: var(--cream);
+    color: var(--cream);
+}
+
+.btn-outline-light:hover {
+    background: var(--cream);
+    color: var(--deep-navy);
+}
+
+.btn-outline-warning {
+    border-color: var(--warning);
+    color: var(--warning);
+}
+
+.btn-outline-warning:hover {
+    background: var(--warning);
+    color: var(--deep-navy);
+}
+
+/* ===================================
+   Loading Spinner
+   =================================== */
+.loading-spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(26, 31, 46, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.loading-spinner .spinner-border {
+    width: 4rem;
+    height: 4rem;
+}
+
+.loading-spinner p {
+    color: var(--cream);
+    font-size: 1.2rem;
+    margin-top: var(--spacing-md);
+}
+
+/* ===================================
+   Buttons
+   =================================== */
+.btn {
+    font-family: var(--font-body);
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    transition: all var(--transition-normal);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--warm-amber) 0%, var(--gold) 100%);
+    color: var(--deep-navy);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--warm-amber) 100%);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+    background: var(--steel-blue);
+    color: var(--cream);
+}
+
+.btn-secondary:hover {
+    background: var(--charcoal);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-warning {
+    background: var(--warning);
+    color: var(--deep-navy);
+}
+
+.btn-warning:hover {
+    background: #ff8c1a;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+/* ===================================
+   Forms
+   =================================== */
+.form-control,
+.form-select {
+    background: rgba(45, 49, 66, 0.8);
+    border: 1px solid var(--steel-blue);
+    color: var(--cream);
+    padding: 0.75rem;
+    border-radius: 5px;
+    transition: all var(--transition-fast);
+}
+
+.form-control:focus,
+.form-select:focus {
+    background: rgba(45, 49, 66, 0.95);
+    border-color: var(--warm-amber);
+    color: var(--cream);
+    box-shadow: 0 0 0 0.2rem rgba(212, 165, 116, 0.25);
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: rgba(244, 241, 222, 0.5);
+}
+
+.form-label {
+    color: var(--cream);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    padding-top: 0.25rem;
+}
+
+.form-check-input {
+    background-color: rgba(45, 49, 66, 0.8);
+    border-color: var(--steel-blue);
+}
+
+.form-check-input:checked {
+    background-color: var(--warm-amber);
+    border-color: var(--warm-amber);
+}
+
+.form-check-label {
+    color: var(--cream);
+    padding-left: 0.5rem;
+}
+
+/* ===================================
+   Modals
+   =================================== */
+.modal-content {
+    background: var(--charcoal);
+    border: 2px solid var(--warm-amber);
+    box-shadow: var(--shadow-lg);
+    color: var(--cream);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--steel-blue);
+    background: var(--deep-navy);
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.modal-title {
+    color: var(--warm-amber);
+    font-family: var(--font-heading);
+}
+
+.modal-body {
+    padding: var(--spacing-md);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--steel-blue);
+    background: var(--deep-navy);
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Confirmation Modal Specific Styles */
+#confirmModal .modal-dialog {
+    max-width: 450px;
+}
+
+#confirmModal .modal-body {
+    font-size: 1.1rem;
+    padding: var(--spacing-lg);
+    text-align: center;
+}
+
+#confirmModal .modal-footer {
+    justify-content: center;
+    gap: var(--spacing-sm);
+}
+
+#confirmModal .btn {
+    min-width: 120px;
+}
+
+/* ===================================
+   Tabs
+   =================================== */
+.nav-tabs {
+    border-bottom: 2px solid var(--steel-blue);
+}
+
+.nav-tabs .nav-link {
+    color: var(--cream);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: all var(--transition-fast);
+    padding: 0.75rem 1rem;
+}
+
+.nav-tabs .nav-link:hover {
+    color: var(--warm-amber);
+    border-bottom-color: var(--warm-amber);
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--warm-amber);
+    background: rgba(212, 165, 116, 0.1);
+    border-bottom-color: var(--warm-amber);
+}
+
+/* ===================================
+   Scrollbar Styling
+   =================================== */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--deep-navy);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--steel-blue);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--warm-amber);
+}
+
+/* ===================================
+   Utility Classes
+   =================================== */
+.text-amber {
+    color: var(--warm-amber);
+}
+
+.text-gold {
+    color: var(--gold);
+}
+
+.text-crimson {
+    color: var(--crimson);
+}
+
+.bg-charcoal {
+    background-color: var(--charcoal);
+}
+
+.bg-navy {
+    background-color: var(--deep-navy);
+}
+
+.shadow-custom {
+    box-shadow: var(--shadow-md);
+}
+
+.transition-all {
+    transition: all var(--transition-normal);
+}
+
+/* ===================================
+   Animations
+   =================================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease;
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.5s ease;
+}
+
+.slide-in-right {
+    animation: slideInRight 0.5s ease;
+}
+
+/* ===================================
+   Responsive Design
+   =================================== */
+@media (max-width: 1400px) {
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.6rem; }
+}
+
+@media (max-width: 1200px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.4rem; }
+}
+
+/* ===================================
+   Accessibility
+   =================================== */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Focus styles for keyboard navigation */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--warm-amber);
+    outline-offset: 2px;
+}
+
+/* Skip to main content link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--warm-amber);
+    color: var(--deep-navy);
+    padding: 8px;
+    text-decoration: none;
+    z-index: 10001;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* ===================================
+   Print Styles
+   =================================== */
+@media print {
+    .navbar,
+    .btn,
+    .modal,
+    .loading-spinner {
+        display: none !important;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .main-app {
+        background: white;
+    }
+}

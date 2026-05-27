@@ -1,0 +1,1245 @@
+{
+  "mysteries": {
+    "mystery_001": {
+      "title": {
+        "en": "The Ashworth Manor Poisoning",
+        "hi": "ऐशवर्थ हवेली विषकांड",
+        "zh-CN": "阿什沃斯庄园毒杀案",
+        "ko": "애쉬워스 저택 독살 사건",
+        "ja": "アッシュワース邸の毒殺事件"
+      },
+      "category": "as_detective",
+      "difficulty": "medium",
+      "story": {
+        "en": "It was a stormy Friday evening at Ashworth Manor, a grand Victorian estate nestled in the fog-laden hills of rural England. Lord Edmund Ashworth, 68, a retired industrialist of considerable wealth and even greater enemies, had invited five guests for his annual private dinner — a tradition he had maintained for thirty years.\n\nAt precisely 9:47 PM, Lord Ashworth collapsed mid-toast, clutching his chest. By the time the family physician, Dr. Helena Cross, reached him, he was dead. The manor's gates had been locked since 7:00 PM due to the storm, and no one had entered or left. The killer was still inside.\n\nThe victim's glass of aged Bordeaux wine was found overturned beside his chair. A faint bitter almond scent lingered near the table — a scent that Dr. Cross immediately recognized as cyanide. The kitchen staff reported that Lord Ashworth's wine had been poured separately from the others, directly from a private bottle kept in the study.\n\nDetective, the murderer is among the five guests. The evidence is in front of you. Every detail matters. Seek the truth and deliver justice.",
+        "hi": "यह एक तूफानी शुक्रवार की शाम थी ऐशवर्थ हवेली में, जो ग्रामीण इंग्लैंड की कोहरे से ढकी पहाड़ियों में बसी एक भव्य विक्टोरियन संपदा थी। लॉर्ड एडमंड ऐशवर्थ, 68 वर्षीय, एक सेवानिवृत्त उद्योगपति जिनके पास अपार संपत्ति थी और उससे भी अधिक दुश्मन, ने अपने वार्षिक निजी रात्रिभोज के लिए पांच मेहमानों को आमंत्रित किया था।\n\nठीक रात 9:47 बजे, लॉर्ड ऐशवर्थ乾杯 के बीच में गिर पड़े, अपनी छाती को थामते हुए। जब तक पारिवारिक चिकित्सक डॉ. हेलेना क्रॉस उनके पास पहुंचीं, वे मर चुके थे। तूफान के कारण हवेली के द्वार शाम 7:00 बजे से बंद थे, और कोई भी अंदर नहीं आया था या बाहर नहीं गया था। हत्यारा अभी भी अंदर था।\n\nजासूस, हत्यारा पांच मेहमानों में से एक है। सबूत आपके सामने हैं। हर विवरण मायने रखता है।",
+        "zh-CN": "那是一个风雨交加的星期五晚上，阿什沃斯庄园笼罩在英格兰乡村雾气弥漫的山丘中。68岁的埃德蒙·阿什沃斯勋爵，一位拥有巨额财富和更多敌人的退休实业家，邀请了五位客人参加他的年度私人晚宴。\n\n晚上9点47分，阿什沃斯勋爵在举杯祝酒时突然倒下，捂着胸口。当家庭医生海伦娜·克罗斯博士赶到时，他已经死亡。由于暴风雨，庄园大门从晚上7点起就已锁上，没有人进出。凶手仍在庄园内。\n\n侦探，凶手就在五位客人之中。证据就在你面前。每个细节都很重要。",
+        "ko": "폭풍우가 몰아치는 금요일 저녁, 안개 자욱한 영국 시골 언덕에 자리한 웅장한 빅토리아 시대 저택 애쉬워스 매너에서 사건이 발생했습니다. 68세의 에드먼드 애쉬워스 경은 막대한 재산과 그보다 더 많은 적을 가진 은퇴한 실업가로, 연례 만찬에 다섯 명의 손님을 초대했습니다.\n\n오후 9시 47분, 애쉬워스 경이 건배 도중 쓰러졌습니다. 가족 주치의 헬레나 크로스 박사가 도착했을 때 그는 이미 사망한 상태였습니다. 폭풍으로 인해 저택 문은 오후 7시부터 잠겨 있었고, 아무도 들어오거나 나가지 않았습니다. 살인범은 아직 안에 있었습니다.\n\n형사님, 살인범은 다섯 손님 중 한 명입니다. 증거가 눈앞에 있습니다.",
+        "ja": "霧深いイングランドの田舎の丘に佇む壮大なヴィクトリア朝の邸宅、アッシュワース・マナーで嵐の金曜日の夜に事件は起きた。68歳のエドマンド・アッシュワース卿は、莫大な富と更に多くの敵を持つ引退した実業家で、毎年恒例の晩餐会に5人のゲストを招いていた。\n\n午後9時47分、アッシュワース卿は乾杯の最中に胸を押さえて倒れた。家庭医のヘレナ・クロス博士が駆けつけた時、彼はすでに息絶えていた。嵐のため邸宅の門は午後7時から施錠されており、誰も出入りしていなかった。殺人犯はまだ邸宅の中にいた。\n\n探偵よ、犯人は5人のゲストの中にいる。証拠は目の前にある。"
+      },
+      "suspects": [
+        {
+          "id": "suspect_001",
+          "name": "Victor Ashworth",
+          "age": 42,
+          "occupation": "Lord's Nephew & Heir",
+          "relationship": "Nephew of the victim",
+          "photo": null,
+          "profile": {
+            "en": "Victor is Lord Ashworth's only nephew and the primary heir to the estate. Charming on the surface, Victor has a well-known gambling addiction and is drowning in debt. He was recently informed that his uncle planned to revise his will, cutting Victor's inheritance by 80% in favor of a charitable trust.",
+            "hi": "विक्टर लॉर्ड ऐशवर्थ का एकमात्र भतीजा और संपत्ति का प्राथमिक उत्तराधिकारी है। ऊपर से आकर्षक, विक्टर को जुए की लत है और वह कर्ज में डूबा है।",
+            "zh-CN": "维克托是阿什沃斯勋爵唯一的侄子和主要继承人。表面上很有魅力，但维克托有众所周知的赌博成瘾，债台高筑。",
+            "ko": "빅터는 애쉬워스 경의 유일한 조카이자 주요 상속인입니다. 겉으로는 매력적이지만 도박 중독으로 빚더미에 앉아 있습니다.",
+            "ja": "ビクターはアッシュワース卿の唯一の甥で、主要な相続人です。表面上は魅力的ですが、ギャンブル依存症で借金まみれです。"
+          },
+          "alibi": {
+            "en": "Claims he was in the billiard room from 8:00 PM to 10:00 PM, but no one can confirm this for the full duration. A 20-minute gap between 9:30–9:50 PM is unaccounted for.",
+            "hi": "दावा करता है कि वह रात 8:00 बजे से 10:00 बजे तक बिलियर्ड रूम में था, लेकिन कोई भी पूरे समय के लिए इसकी पुष्टि नहीं कर सकता।",
+            "zh-CN": "声称晚上8点到10点一直在台球室，但没有人能证实整个时间段。9:30-9:50 PM有20分钟无法解释。",
+            "ko": "오후 8시부터 10시까지 당구실에 있었다고 주장하지만, 전체 시간 동안 이를 확인할 수 있는 사람이 없습니다.",
+            "ja": "午後8時から10時まで撞球室にいたと主張しているが、全時間を証明できる人物はいない。"
+          },
+          "motive": {
+            "en": "Stands to lose 80% of his inheritance due to the planned will revision. Owes £340,000 to creditors. Lord Ashworth's death before the will is changed means Victor inherits everything.",
+            "hi": "नियोजित वसीयत संशोधन के कारण अपनी 80% विरासत खोने वाला है। लेनदारों को £340,000 का कर्ज है।",
+            "zh-CN": "由于计划中的遗嘱修改，将失去80%的遗产。欠债34万英镑。",
+            "ko": "유언장 수정으로 상속의 80%를 잃게 됩니다. 채권자에게 34만 파운드의 빚이 있습니다.",
+            "ja": "遺言書の変更により相続の80%を失う予定。債権者に34万ポンドの借金がある。"
+          }
+        },
+        {
+          "id": "suspect_002",
+          "name": "Margaret Holloway",
+          "age": 55,
+          "occupation": "Estate Solicitor",
+          "relationship": "Lord's personal lawyer for 20 years",
+          "photo": null,
+          "profile": {
+            "en": "Margaret has managed Lord Ashworth's legal affairs for two decades. She is meticulous, cold, and deeply professional. However, a recent audit revealed she had been embezzling small sums from the estate accounts over 7 years — totalling £89,000. Lord Ashworth had confronted her privately three days before the dinner.",
+            "hi": "मार्गरेट ने दो दशकों से लॉर्ड ऐशवर्थ के कानूनी मामलों का प्रबंधन किया है। हाल ही में एक ऑडिट से पता चला कि उसने 7 वर्षों में संपत्ति खातों से छोटी-छोटी राशियां गबन की थी।",
+            "zh-CN": "玛格丽特管理阿什沃斯勋爵的法律事务已有二十年。最近的审计显示她在7年内从庄园账户挪用了8.9万英镑。",
+            "ko": "마가렛은 20년간 애쉬워스 경의 법률 업무를 관리해왔습니다. 최근 감사에서 7년간 8만 9천 파운드를 횡령한 것이 밝혀졌습니다.",
+            "ja": "マーガレットは20年間アッシュワース卿の法律業務を管理してきた。最近の監査で7年間にわたり8万9千ポンドを横領していたことが判明した。"
+          },
+          "alibi": {
+            "en": "Was seated at the dinner table the entire evening, visible to all guests. However, she was the last person to handle the wine bottle before it was brought to the table, as she retrieved it from the study at Lord Ashworth's request.",
+            "hi": "पूरी शाम डिनर टेबल पर बैठी रही, सभी मेहमानों को दिखाई दे रही थी। हालांकि, वह वाइन बोतल को संभालने वाली आखिरी व्यक्ति थी।",
+            "zh-CN": "整个晚上都坐在餐桌旁，所有客人都能看到她。但她是最后一个处理葡萄酒瓶的人，应阿什沃斯勋爵的要求从书房取来了酒瓶。",
+            "ko": "저녁 내내 식탁에 앉아 있어 모든 손님이 볼 수 있었습니다. 그러나 그녀는 서재에서 와인 병을 가져온 마지막 사람이었습니다.",
+            "ja": "夕食中ずっとテーブルに座っており、全員から見えていた。しかし、書斎からワインボトルを持ってきた最後の人物でもある。"
+          },
+          "motive": {
+            "en": "Lord Ashworth had discovered her embezzlement and threatened to press criminal charges and terminate her employment. Silencing him permanently would bury the evidence and protect her career and freedom.",
+            "hi": "लॉर्ड ऐशवर्थ ने उसके गबन की खोज की थी और आपराधिक आरोप लगाने की धमकी दी थी।",
+            "zh-CN": "阿什沃斯勋爵发现了她的挪用公款行为，并威胁要提起刑事诉讼。",
+            "ko": "애쉬워스 경이 횡령을 발견하고 형사 고발을 위협했습니다.",
+            "ja": "アッシュワース卿が横領を発見し、刑事告訴を脅した。"
+          }
+        },
+        {
+          "id": "suspect_003",
+          "name": "Dr. Helena Cross",
+          "age": 49,
+          "occupation": "Family Physician",
+          "relationship": "Lord's personal doctor for 12 years",
+          "photo": null,
+          "profile": {
+            "en": "Dr. Cross has been the Ashworth family physician for over a decade. She is respected, composed, and has unrestricted access to the manor's medicine cabinet. Critically, she is the only person at the dinner with professional knowledge of lethal dosages of potassium cyanide and how to administer it without detection. She was also the first to declare the cause of death — before any official autopsy.",
+            "hi": "डॉ. क्रॉस एक दशक से अधिक समय से ऐशवर्थ परिवार की चिकित्सक हैं। वह केवल एकमात्र व्यक्ति हैं जिनके पास पोटेशियम साइनाइड की घातक खुराक का पेशेवर ज्ञान है।",
+            "zh-CN": "克罗斯博士担任阿什沃斯家族医生已超过十年。她是晚宴上唯一具备氰化钾致死剂量专业知识的人，也是第一个宣布死亡原因的人。",
+            "ko": "크로스 박사는 10년 이상 애쉬워스 가족의 주치의였습니다. 그녀는 시안화칼륨의 치사량에 대한 전문 지식을 가진 유일한 사람입니다.",
+            "ja": "クロス博士は10年以上アッシュワース家の主治医を務めている。シアン化カリウムの致死量について専門知識を持つ唯一の人物で、死因を最初に宣言した。"
+          },
+          "alibi": {
+            "en": "Claims she arrived at 7:30 PM and went directly to the drawing room. However, kitchen staff saw her near the study — where the private wine bottle was stored — at approximately 8:45 PM, alone, for nearly 15 minutes.",
+            "hi": "दावा करती है कि वह शाम 7:30 बजे पहुंची और सीधे ड्राइंग रूम में गई। हालांकि, रसोई के कर्मचारियों ने उसे लगभग 8:45 बजे अध्ययन कक्ष के पास देखा।",
+            "zh-CN": "声称晚上7:30到达并直接去了客厅。但厨房工作人员看到她在晚上8:45左右独自在书房附近待了近15分钟。",
+            "ko": "오후 7시 30분에 도착해 응접실로 바로 갔다고 주장하지만, 주방 직원이 오후 8시 45분경 서재 근처에서 혼자 있는 것을 목격했습니다.",
+            "ja": "午後7時30分に到着し、直接応接間に行ったと主張。しかし、台所のスタッフが午後8時45分頃、書斎の近くで一人でいるのを目撃している。"
+          },
+          "motive": {
+            "en": "Lord Ashworth had recently changed his medical power of attorney, removing Dr. Cross and replacing her with a London specialist. She also stood to lose a £200,000 bequest mentioned in the old will. Furthermore, a secret affair between Dr. Cross and Lord Ashworth had recently ended bitterly at his initiative.",
+            "hi": "लॉर्ड ऐशवर्थ ने हाल ही में अपनी चिकित्सा शक्ति को बदल दिया था, डॉ. क्रॉस को हटा दिया था। उन्हें पुरानी वसीयत में £200,000 की विरासत भी खोनी थी।",
+            "zh-CN": "阿什沃斯勋爵最近更改了医疗授权书，撤销了克罗斯博士的资格。她还将失去旧遗嘱中提到的20万英镑遗产。此外，两人之间的秘密恋情最近以他的主动结束。",
+            "ko": "애쉬워스 경이 의료 위임장을 변경해 크로스 박사를 제거했습니다. 또한 구 유언장에 명시된 20만 파운드의 유산을 잃게 됩니다.",
+            "ja": "アッシュワース卿が医療委任状を変更し、クロス博士を外した。旧遺言書に記載された20万ポンドの遺贈も失う予定。また、二人の秘密の関係が彼の意思で最近終わっていた。"
+          }
+        },
+        {
+          "id": "suspect_004",
+          "name": "Thomas Wren",
+          "age": 61,
+          "occupation": "Business Partner",
+          "relationship": "30-year business partner of the victim",
+          "photo": null,
+          "profile": {
+            "en": "Thomas and Lord Ashworth built their industrial empire together. However, a recent corporate dispute has led to a bitter legal battle over the ownership of a £12 million patent. Lord Ashworth had filed an injunction two weeks prior, freezing all of Thomas's business assets. Thomas stood to be financially ruined if the case proceeded.",
+            "hi": "थॉमस और लॉर्ड ऐशवर्थ ने मिलकर अपना औद्योगिक साम्राज्य बनाया था। हाल ही में £12 मिलियन के पेटेंट पर कानूनी विवाद हुआ था।",
+            "zh-CN": "托马斯和阿什沃斯勋爵共同建立了工业帝国。最近因1200万英镑专利所有权发生法律纠纷，阿什沃斯勋爵申请了禁令，冻结了托马斯的所有商业资产。",
+            "ko": "토마스와 애쉬워스 경은 함께 산업 제국을 건설했습니다. 최근 1,200만 파운드 특허 소유권 분쟁으로 법적 다툼이 벌어졌습니다.",
+            "ja": "トーマスとアッシュワース卿は共に産業帝国を築いた。最近1200万ポンドの特許をめぐる法的紛争が起き、アッシュワース卿が差し止め命令を申請し、トーマスの全事業資産が凍結された。"
+          },
+          "alibi": {
+            "en": "Was in the dining room at the time of death, confirmed by three witnesses. However, he was seen arguing heatedly with Lord Ashworth in the garden at 6:30 PM, before the gates were locked.",
+            "hi": "मृत्यु के समय डाइनिंग रूम में था, तीन गवाहों द्वारा पुष्टि की गई। हालांकि, उसे शाम 6:30 बजे बगीचे में लॉर्ड ऐशवर्थ के साथ गरमागरम बहस करते देखा गया था।",
+            "zh-CN": "死亡时在餐厅，有三名证人确认。但在大门锁上之前，他在下午6:30被看到与阿什沃斯勋爵在花园里激烈争吵。",
+            "ko": "사망 당시 식당에 있었으며 세 명의 증인이 확인했습니다. 그러나 오후 6시 30분 정원에서 애쉬워스 경과 격렬하게 다투는 것이 목격되었습니다.",
+            "ja": "死亡時は食堂におり、3人の証人が確認している。しかし、門が施錠される前の午後6時30分に庭でアッシュワース卿と激しく口論しているのが目撃された。"
+          },
+          "motive": {
+            "en": "Lord Ashworth's death would immediately dissolve the injunction and revert patent ownership to a joint-estate status, saving Thomas from financial ruin. He had also recently discovered that Lord Ashworth had been secretly negotiating to sell the patent to a competitor.",
+            "hi": "लॉर्ड ऐशवर्थ की मृत्यु से तुरंत निषेधाज्ञा समाप्त हो जाती और थॉमस को वित्तीय बर्बादी से बचाती।",
+            "zh-CN": "阿什沃斯勋爵的死亡将立即解除禁令，使托马斯免于财务破产。他还发现阿什沃斯勋爵一直在秘密谈判将专利卖给竞争对手。",
+            "ko": "애쉬워스 경의 사망으로 즉시 금지 명령이 해제되어 토마스가 재정 파탄을 면할 수 있습니다.",
+            "ja": "アッシュワース卿の死により差し止め命令が即座に解除され、財政破綻を免れる。また、アッシュワース卿が競合他社に特許を秘密裏に売却交渉していたことも発見していた。"
+          }
+        },
+        {
+          "id": "suspect_005",
+          "name": "Cecilia Vane",
+          "age": 34,
+          "occupation": "Journalist",
+          "relationship": "Investigative reporter, recently met the victim",
+          "photo": null,
+          "profile": {
+            "en": "Cecilia is an investigative journalist who had been researching Lord Ashworth's past for a major exposé. She was invited to the dinner under the pretense of writing a flattering profile piece. In reality, she had uncovered evidence that Lord Ashworth had bribed government officials in the 1990s — evidence that, if published, would destroy his legacy. Lord Ashworth had discovered her true intentions and threatened legal action.",
+            "hi": "सेसिलिया एक खोजी पत्रकार है जो लॉर्ड ऐशवर्थ के अतीत पर शोध कर रही थी। उसने 1990 के दशक में सरकारी अधिकारियों को रिश्वत देने के सबूत उजागर किए थे।",
+            "zh-CN": "塞西莉亚是一名调查记者，一直在研究阿什沃斯勋爵的过去。她发现了阿什沃斯勋爵在1990年代贿赂政府官员的证据。",
+            "ko": "세실리아는 애쉬워스 경의 과거를 조사하던 탐사 기자입니다. 1990년대 정부 관리 뇌물 증거를 발견했습니다.",
+            "ja": "セシリアはアッシュワース卿の過去を調査していた調査報道記者。1990年代に政府高官に賄賂を贈った証拠を発見していた。"
+          },
+          "alibi": {
+            "en": "Was in the drawing room with Victor Ashworth between 9:00–9:45 PM, which Victor partially confirms. She was seen using her phone extensively during dinner, which she claims was for note-taking.",
+            "hi": "रात 9:00-9:45 बजे विक्टर ऐशवर्थ के साथ ड्राइंग रूम में थी, जिसकी विक्टर आंशिक रूप से पुष्टि करता है।",
+            "zh-CN": "晚上9:00-9:45与维克托·阿什沃斯在客厅，维克托部分确认了这一点。她在晚餐期间大量使用手机，声称是在记笔记。",
+            "ko": "오후 9시~9시 45분에 빅터 애쉬워스와 응접실에 있었으며, 빅터가 부분적으로 확인했습니다.",
+            "ja": "午後9時〜9時45分はビクター・アッシュワースと応接間にいたとビクターが部分的に確認している。"
+          },
+          "motive": {
+            "en": "Lord Ashworth had hired a law firm to file a £5 million defamation suit against Cecilia and her publication. If successful, it would end her career. Additionally, she feared he would use his political connections to have her press credentials revoked.",
+            "hi": "लॉर्ड ऐशवर्थ ने सेसिलिया के खिलाफ £5 मिलियन का मानहानि मुकदमा दायर करने के लिए एक कानूनी फर्म को नियुक्त किया था।",
+            "zh-CN": "阿什沃斯勋爵聘请律师事务所对塞西莉亚提起500万英镑的诽谤诉讼，可能终结她的职业生涯。",
+            "ko": "애쉬워스 경이 세실리아를 상대로 500만 파운드 명예훼손 소송을 제기하기 위해 법률 회사를 고용했습니다.",
+            "ja": "アッシュワース卿がセシリアに対して500万ポンドの名誉毀損訴訟を起こすため法律事務所を雇った。"
+          }
+        }
+      ],
+      "weapons": [
+        {
+          "id": "weapon_001",
+          "name": "Potassium Cyanide",
+          "type": "Poison",
+          "image": null,
+          "details": {
+            "en": "A lethal white crystalline powder, odourless in solid form but releases a faint bitter almond scent when dissolved in liquid. A dose of 1.5mg per kilogram of body weight is fatal. The poison was dissolved into the victim's private bottle of 1987 Bordeaux wine. The bottle was found in the study with trace residue on the inner neck.",
+            "hi": "एक घातक सफेद क्रिस्टलीय पाउडर, ठोस रूप में गंधहीन लेकिन तरल में घुलने पर हल्की कड़वी बादाम की गंध छोड़ता है। जहर पीड़ित की निजी वाइन बोतल में घोला गया था।",
+            "zh-CN": "一种致命的白色晶体粉末，固态时无味，溶于液体时散发淡淡的苦杏仁气味。毒药被溶入受害者的私人1987年波尔多葡萄酒瓶中。",
+            "ko": "치명적인 흰색 결정 분말로, 고체 상태에서는 무취이지만 액체에 용해되면 희미한 쓴 아몬드 향을 냅니다. 독약은 피해자의 개인 와인 병에 녹아 있었습니다.",
+            "ja": "致死性の白い結晶粉末で、固体では無臭だが液体に溶けると微かな苦いアーモンドの香りを放つ。毒は被害者の個人用ワインボトルに溶かされていた。"
+          },
+          "forensics": {
+            "en": "Trace amounts of potassium cyanide confirmed in the wine bottle and in the victim's stomach contents during autopsy. No fingerprints found on the bottle — it was wiped clean. A small empty vial was found in the manor's medicine cabinet, consistent with medical-grade cyanide compounds used in certain dental procedures.",
+            "hi": "वाइन बोतल में और पोस्टमॉर्टम के दौरान पीड़ित के पेट की सामग्री में पोटेशियम साइनाइड के अंश की पुष्टि हुई। बोतल पर कोई उंगलियों के निशान नहीं मिले।",
+            "zh-CN": "在葡萄酒瓶和尸检中受害者的胃内容物中确认了氰化钾痕迹。瓶子上没有指纹——被擦拭干净了。",
+            "ko": "와인 병과 부검 중 피해자의 위 내용물에서 시안화칼륨 흔적이 확인되었습니다. 병에서 지문이 발견되지 않았습니다.",
+            "ja": "ワインボトルと剖検時の被害者の胃内容物からシアン化カリウムの痕跡が確認された。ボトルに指紋はなく、拭き取られていた。"
+          }
+        },
+        {
+          "id": "weapon_002",
+          "name": "Letter Opener (Steel)",
+          "type": "Sharp Object",
+          "image": null,
+          "details": {
+            "en": "An ornate silver-handled letter opener found on Lord Ashworth's study desk. It was found with a smear of blood on the blade — later confirmed to be Lord Ashworth's blood type. However, the wound was superficial and pre-mortem, suggesting a possible earlier altercation, not the cause of death.",
+            "hi": "लॉर्ड ऐशवर्थ की स्टडी डेस्क पर मिला एक अलंकृत चांदी के हत्थे वाला लेटर ओपनर। ब्लेड पर खून का धब्बा था — बाद में लॉर्ड ऐशवर्थ के रक्त प्रकार की पुष्टि हुई।",
+            "zh-CN": "在阿什沃斯勋爵书桌上发现的一把装饰精美的银柄拆信刀。刀刃上有血迹——后来确认是阿什沃斯勋爵的血型。伤口是表浅的，表明可能是之前的争执。",
+            "ko": "애쉬워스 경의 서재 책상에서 발견된 화려한 은 손잡이 편지 개봉기. 칼날에 혈흔이 있었으며 애쉬워스 경의 혈액형으로 확인되었습니다.",
+            "ja": "アッシュワース卿の書斎の机で発見された装飾的な銀の柄のレターオープナー。刃にアッシュワース卿の血液型と一致する血痕があった。傷は表面的で、死因ではなく以前の口論によるものと思われる。"
+          },
+          "forensics": {
+            "en": "Partial fingerprint found on the handle — smudged and inconclusive. The blood is confirmed as Lord Ashworth's. This weapon is considered a red herring — it did not cause death but indicates a prior physical confrontation in the study.",
+            "hi": "हैंडल पर आंशिक उंगलियों का निशान मिला — धुंधला और अनिर्णायक। यह हथियार एक भ्रामक सुराग माना जाता है।",
+            "zh-CN": "手柄上发现部分指纹——模糊且不确定。这件武器被认为是误导线索——它没有导致死亡，但表明书房里曾发生过身体对抗。",
+            "ko": "손잡이에서 부분 지문이 발견되었지만 불분명합니다. 이 무기는 레드 헤링으로 간주됩니다.",
+            "ja": "柄に部分的な指紋が見つかったが不鮮明。この武器はレッドヘリングと見なされる——死因ではないが、書斎での以前の身体的衝突を示している。"
+          }
+        }
+      ],
+      "locations": [
+        {
+          "id": "location_001",
+          "name": "The Study",
+          "image": null,
+          "description": {
+            "en": "Lord Ashworth's private study on the ground floor, adjacent to the dining room. Floor-to-ceiling bookshelves, a large mahogany desk, and a locked liquor cabinet containing his private wine collection. This is where the poisoned Bordeaux bottle was stored before dinner. The room was accessible to all guests but considered off-limits by convention.",
+            "hi": "लॉर्ड ऐशवर्थ का निजी अध्ययन कक्ष भूतल पर, डाइनिंग रूम के बगल में। यहीं पर जहरीली बोर्डो बोतल रात्रिभोज से पहले रखी गई थी।",
+            "zh-CN": "阿什沃斯勋爵在底层的私人书房，紧邻餐厅。这里存放着晚餐前的那瓶被毒化的波尔多葡萄酒。",
+            "ko": "1층에 있는 애쉬워스 경의 개인 서재로, 식당 옆에 위치합니다. 독이 든 보르도 와인 병이 저녁 식사 전에 이곳에 보관되어 있었습니다.",
+            "ja": "1階にあるアッシュワース卿の個人書斎で、食堂に隣接している。夕食前に毒入りボルドーボトルが保管されていた場所。"
+          },
+          "evidence_found": ["evidence_001", "evidence_002", "evidence_005"]
+        },
+        {
+          "id": "location_002",
+          "name": "The Dining Room",
+          "image": null,
+          "description": {
+            "en": "The grand formal dining room where the dinner took place. A long oak table set for six, with Lord Ashworth at the head. This is where the victim collapsed. The overturned wine glass was found here, and the faint cyanide scent was first detected near the victim's chair.",
+            "hi": "भव्य औपचारिक डाइनिंग रूम जहां रात्रिभोज हुआ। यहीं पर पीड़ित गिर पड़े। उलटा वाइन गिलास यहां पाया गया।",
+            "zh-CN": "举行晚宴的宏伟正式餐厅。受害者在这里倒下。翻倒的酒杯在这里被发现，受害者椅子附近首次检测到淡淡的氰化物气味。",
+            "ko": "저녁 식사가 열린 웅장한 공식 식당입니다. 피해자가 쓰러진 곳이며, 뒤집힌 와인 잔이 발견되었습니다.",
+            "ja": "晩餐会が行われた壮大な正式食堂。被害者が倒れた場所で、ひっくり返ったワイングラスが発見され、被害者の椅子近くで微かなシアン化物の臭いが最初に検知された。"
+          },
+          "evidence_found": ["evidence_003", "evidence_004"]
+        },
+        {
+          "id": "location_003",
+          "name": "The Medicine Cabinet (Upstairs Bathroom)",
+          "image": null,
+          "description": {
+            "en": "The main bathroom on the first floor containing the manor's medicine cabinet. Stocked with standard medications plus several professional-grade compounds accessible only to the family physician. A small empty glass vial was found here, consistent with medical-grade potassium cyanide used in dental procedures. Dr. Cross had exclusive knowledge of its contents.",
+            "hi": "पहली मंजिल पर मुख्य बाथरूम जिसमें हवेली की दवा कैबिनेट है। यहां एक छोटी खाली कांच की शीशी मिली, जो दंत प्रक्रियाओं में उपयोग किए जाने वाले चिकित्सा-ग्रेड पोटेशियम साइनाइड के अनुरूप है।",
+            "zh-CN": "一楼主浴室，内有庄园药柜。这里发现了一个小空玻璃瓶，与牙科手术中使用的医用级氰化钾一致。克罗斯博士对其内容物有独家了解。",
+            "ko": "1층 주 욕실에 있는 저택의 약장입니다. 치과 시술에 사용되는 의료용 시안화칼륨과 일치하는 작은 빈 유리 바이알이 발견되었습니다.",
+            "ja": "1階のメインバスルームにある邸宅の薬棚。歯科処置に使用される医療グレードのシアン化カリウムと一致する小さな空のガラスバイアルが発見された。クロス博士だけがその内容物を把握していた。"
+          },
+          "evidence_found": ["evidence_005"]
+        },
+        {
+          "id": "location_004",
+          "name": "The Billiard Room",
+          "image": null,
+          "description": {
+            "en": "A large recreation room on the ground floor. Victor Ashworth claims to have spent most of the evening here. A half-finished glass of whisky was found on the billiard table, and a crumpled letter was discovered in the waste bin — a letter from Victor's creditors demanding immediate repayment.",
+            "hi": "भूतल पर एक बड़ा मनोरंजन कक्ष। विक्टर ऐशवर्थ का दावा है कि उसने शाम का अधिकांश समय यहां बिताया। कूड़ेदान में एक मुड़ा हुआ पत्र मिला।",
+            "zh-CN": "底层的大型娱乐室。维克托·阿什沃斯声称晚上大部分时间都在这里。废纸篓里发现了一封来自维克托债权人的信，要求立即还款。",
+            "ko": "1층의 대형 오락실입니다. 빅터 애쉬워스가 저녁 대부분을 이곳에서 보냈다고 주장합니다. 쓰레기통에서 빅터의 채권자로부터 즉시 상환을 요구하는 편지가 발견되었습니다.",
+            "ja": "1階の大きな娯楽室。ビクター・アッシュワースが夕方の大半をここで過ごしたと主張している。ゴミ箱にビクターの債権者からの即時返済要求の手紙が見つかった。"
+          },
+          "evidence_found": ["evidence_007"]
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence_001",
+          "type": "physical",
+          "name": "Poisoned Wine Bottle (1987 Bordeaux)",
+          "image": null,
+          "description": {
+            "en": "Lord Ashworth's private bottle of 1987 Château Margaux Bordeaux, found in the study's liquor cabinet after the death. The bottle had been opened and resealed. Forensic analysis confirmed potassium cyanide residue on the inner neck of the bottle. The bottle had been wiped clean of fingerprints.",
+            "hi": "लॉर्ड ऐशवर्थ की 1987 चेटो मार्गॉक्स बोर्डो की निजी बोतल, मृत्यु के बाद अध्ययन कक्ष की शराब कैबिनेट में मिली। बोतल खोली और फिर से सील की गई थी।",
+            "zh-CN": "阿什沃斯勋爵的私人1987年玛歌庄园波尔多葡萄酒瓶，死后在书房酒柜中发现。瓶子被打开并重新密封。法证分析在瓶颈内侧确认了氰化钾残留物。",
+            "ko": "애쉬워스 경의 개인 1987년 샤토 마르고 보르도 와인 병으로, 사망 후 서재 주류 캐비닛에서 발견되었습니다. 병이 열렸다가 다시 밀봉되었습니다.",
+            "ja": "アッシュワース卿の個人用1987年シャトー・マルゴー・ボルドーボトルで、死後書斎の酒棚で発見された。ボトルは開封後再封されており、内側の瓶口にシアン化カリウムの残留物が確認された。"
+          },
+          "significance": {
+            "en": "This is the primary murder weapon delivery mechanism. The poison was introduced into this specific bottle, which was only poured for Lord Ashworth. The person who poisoned the bottle had access to the study and knowledge of which bottle Lord Ashworth would drink from.",
+            "hi": "यह प्राथमिक हत्या हथियार वितरण तंत्र है। जहर इस विशिष्ट बोतल में डाला गया था, जो केवल लॉर्ड ऐशवर्थ के लिए डाली गई थी।",
+            "zh-CN": "这是主要的谋杀武器传递机制。毒药被放入这个特定的瓶子里，只为阿什沃斯勋爵倒酒。",
+            "ko": "이것이 주요 살인 무기 전달 메커니즘입니다. 독약은 애쉬워스 경에게만 따라준 이 특정 병에 주입되었습니다.",
+            "ja": "これが主要な殺人武器の投与メカニズム。毒はアッシュワース卿だけに注がれるこの特定のボトルに入れられた。"
+          }
+        },
+        {
+          "id": "evidence_002",
+          "type": "physical",
+          "name": "Empty Medical Vial",
+          "image": null,
+          "description": {
+            "en": "A small 5ml glass vial found in the medicine cabinet upstairs, emptied and rinsed but not discarded. Lab analysis found trace amounts of potassium cyanide. The vial's label had been removed, but adhesive residue matched pharmaceutical-grade medical supply labelling. This type of vial is standard in dental surgery kits.",
+            "hi": "ऊपर की दवा कैबिनेट में मिली एक छोटी 5ml कांच की शीशी, खाली और धोई गई लेकिन फेंकी नहीं गई। लैब विश्लेषण में पोटेशियम साइनाइड के अंश मिले।",
+            "zh-CN": "在楼上药柜中发现的一个小5毫升玻璃瓶，已清空并冲洗但未丢弃。实验室分析发现氰化钾痕迹。这种小瓶是牙科手术套件中的标准配置。",
+            "ko": "위층 약장에서 발견된 작은 5ml 유리 바이알로, 비워지고 헹궈졌지만 버려지지 않았습니다. 실험실 분석에서 시안화칼륨 흔적이 발견되었습니다.",
+            "ja": "2階の薬棚で発見された5mlの小さなガラスバイアル。空にされ洗浄されていたが廃棄されていなかった。実験室分析でシアン化カリウムの痕跡が検出された。このタイプのバイアルは歯科手術キットの標準品。"
+          },
+          "significance": {
+            "en": "Directly links the poison to the manor's medicine cabinet. Only Dr. Cross had professional knowledge of cyanide compounds in medical settings and exclusive familiarity with the medicine cabinet's contents. The fact that it was rinsed but not discarded suggests a rushed or panicked killer.",
+            "hi": "जहर को हवेली की दवा कैबिनेट से सीधे जोड़ता है। केवल डॉ. क्रॉस के पास चिकित्सा सेटिंग में साइनाइड यौगिकों का पेशेवर ज्ञान था।",
+            "zh-CN": "直接将毒药与庄园药柜联系起来。只有克罗斯博士具备医疗环境中氰化物化合物的专业知识，并且熟悉药柜的内容。",
+            "ko": "독약을 저택 약장과 직접 연결합니다. 크로스 박사만이 의료 환경에서 시안화물 화합물에 대한 전문 지식을 가지고 있었습니다.",
+            "ja": "毒を邸宅の薬棚と直接結びつける。医療現場でのシアン化物化合物の専門知識を持ち、薬棚の内容を熟知していたのはクロス博士だけ。"
+          }
+        },
+        {
+          "id": "evidence_003",
+          "type": "physical",
+          "name": "Overturned Wine Glass",
+          "image": null,
+          "description": {
+            "en": "Lord Ashworth's wine glass, found overturned at his place at the dining table. Residual wine in the glass tested positive for potassium cyanide. The glass had Lord Ashworth's fingerprints only — confirming no one else handled it at the table. The bitter almond scent detected by Dr. Cross came from this glass.",
+            "hi": "लॉर्ड ऐशवर्थ का वाइन गिलास, डाइनिंग टेबल पर उनकी जगह पर उलटा पाया गया। गिलास में बचे वाइन में पोटेशियम साइनाइड की पुष्टि हुई।",
+            "zh-CN": "阿什沃斯勋爵的酒杯，在餐桌上他的位置发现翻倒。杯中残留葡萄酒检测出氰化钾阳性。杯子上只有阿什沃斯勋爵的指纹。",
+            "ko": "식탁에서 뒤집힌 채 발견된 애쉬워스 경의 와인 잔입니다. 잔의 잔류 와인에서 시안화칼륨 양성 반응이 나왔습니다.",
+            "ja": "食卓でひっくり返った状態で発見されたアッシュワース卿のワイングラス。グラスの残留ワインからシアン化カリウムが検出された。グラスにはアッシュワース卿の指紋のみ。"
+          },
+          "significance": {
+            "en": "Confirms the method of poisoning — the cyanide was in the wine. Confirms the wine came from the private bottle. No evidence of tampering at the table itself, meaning the poison was introduced at the source — the bottle in the study.",
+            "hi": "विषाक्तता की विधि की पुष्टि करता है — साइनाइड वाइन में था। इसका मतलब है कि जहर स्रोत पर डाला गया था — अध्ययन कक्ष में बोतल में।",
+            "zh-CN": "确认了下毒方式——氰化物在葡萄酒中。意味着毒药是在源头——书房的瓶子中被放入的。",
+            "ko": "독살 방법을 확인합니다. 독약은 서재의 병에서 주입되었음을 의미합니다.",
+            "ja": "毒殺の方法を確認——シアン化物はワインの中にあった。毒は源で、書斎のボトルに入れられたことを意味する。"
+          }
+        },
+        {
+          "id": "evidence_004",
+          "type": "witness",
+          "name": "Kitchen Staff Testimony",
+          "image": null,
+          "description": {
+            "en": "Agnes Whitmore, the head cook, testified that at approximately 8:45 PM she saw Dr. Helena Cross walking out of the study corridor alone, closing the door quietly behind her. Agnes noted that Dr. Cross appeared flushed and was carrying nothing visible. This was approximately one hour before Lord Ashworth's death.",
+            "hi": "हेड कुक एग्नेस व्हिटमोर ने गवाही दी कि लगभग रात 8:45 बजे उसने डॉ. हेलेना क्रॉस को अकेले अध्ययन कक्ष के गलियारे से बाहर आते देखा।",
+            "zh-CN": "厨师长艾格尼丝·惠特莫尔作证说，晚上8:45左右，她看到海伦娜·克罗斯博士独自从书房走廊走出来，轻轻关上了门。",
+            "ko": "수석 요리사 아그네스 휘트모어는 오후 8시 45분경 헬레나 크로스 박사가 혼자 서재 복도에서 나오는 것을 목격했다고 증언했습니다.",
+            "ja": "料理長のアグネス・ウィットモアが、午後8時45分頃にヘレナ・クロス博士が一人で書斎の廊下から出てきて静かにドアを閉めるのを目撃したと証言した。"
+          },
+          "significance": {
+            "en": "Places Dr. Cross at the study — where the poisoned bottle was stored — at the critical time window when the poison could have been administered. Directly contradicts her alibi that she went straight to the drawing room upon arrival.",
+            "hi": "डॉ. क्रॉस को अध्ययन कक्ष में रखता है — जहां जहरीली बोतल रखी थी — उस महत्वपूर्ण समय पर जब जहर दिया जा सकता था। उनके बयान का सीधा खंडन करता है।",
+            "zh-CN": "将克罗斯博士置于书房——毒瓶存放处——在毒药可能被投放的关键时间窗口。直接与她关于到达后直接去客厅的证词相矛盾。",
+            "ko": "독이 든 병이 보관된 서재에 크로스 박사가 있었음을 입증합니다. 그녀의 알리바이와 직접 모순됩니다.",
+            "ja": "毒入りボトルが保管されていた書斎にクロス博士がいたことを証明する。到着後すぐに応接間に行ったという彼女のアリバイと直接矛盾する。"
+          }
+        },
+        {
+          "id": "evidence_005",
+          "type": "document",
+          "name": "Revised Will Draft",
+          "image": null,
+          "description": {
+            "en": "A partially drafted revised will found in Lord Ashworth's study desk drawer, dated three days before the murder. The draft significantly reduces Victor Ashworth's inheritance from 100% to 20% and removes Dr. Helena Cross entirely from the beneficiary list — a £200,000 bequest crossed out in red ink. The draft also removes Margaret Holloway as executor.",
+            "hi": "लॉर्ड ऐशवर्थ की स्टडी डेस्क दराज में मिली एक आंशिक रूप से तैयार संशोधित वसीयत, हत्या से तीन दिन पहले दिनांकित। ड्राफ्ट में डॉ. हेलेना क्रॉस को लाभार्थी सूची से पूरी तरह हटा दिया गया है।",
+            "zh-CN": "在阿什沃斯勋爵书桌抽屉中发现的一份部分起草的修订遗嘱，日期为谋杀前三天。草稿将维克托的遗产从100%减少到20%，并将克罗斯博士从受益人名单中完全删除——用红墨水划掉了20万英镑的遗产。",
+            "ko": "살인 3일 전 날짜가 적힌 애쉬워스 경의 서재 서랍에서 발견된 부분적으로 작성된 개정 유언장 초안입니다. 초안은 크로스 박사를 수혜자 목록에서 완전히 제거했습니다.",
+            "ja": "殺人の3日前の日付でアッシュワース卿の書斎の引き出しで発見された改訂遺言書の草稿。草稿はクロス博士を受益者リストから完全に削除し、20万ポンドの遺贈が赤インクで消されていた。"
+          },
+          "significance": {
+            "en": "Provides motive for both Victor Ashworth and Dr. Helena Cross. Confirms that both knew or could have known about the will changes. Margaret Holloway, as the solicitor, would have been aware of these changes — adding to her motive as well.",
+            "hi": "विक्टर ऐशवर्थ और डॉ. हेलेना क्रॉस दोनों के लिए मकसद प्रदान करता है। पुष्टि करता है कि दोनों वसीयत परिवर्तनों के बारे में जानते थे।",
+            "zh-CN": "为维克托·阿什沃斯和克罗斯博士提供了动机。确认两人都知道或可能知道遗嘱变更。",
+            "ko": "빅터 애쉬워스와 크로스 박사 모두에게 동기를 제공합니다. 두 사람 모두 유언장 변경을 알고 있었음을 확인합니다.",
+            "ja": "ビクター・アッシュワースとクロス博士の両方に動機を提供する。両者が遺言書の変更を知っていたか知り得たことを確認する。"
+          }
+        },
+        {
+          "id": "evidence_006",
+          "type": "digital",
+          "name": "Dr. Cross's Phone Search History",
+          "image": null,
+          "description": {
+            "en": "Police retrieved Dr. Cross's phone and found a browser search conducted 11 days before the murder: 'lethal dose potassium cyanide body weight', 'cyanide detection post mortem', 'how long does cyanide take to act in wine'. The searches were conducted in incognito mode but the device's DNS cache retained the queries.",
+            "hi": "पुलिस ने डॉ. क्रॉस का फोन बरामद किया और हत्या से 11 दिन पहले किए गए ब्राउज़र खोज पाए: 'पोटेशियम साइनाइड की घातक खुराक', 'वाइन में साइनाइड कितने समय में काम करता है'।",
+            "zh-CN": "警方找回了克罗斯博士的手机，发现谋杀前11天进行了浏览器搜索：'氰化钾致死剂量体重'，'死后氰化物检测'，'氰化物在葡萄酒中起效需要多长时间'。",
+            "ko": "경찰이 크로스 박사의 전화기를 회수하여 살인 11일 전에 검색한 내용을 발견했습니다: '시안화칼륨 치사량 체중', '와인에서 시안화물이 작용하는 데 걸리는 시간'.",
+            "ja": "警察がクロス博士の携帯電話を回収し、殺人の11日前のブラウザ検索を発見：「シアン化カリウム致死量体重」「ワインでシアン化物が作用する時間」。インコグニートモードで検索されたが、デバイスのDNSキャッシュに残っていた。"
+          },
+          "significance": {
+            "en": "This is the most damning piece of evidence. It demonstrates premeditation — the murder was planned at least 11 days in advance. Only someone with intent to poison would search for these specific terms. Combined with her presence at the study and her medical access to cyanide, this evidence is conclusive.",
+            "hi": "यह सबसे निंदनीय सबूत है। यह पूर्व-विचार प्रदर्शित करता है — हत्या कम से कम 11 दिन पहले से योजनाबद्ध थी।",
+            "zh-CN": "这是最有力的证据。它证明了预谋——谋杀至少提前11天计划。结合她在书房的出现和她获取氰化物的医疗途径，这一证据是决定性的。",
+            "ko": "이것이 가장 결정적인 증거입니다. 사전 계획을 입증합니다. 서재에서의 존재와 시안화물에 대한 의료 접근과 결합하면 이 증거는 결정적입니다.",
+            "ja": "これが最も決定的な証拠。少なくとも11日前から計画されていた殺人の計画性を示す。書斎での存在とシアン化物への医療アクセスと組み合わせると、この証拠は決定的。"
+          }
+        },
+        {
+          "id": "evidence_007",
+          "type": "document",
+          "name": "Debt Demand Letter (Victor's)",
+          "image": null,
+          "description": {
+            "en": "A crumpled letter found in the billiard room waste bin, from Hargreaves & Sons Debt Recovery, demanding immediate repayment of £340,000 within 14 days or legal proceedings would commence. The letter is dated one week before the murder. Victor's name and address are clearly printed at the top.",
+            "hi": "बिलियर्ड रूम के कूड़ेदान में मिला एक मुड़ा हुआ पत्र, हार्ग्रीव्स एंड संस डेट रिकवरी से, 14 दिनों के भीतर £340,000 की तत्काल वापसी की मांग करता है।",
+            "zh-CN": "在台球室废纸篓中发现的一封皱巴巴的信，来自哈格里夫斯父子债务追收公司，要求在14天内立即偿还34万英镑，否则将开始法律程序。",
+            "ko": "당구실 쓰레기통에서 발견된 구겨진 편지로, 하그리브스 앤 선즈 채권 추심 회사로부터 14일 이내에 34만 파운드를 즉시 상환하지 않으면 법적 절차를 시작하겠다는 내용입니다.",
+            "ja": "撞球室のゴミ箱で発見されたくしゃくしゃの手紙。ハーグリーブス・アンド・サンズ債権回収会社から、14日以内に34万ポンドを即時返済しなければ法的手続きを開始するという内容。"
+          },
+          "significance": {
+            "en": "Establishes Victor Ashworth's desperate financial situation and confirms his motive. However, this evidence is a red herring in terms of the actual murder — Victor had the motive but lacked the means and opportunity. The letter establishes him as a suspect, not the killer.",
+            "hi": "विक्टर ऐशवर्थ की हताश वित्तीय स्थिति स्थापित करता है। हालांकि, यह सबूत वास्तविक हत्या के संदर्भ में एक भ्रामक सुराग है।",
+            "zh-CN": "确立了维克托·阿什沃斯的绝望财务状况。然而，就实际谋杀而言，这一证据是误导线索——维克托有动机但缺乏手段和机会。",
+            "ko": "빅터 애쉬워스의 절박한 재정 상황을 확립합니다. 그러나 실제 살인 측면에서는 레드 헤링입니다.",
+            "ja": "ビクター・アッシュワースの絶望的な財政状況を確立する。しかし、実際の殺人に関してはレッドヘリング——ビクターには動機があったが、手段と機会がなかった。"
+          }
+        },
+        {
+          "id": "evidence_008",
+          "type": "witness",
+          "name": "Victor's Partial Alibi Confirmation",
+          "image": null,
+          "description": {
+            "en": "Cecilia Vane confirmed that Victor Ashworth was with her in the drawing room between 9:00 PM and 9:45 PM. However, she could not account for his whereabouts between 9:45 PM and 10:05 PM. Victor himself admits he was 'walking the corridor' during this time but denies entering the study or dining room.",
+            "hi": "सेसिलिया वेन ने पुष्टि की कि विक्टर ऐशवर्थ रात 9:00 बजे से 9:45 बजे के बीच उसके साथ ड्राइंग रूम में था। हालांकि, वह 9:45-10:05 बजे के बीच उसके ठिकाने का हिसाब नहीं दे सकती।",
+            "zh-CN": "塞西莉亚·韦恩确认维克托·阿什沃斯在晚上9:00到9:45之间与她在客厅。但她无法说明他在9:45到10:05之间的下落。",
+            "ko": "세실리아 베인은 빅터 애쉬워스가 오후 9시부터 9시 45분 사이에 응접실에서 자신과 함께 있었다고 확인했습니다. 그러나 9시 45분에서 10시 5분 사이의 행방은 확인할 수 없습니다.",
+            "ja": "セシリア・ヴェインが午後9時〜9時45分にビクター・アッシュワースが応接間にいたことを確認。しかし9時45分〜10時5分の行方は確認できない。"
+          },
+          "significance": {
+            "en": "Partially clears Victor for the critical 9:00–9:45 PM window but leaves a gap. Since Lord Ashworth collapsed at 9:47 PM, Victor technically could not have poisoned the glass at the table — but the bottle was poisoned earlier, during the 8:45 PM window when Dr. Cross was seen at the study.",
+            "hi": "विक्टर को आंशिक रूप से 9:00-9:45 बजे के लिए क्लियर करता है। चूंकि लॉर्ड ऐशवर्थ 9:47 बजे गिरे, विक्टर तकनीकी रूप से टेबल पर गिलास में जहर नहीं दे सकता था।",
+            "zh-CN": "部分为维克托在9:00-9:45 PM时间窗口提供不在场证明。由于阿什沃斯勋爵在9:47倒下，维克托在技术上不可能在桌子上毒化酒杯——但瓶子是在更早的8:45 PM窗口被毒化的。",
+            "ko": "빅터를 오후 9시~9시 45분 구간에서 부분적으로 해제합니다. 애쉬워스 경이 9시 47분에 쓰러졌으므로 빅터는 기술적으로 테이블에서 잔에 독을 넣을 수 없었습니다.",
+            "ja": "午後9時〜9時45分の重要な時間帯でビクターを部分的にクリアするが、空白が残る。アッシュワース卿が9時47分に倒れたため、ビクターは技術的にテーブルでグラスに毒を入れることはできなかった——しかしボトルはクロス博士が書斎で目撃された8時45分の時間帯に毒を入れられていた。"
+          }
+        }
+      ],
+      "timeline": [
+        {
+          "time": "6:30 PM",
+          "event": {
+            "en": "Thomas Wren and Lord Ashworth are seen arguing heatedly in the garden. Thomas is overheard saying 'You'll regret this, Edmund.' Lord Ashworth dismisses him and walks inside.",
+            "hi": "थॉमस रेन और लॉर्ड ऐशवर्थ को बगीचे में गरमागरम बहस करते देखा गया। थॉमस को यह कहते सुना गया: 'तुम्हें इसका पछतावा होगा, एडमंड।'",
+            "zh-CN": "托马斯·雷恩和阿什沃斯勋爵在花园里激烈争吵。有人听到托马斯说'你会后悔的，埃德蒙。'",
+            "ko": "토마스 렌과 애쉬워스 경이 정원에서 격렬하게 다투는 것이 목격되었습니다. 토마스가 '후회하게 될 거야, 에드먼드'라고 말하는 것이 들렸습니다.",
+            "ja": "トーマス・レンとアッシュワース卿が庭で激しく口論しているのが目撃された。トーマスが「後悔するぞ、エドマンド」と言うのが聞こえた。"
+          },
+          "location": "location_001",
+          "witnesses": ["Agnes Whitmore", "Victor Ashworth"]
+        },
+        {
+          "time": "7:00 PM",
+          "event": {
+            "en": "Manor gates are locked due to the incoming storm. All five guests are confirmed inside. Lord Ashworth retires to his study to prepare for dinner. The private wine bottle is confirmed to be in the study liquor cabinet at this point, unopened.",
+            "hi": "आने वाले तूफान के कारण हवेली के द्वार बंद कर दिए गए। सभी पांच मेहमान अंदर की पुष्टि हुई। लॉर्ड ऐशवर्थ रात्रिभोज की तैयारी के लिए अपने अध्ययन कक्ष में चले गए।",
+            "zh-CN": "由于即将来临的风暴，庄园大门被锁上。所有五位客人确认在内。阿什沃斯勋爵退回书房准备晚餐。私人葡萄酒瓶此时确认在书房酒柜中，未开封。",
+            "ko": "다가오는 폭풍으로 저택 문이 잠겼습니다. 다섯 손님 모두 내부에 있음이 확인되었습니다. 개인 와인 병이 이 시점에 서재 주류 캐비닛에 미개봉 상태로 있음이 확인되었습니다.",
+            "ja": "迫る嵐のため邸宅の門が施錠された。5人のゲスト全員が内部にいることが確認された。個人用ワインボトルはこの時点で書斎の酒棚に未開封で保管されていたことが確認された。"
+          },
+          "location": "location_001",
+          "witnesses": ["Agnes Whitmore"]
+        },
+        {
+          "time": "7:30 PM",
+          "event": {
+            "en": "Dr. Helena Cross arrives at the manor. She claims to go directly to the drawing room. Kitchen staff later contradict this, placing her near the study corridor.",
+            "hi": "डॉ. हेलेना क्रॉस हवेली में पहुंची। उनका दावा है कि वे सीधे ड्राइंग रूम में गईं। रसोई कर्मचारियों ने बाद में इसका खंडन किया।",
+            "zh-CN": "克罗斯博士到达庄园。她声称直接去了客厅。厨房工作人员后来对此提出异议，将她置于书房走廊附近。",
+            "ko": "크로스 박사가 저택에 도착했습니다. 응접실로 바로 갔다고 주장하지만 주방 직원이 이를 반박합니다.",
+            "ja": "クロス博士が邸宅に到着。応接間に直行したと主張するが、台所のスタッフが後に書斎廊下付近にいたと反論した。"
+          },
+          "location": "location_002",
+          "witnesses": ["Agnes Whitmore"]
+        },
+        {
+          "time": "8:45 PM",
+          "event": {
+            "en": "Agnes Whitmore (head cook) sees Dr. Helena Cross exiting the study corridor alone, quietly closing the door. Dr. Cross appears flushed. This is the critical window — the poison was most likely introduced into the wine bottle at this time.",
+            "hi": "हेड कुक एग्नेस व्हिटमोर डॉ. हेलेना क्रॉस को अकेले अध्ययन कक्ष के गलियारे से बाहर निकलते देखती है। यह महत्वपूर्ण समय है — जहर सबसे अधिक संभावना इसी समय वाइन बोतल में डाला गया था।",
+            "zh-CN": "厨师长艾格尼丝·惠特莫尔看到克罗斯博士独自从书房走廊走出，轻轻关上了门。克罗斯博士面色潮红。这是关键时间窗口——毒药最有可能在此时被放入葡萄酒瓶。",
+            "ko": "수석 요리사 아그네스 휘트모어가 크로스 박사가 혼자 서재 복도에서 나오는 것을 목격합니다. 이것이 핵심 시간대입니다.",
+            "ja": "料理長アグネス・ウィットモアがクロス博士が一人で書斎廊下から出てきて静かにドアを閉めるのを目撃。クロス博士は顔が紅潮していた。これが重要な時間帯——毒はこの時点でワインボトルに入れられた可能性が最も高い。"
+          },
+          "location": "location_001",
+          "witnesses": ["Agnes Whitmore"]
+        },
+        {
+          "time": "9:15 PM",
+          "event": {
+            "en": "Margaret Holloway retrieves the private Bordeaux bottle from the study at Lord Ashworth's request and brings it to the dining room. She is the last person to handle the bottle before it is opened at the table. The bottle had already been poisoned by this point.",
+            "hi": "मार्गरेट हॉलोवे लॉर्ड ऐशवर्थ के अनुरोध पर अध्ययन कक्ष से निजी बोर्डो बोतल लाती है और उसे डाइनिंग रूम में लाती है। इस बिंदु तक बोतल पहले ही जहरीली हो चुकी थी।",
+            "zh-CN": "玛格丽特·霍洛韦应阿什沃斯勋爵的要求从书房取来私人波尔多葡萄酒瓶并带到餐厅。她是在桌上开瓶前最后一个处理瓶子的人。此时瓶子已经被下毒。",
+            "ko": "마가렛 홀로웨이가 애쉬워스 경의 요청으로 서재에서 개인 보르도 병을 가져와 식당으로 가져옵니다. 이 시점에 병은 이미 독이 들어 있었습니다.",
+            "ja": "マーガレット・ホロウェイがアッシュワース卿の要請で書斎から個人用ボルドーボトルを取り出し食堂に持参。テーブルで開封される前に最後にボトルを扱った人物。この時点でボトルにはすでに毒が入っていた。"
+          },
+          "location": "location_002",
+          "witnesses": ["Lord Ashworth", "Thomas Wren"]
+        },
+        {
+          "time": "9:30 PM",
+          "event": {
+            "en": "Dinner begins. Lord Ashworth's wine is poured exclusively from the private Bordeaux bottle. All other guests drink from the communal table wine. Lord Ashworth makes a toast and drinks.",
+            "hi": "रात्रिभोज शुरू होता है। लॉर्ड ऐशवर्थ की वाइन विशेष रूप से निजी बोर्डो बोतल से डाली जाती है। लॉर्ड ऐशवर्थ乾杯 करते हैं और पीते हैं।",
+            "zh-CN": "晚餐开始。阿什沃斯勋爵的葡萄酒专门从私人波尔多葡萄酒瓶中倒出。所有其他客人喝公共餐桌葡萄酒。",
+            "ko": "저녁 식사가 시작됩니다. 애쉬워스 경의 와인은 개인 보르도 병에서만 따릅니다. 애쉬워스 경이 건배하고 마십니다.",
+            "ja": "晩餐開始。アッシュワース卿のワインは個人用ボルドーボトルからのみ注がれる。他の全ゲストは共用テーブルワインを飲む。アッシュワース卿が乾杯して飲む。"
+          },
+          "location": "location_002",
+          "witnesses": ["All five suspects", "Agnes Whitmore"]
+        },
+        {
+          "time": "9:47 PM",
+          "event": {
+            "en": "Lord Ashworth collapses mid-toast during his second glass of wine. He clutches his chest and falls from his chair. Dr. Helena Cross is the first to reach him. She declares him dead within minutes, identifying the cause as 'cardiac arrest' — before any official examination. The faint bitter almond scent is noticed by Agnes Whitmore, who alerts the others.",
+            "hi": "लॉर्ड ऐशवर्थ अपने दूसरे गिलास वाइन के दौरान乾杯 के बीच में गिर पड़े। डॉ. हेलेना क्रॉस सबसे पहले उनके पास पहुंची और कुछ ही मिनटों में उन्हें मृत घोषित कर दिया।",
+            "zh-CN": "阿什沃斯勋爵在第二杯葡萄酒的祝酒中途倒下。克罗斯博士第一个赶到，几分钟内宣布他死亡，将原因确定为'心脏骤停'——在任何官方检查之前。",
+            "ko": "애쉬워스 경이 두 번째 와인 잔 건배 중에 쓰러집니다. 크로스 박사가 가장 먼저 달려가 공식 검사 전에 '심정지'로 사망을 선언합니다.",
+            "ja": "アッシュワース卿が2杯目のワインの乾杯中に倒れる。クロス博士が最初に駆けつけ、公式検査前に「心停止」として数分以内に死亡を宣告。アグネス・ウィットモアが微かな苦いアーモンドの臭いに気づき他の人々に警告した。"
+          },
+          "location": "location_002",
+          "witnesses": ["All five suspects", "Agnes Whitmore"]
+        },
+        {
+          "time": "10:15 PM",
+          "event": {
+            "en": "Police are called. The manor remains locked. Detective Inspector Harlow arrives at 11:30 PM and seals the premises. All guests are detained for questioning. The empty vial is found in the medicine cabinet during the initial sweep.",
+            "hi": "पुलिस को बुलाया गया। हवेली बंद रहती है। डिटेक्टिव इंस्पेक्टर हार्लो रात 11:30 बजे पहुंचे और परिसर को सील कर दिया।",
+            "zh-CN": "警察被叫来。庄园保持锁定状态。哈洛侦探长在11:30 PM到达并封锁了场所。所有客人被拘留审问。",
+            "ko": "경찰이 호출됩니다. 저택은 잠긴 상태로 유지됩니다. 하로우 경감이 오후 11시 30분에 도착하여 현장을 봉쇄합니다.",
+            "ja": "警察が呼ばれる。邸宅は施錠されたまま。ハーロウ警部補が午後11時30分に到着し敷地を封鎖。全ゲストが尋問のため拘留される。初期捜索で薬棚の空のバイアルが発見される。"
+          },
+          "location": "location_002",
+          "witnesses": ["Agnes Whitmore", "All five suspects"]
+        }
+      ],
+      "solution": {
+        "culprit": "suspect_003",
+        "weapon": "weapon_001",
+        "location": "location_001",
+        "motive": {
+          "en": "Dr. Helena Cross murdered Lord Ashworth to prevent him from removing her from his will (losing £200,000), to stop him from replacing her as family physician, and to bury the bitterness of their ended secret relationship — all of which she stood to lose simultaneously.",
+          "hi": "डॉ. हेलेना क्रॉस ने लॉर्ड ऐशवर्थ की हत्या इसलिए की ताकि वे उन्हें अपनी वसीयत से न हटाएं (£200,000 खोना), उन्हें पारिवारिक चिकित्सक के रूप में बदलने से रोकें, और उनके समाप्त हुए गुप्त संबंध की कड़वाहट को दफनाएं।",
+          "zh-CN": "克罗斯博士谋杀阿什沃斯勋爵是为了防止他将她从遗嘱中删除（损失20万英镑），阻止他更换家庭医生，并掩盖他们结束的秘密关系的苦涩——所有这些她都将同时失去。",
+          "ko": "크로스 박사는 유언장에서 제거되는 것(20만 파운드 손실), 가족 주치의 교체, 끝난 비밀 관계의 쓴맛을 묻기 위해 애쉬워스 경을 살해했습니다.",
+          "ja": "クロス博士はアッシュワース卿が遺言書から自分を外すこと（20万ポンドの損失）、家庭医としての交代、終わった秘密の関係の苦さを葬るために殺害した——これらすべてを同時に失う状況にあった。"
+        },
+        "explanation": {
+          "en": "Dr. Helena Cross had been planning the murder for at least 11 days, as evidenced by her phone search history. She sourced potassium cyanide from the manor's medicine cabinet — a vial she had placed there herself during a previous medical visit under the guise of dental supplies.\n\nOn the evening of the murder, she arrived at 7:30 PM and used the confusion of the storm and pre-dinner preparations to slip into the study undetected. At 8:45 PM, she opened the private Bordeaux bottle, dissolved a lethal dose of potassium cyanide, resealed it, and wiped the bottle clean of fingerprints. She was seen exiting the study by Agnes Whitmore.\n\nWhen Margaret Holloway retrieved the bottle at 9:15 PM, the poison was already inside. Lord Ashworth drank from the glass and collapsed at 9:47 PM. Dr. Cross was the first to reach him, allowing her to control the narrative — she declared 'cardiac arrest' before any official examination, hoping to prevent a forensic investigation.\n\nThe combination of her phone search history, her presence at the study at 8:45 PM (witnessed by Agnes), the empty cyanide vial in the medicine cabinet she alone managed, and her removal from the will all point conclusively to Dr. Helena Cross as the murderer.",
+          "hi": "डॉ. हेलेना क्रॉस कम से कम 11 दिनों से हत्या की योजना बना रही थीं। उन्होंने हवेली की दवा कैबिनेट से पोटेशियम साइनाइड प्राप्त किया। शाम 8:45 बजे, उन्होंने निजी बोर्डो बोतल खोली, पोटेशियम साइनाइड की एक घातक खुराक घोली, इसे फिर से सील किया और बोतल को उंगलियों के निशान से साफ किया। लॉर्ड ऐशवर्थ ने गिलास से पिया और 9:47 बजे गिर पड़े। डॉ. क्रॉस सबसे पहले उनके पास पहुंचीं, जिससे उन्हें कहानी को नियंत्रित करने का मौका मिला।",
+          "zh-CN": "克罗斯博士至少提前11天就在计划谋杀。她从庄园药柜中获取了氰化钾。晚上8:45，她打开了私人波尔多葡萄酒瓶，溶解了致死剂量的氰化钾，重新密封并擦去了指纹。阿什沃斯勋爵喝了酒杯里的酒，在9:47倒下。克罗斯博士第一个赶到，让她能够控制叙述——她在任何官方检查之前就宣布了'心脏骤停'。",
+          "ko": "크로스 박사는 최소 11일 전부터 살인을 계획했습니다. 저택 약장에서 시안화칼륨을 구했습니다. 오후 8시 45분에 개인 보르도 병을 열어 치사량의 시안화칼륨을 녹이고 다시 밀봉한 후 지문을 닦아냈습니다. 애쉬워스 경이 와인을 마시고 9시 47분에 쓰러졌습니다. 크로스 박사가 가장 먼저 달려가 공식 검사 전에 '심정지'를 선언했습니다.",
+          "ja": "クロス博士は少なくとも11日前から殺人を計画していた。邸宅の薬棚からシアン化カリウムを入手した。午後8時45分に個人用ボルドーボトルを開け、致死量のシアン化カリウムを溶かし、再封して指紋を拭き取った。アッシュワース卿はワインを飲み9時47分に倒れた。クロス博士が最初に駆けつけ、公式検査前に「心停止」を宣告することで物語を制御しようとした。"
+        },
+        "key_evidence": [
+          "evidence_006",
+          "evidence_004",
+          "evidence_002",
+          "evidence_001"
+        ],
+        "red_herrings": [
+          "The letter opener with Lord Ashworth's blood — this indicated a prior argument but was unrelated to the actual murder method.",
+          "Thomas Wren's heated argument in the garden — he had strong motive but was confirmed at the dinner table by three witnesses at time of death.",
+          "Victor Ashworth's debt demand letter — establishes motive but Victor lacked the medical knowledge and opportunity to poison the bottle.",
+          "Margaret Holloway handling the wine bottle — she retrieved it after it was already poisoned, making her the unwitting delivery person, not the poisoner."
+        ]
+      },
+      "created_at": "2026-01-15T10:00:00Z",
+      "updated_at": "2026-01-15T10:00:00Z",
+      "is_active": true
+    },
+    "mystery_002": {
+            "title": {
+                "en": "The Raigarh Palace Poisoning",
+                "hi": "रायगढ़ महल विषकांड",
+                "zh-CN": "赖加尔宫殿毒杀案",
+                "ko": "라이가르 궁전 독살 사건",
+                "ja": "ライガル宮殿の毒殺事件"
+            },
+            "category": "as_detective",
+            "difficulty": "hard",
+            "story": {
+                "en": "It was a sweltering monsoon evening in Raigarh, Chhattisgarh — a city where ancient royalty and modern wealth collide in uneasy silence. Maharaja Vikramaditya Singh Raigarh, 71, the last living heir of the Raigarh royal lineage and chairman of Raigarh Minerals & Power Ltd., one of India's most powerful private mining conglomerates, had summoned five individuals to his ancestral palace for what he described as a 'final family conclave.'\n\nThe Raigarh Palace, a sprawling Indo-Saracenic structure built in 1887, had been sealed from the outside since 8:00 PM due to an unprecedented flash flood warning issued by the district administration. No one could enter or leave.\n\nAt precisely 10:23 PM, during the ceremonial serving of the Maharaja's private reserve of 'Raigarh Amrit' — a rare aged single malt whisky gifted to his grandfather by a Scottish dignitary in 1952 — the Maharaja convulsed violently, collapsed from his ivory throne chair, and was dead before anyone could reach him.\n\nThe palace physician, Dr. Priya Anand, noted an unmistakable smell of bitter almonds near the Maharaja's glass. The whisky decanter had been brought from the private vault in the east wing. The palace staff confirmed that the decanter had been poured exclusively for the Maharaja — no one else drank from it.\n\nDetective, the killer is among the five guests. The palace doors are sealed. The monsoon rages outside. Every shadow in this palace hides a secret. Seek the truth before it is buried forever.",
+                "hi": "यह छत्तीसगढ़ के रायगढ़ में एक उमस भरी मानसून की शाम थी — एक ऐसा शहर जहां प्राचीन राजघराना और आधुनिक धन एक असहज खामोशी में टकराते हैं। महाराजा विक्रमादित्य सिंह रायगढ़, 71 वर्षीय, रायगढ़ राजवंश के अंतिम जीवित उत्तराधिकारी और रायगढ़ मिनरल्स एंड पावर लिमिटेड के अध्यक्ष, ने पांच व्यक्तियों को अपने पैतृक महल में एक 'अंतिम पारिवारिक सभा' के लिए बुलाया था।\n\nरात 10:23 बजे, महाराजा की निजी रिजर्व 'रायगढ़ अमृत' — एक दुर्लभ परिपक्व सिंगल माल्ट व्हिस्की — की औपचारिक सेवा के दौरान, महाराजा तेजी से कांपे, अपनी हाथीदांत सिंहासन कुर्सी से गिर पड़े, और कोई भी उन तक पहुंचने से पहले मर गए।\n\nजासूस, हत्यारा पांच मेहमानों में से एक है। महल के दरवाजे बंद हैं। बाहर मानसून का तांडव जारी है। इस महल की हर छाया एक राज छुपाए है। सच को ढूंढो इससे पहले कि वह हमेशा के लिए दफन हो जाए।",
+                "zh-CN": "那是恰蒂斯加尔邦赖加尔市一个闷热的季风之夜——一座古老王室与现代财富在不安的沉默中碰撞的城市。71岁的维克拉马迪蒂亚·辛格·赖加尔大君，赖加尔王室最后的在世继承人，同时也是印度最强大的私人矿业集团之一——赖加尔矿业与电力有限公司的董事长，将五位人士召集到他的祖传宫殿，进行他所描述的'最终家族会议'。\n\n晚上10点23分，在仪式性地供应大君私人珍藏的'赖加尔甘露'——一瓶1952年苏格兰贵宾赠予其祖父的稀有陈年单一麦芽威士忌——时，大君剧烈抽搐，从象牙王座椅上倒下，在任何人赶到之前便已断气。\n\n侦探，凶手就在五位客人之中。宫殿大门已被封锁。季风在外肆虐。这座宫殿的每一个阴影都藏着秘密。在真相被永远埋葬之前找到它。",
+                "ko": "그것은 차티스가르 주 라이가르의 무더운 몬순 저녁이었습니다. 라이가르 왕족의 마지막 생존 후계자이자 인도 최강의 민간 광업 재벌 중 하나인 라이가르 광업 전력 주식회사 회장, 71세의 마하라자 비크라마디티아 싱 라이가르가 다섯 명을 그의 조상 궁전으로 불러 '최후의 가족 회의'를 소집했습니다.\n\n오후 10시 23분, 마하라자의 개인 비장품 '라이가르 아므리트' — 1952년 스코틀랜드 귀빈이 그의 할아버지에게 선물한 희귀한 숙성 싱글 몰트 위스키 — 의 의식적인 서빙 중, 마하라자는 격렬하게 경련을 일으키며 상아 왕좌에서 쓰러졌고, 누구도 그에게 닿기 전에 사망했습니다.\n\n형사님, 살인범은 다섯 손님 중 한 명입니다. 궁전 문은 봉쇄되어 있습니다. 밖에서는 몬순이 맹위를 떨치고 있습니다. 이 궁전의 모든 그림자는 비밀을 숨기고 있습니다.",
+                "ja": "チャッティースガル州ライガルの蒸し暑いモンスーンの夜——古代の王族と現代の富が不安な沈黙の中で衝突する街。71歳のマハラジャ・ヴィクラマーディティヤ・シン・ライガルは、ライガル王家最後の存命相続人であり、インド最強の民間鉱業コングロマリットの一つ、ライガル・ミネラルズ・アンド・パワー社の会長として、5人を祖先の宮殿に「最終家族会議」と称して召集した。\n\n午後10時23分、マハラジャの個人秘蔵品「ライガル・アムリット」——1952年にスコットランドの高官が祖父に贈った希少な熟成シングルモルトウイスキー——の儀式的な供与の最中、マハラジャは激しく痙攣し、象牙の玉座から倒れ、誰も駆けつける前に息絶えた。\n\n探偵よ、犯人は5人のゲストの中にいる。宮殿の扉は封鎖されている。外ではモンスーンが猛威を振るっている。この宮殿のすべての影が秘密を隠している。真実が永遠に葬られる前に見つけ出せ。"
+            },
+            "suspects": [
+                {
+                    "id": "suspect_001",
+                    "name": "Arjun Singh Raigarh",
+                    "age": 44,
+                    "occupation": "Maharaja's Son & Designated Heir",
+                    "relationship": "Eldest son of the victim",
+                    "photo": null,
+                    "profile": {
+                        "en": "Arjun is the Maharaja's eldest son and the publicly announced heir to both the royal title and the chairmanship of Raigarh Minerals. Educated at IIT Delhi and Oxford, he is sharp, politically ambitious, and widely regarded as the crown prince of Chhattisgarh's industrial elite. However, a recent forensic audit commissioned by the Maharaja revealed that Arjun had been siphoning ₹47 crore from the company's tribal welfare fund over four years — money meant for the displaced mining communities. The Maharaja had confronted Arjun privately two days before the conclave and threatened to disinherit him and hand the matter to the CBI.",
+                        "hi": "अर्जुन महाराजा के सबसे बड़े बेटे और रायगढ़ मिनरल्स के अध्यक्ष पद के घोषित उत्तराधिकारी हैं। हाल ही में महाराजा द्वारा कमीशन किए गए एक फोरेंसिक ऑडिट से पता चला कि अर्जुन ने चार वर्षों में कंपनी के आदिवासी कल्याण कोष से ₹47 करोड़ की हेराफेरी की थी। महाराजा ने सभा से दो दिन पहले अर्जुन का सामना किया था और उसे बेदखल करने और मामला सीबीआई को सौंपने की धमकी दी थी।",
+                        "zh-CN": "阿尔琼是大君的长子，是王室头衔和赖加尔矿业董事长职位的公开宣布继承人。然而，大君委托的一项近期法证审计显示，阿尔琼在四年内从公司的部落福利基金中挪用了4700万卢比。大君在会议前两天私下与阿尔琼对质，威胁要剥夺其继承权并将此事移交中央调查局。",
+                        "ko": "아르준은 마하라자의 장남이자 라이가르 광업 회장직의 공식 후계자입니다. 최근 마하라자가 의뢰한 법의학 감사에서 아르준이 4년간 회사의 부족 복지 기금에서 4700만 루피를 횡령한 것이 밝혀졌습니다. 마하라자는 회의 이틀 전 아르준과 단독 대면하여 상속 박탈과 CBI 수사를 위협했습니다.",
+                        "ja": "アルジュンはマハラジャの長男で、王位称号とライガル・ミネラルズ会長職の公式後継者。最近マハラジャが依頼した法医学監査で、アルジュンが4年間にわたり部族福祉基金から4700万ルピーを横領していたことが判明した。マハラジャは会議の2日前にアルジュンと個別に対峙し、廃嫡とCBIへの告発を脅した。"
+                    },
+                    "alibi": {
+                        "en": "Claims he was in the east wing gallery reviewing ancestral paintings from 9:30 PM to 10:15 PM, alone. No witness can confirm this for the full duration. A 25-minute gap between 9:45 PM and 10:10 PM is completely unaccounted for. The east wing gallery is adjacent to the private vault where the whisky decanter was stored.",
+                        "hi": "दावा करता है कि वह रात 9:30 बजे से 10:15 बजे तक पूर्वी विंग गैलरी में अकेले पैतृक चित्रों की समीक्षा कर रहा था। रात 9:45 बजे से 10:10 बजे के बीच 25 मिनट का अंतर पूरी तरह से अस्पष्ट है। पूर्वी विंग गैलरी उस निजी तिजोरी के बगल में है जहां व्हिस्की डिकैंटर रखा था।",
+                        "zh-CN": "声称晚上9:30到10:15独自在东翼画廊欣赏祖先画作。没有证人能证实全程。9:45到10:10 PM之间有25分钟完全无法解释。东翼画廊紧邻存放威士忌酒壶的私人金库。",
+                        "ko": "오후 9시 30분부터 10시 15분까지 동쪽 날개 갤러리에서 혼자 조상 그림을 감상했다고 주장합니다. 오후 9시 45분부터 10시 10분 사이 25분이 완전히 설명되지 않습니다. 동쪽 날개 갤러리는 위스키 디캔터가 보관된 개인 금고 옆에 있습니다.",
+                        "ja": "午後9時30分から10時15分まで東翼ギャラリーで一人で祖先の絵画を鑑賞していたと主張。9時45分から10時10分の25分間は完全に説明がつかない。東翼ギャラリーはウイスキーデカンターが保管されていた個人金庫に隣接している。"
+                    },
+                    "motive": {
+                        "en": "Stands to lose his inheritance, his chairmanship, and his freedom if the Maharaja proceeds with CBI referral. The ₹47 crore embezzlement would result in criminal prosecution and imprisonment. The Maharaja's death before the disinheritance is formalized means Arjun inherits everything and the evidence of embezzlement dies with the only man who commissioned the audit.",
+                        "hi": "अगर महाराजा सीबीआई रेफरल के साथ आगे बढ़ते हैं तो वह अपनी विरासत, अध्यक्ष पद और स्वतंत्रता खो देगा। ₹47 करोड़ की हेराफेरी के परिणामस्वरूप आपराधिक अभियोजन और कारावास होगा।",
+                        "zh-CN": "如果大君继续向中央调查局举报，将失去继承权、董事长职位和自由。4700万卢比的挪用将导致刑事起诉和监禁。大君在正式剥夺继承权之前死亡意味着阿尔琼继承一切。",
+                        "ko": "마하라자가 CBI 고발을 진행하면 상속권, 회장직, 자유를 모두 잃게 됩니다. 4700만 루피 횡령으로 형사 기소와 투옥이 예상됩니다.",
+                        "ja": "マハラジャがCBI告発を進めれば相続権、会長職、自由をすべて失う。4700万ルピーの横領で刑事訴追と投獄が予想される。廃嫡が正式化される前のマハラジャの死はアルジュンがすべてを相続することを意味する。"
+                    }
+                },
+                {
+                    "id": "suspect_002",
+                    "name": "Meenakshi Devi Raigarh",
+                    "age": 66,
+                    "occupation": "Maharaja's Estranged Wife & Trustee",
+                    "relationship": "Wife of the victim, separated for 11 years",
+                    "photo": null,
+                    "profile": {
+                        "en": "Meenakshi Devi was once the celebrated Maharani of Raigarh. Eleven years ago, the Maharaja formally separated from her after a bitter dispute over the management of the Raigarh Royal Trust — a charitable endowment worth ₹320 crore managing schools, hospitals, and temples across Chhattisgarh. Meenakshi had been the Trust's managing trustee for 18 years. The Maharaja had recently filed a petition in the Chhattisgarh High Court to have her removed as trustee, citing mismanagement and diversion of funds to her personal NGO. The conclave had been called, in part, to present her with a formal notice of removal.",
+                        "hi": "मीनाक्षी देवी कभी रायगढ़ की प्रसिद्ध महारानी थीं। ग्यारह साल पहले, महाराजा ने रायगढ़ रॉयल ट्रस्ट के प्रबंधन पर कड़वे विवाद के बाद उनसे औपचारिक रूप से अलगाव कर लिया था। महाराजा ने हाल ही में उन्हें ट्रस्टी के रूप में हटाने के लिए छत्तीसगढ़ हाई कोर्ट में याचिका दायर की थी। सभा को आंशिक रूप से उन्हें हटाने की औपचारिक सूचना देने के लिए बुलाया गया था।",
+                        "zh-CN": "米纳克希·黛维曾是赖加尔备受赞誉的大君妃。十一年前，大君因赖加尔皇家信托基金管理问题与她正式分居。大君最近在恰蒂斯加尔邦高等法院提交请愿书，要求以管理不善和挪用资金为由将她解除受托人职务。",
+                        "ko": "메에나크시 데비는 한때 라이가르의 유명한 마하라니였습니다. 11년 전 라이가르 왕실 신탁 관리 문제로 마하라자와 공식 별거했습니다. 마하라자는 최근 그녀를 수탁자에서 제거하기 위해 차티스가르 고등법원에 청원을 제출했습니다.",
+                        "ja": "メーナクシー・デーヴィーはかつてライガルの名高いマハラニだった。11年前、ライガル王室信託の管理をめぐる激しい争いでマハラジャと正式に別居した。マハラジャは最近、管理不善と個人NGOへの資金流用を理由に彼女を受託者から解任するためチャッティースガル高等裁判所に申立を行った。"
+                    },
+                    "alibi": {
+                        "en": "Was seated in the main durbar hall the entire evening, visible to palace staff. However, she was the one who personally insisted on the ceremonial serving of the 'Raigarh Amrit' whisky that evening — a tradition she had maintained as Maharani — and she supervised the decanting process in the east wing vault at 9:00 PM, before the decanter was brought to the hall.",
+                        "hi": "पूरी शाम मुख्य दरबार हॉल में बैठी रही, महल के कर्मचारियों को दिखाई दे रही थी। हालांकि, वह वह थी जिसने उस शाम 'रायगढ़ अमृत' व्हिस्की की औपचारिक सेवा पर व्यक्तिगत रूप से जोर दिया था और रात 9:00 बजे पूर्वी विंग तिजोरी में डिकैंटिंग प्रक्रिया की निगरानी की थी।",
+                        "zh-CN": "整个晚上都坐在主觐见厅，宫殿工作人员可以看到她。然而，她是那天晚上亲自坚持举行'赖加尔甘露'威士忌仪式供应的人，并在晚上9点在东翼金库监督了倒酒过程。",
+                        "ko": "저녁 내내 주 알현실에 앉아 있어 궁전 직원들이 볼 수 있었습니다. 그러나 그날 저녁 '라이가르 아므리트' 위스키의 의식적 서빙을 직접 고집했으며, 오후 9시에 동쪽 날개 금고에서 디캔팅 과정을 감독했습니다.",
+                        "ja": "夕方中ずっとメインのダルバールホールに座っており、宮殿スタッフから見えていた。しかし、その夜「ライガル・アムリット」ウイスキーの儀式的な供与を個人的に主張し、午後9時に東翼金庫でデカンティング作業を監督したのも彼女だった。"
+                    },
+                    "motive": {
+                        "en": "The formal removal notice from the Trust would strip her of the only institutional power she retained after the separation. The Trust's ₹320 crore endowment had been her primary source of influence and income. Furthermore, the High Court petition, if successful, would trigger a forensic audit of the Trust — potentially exposing her own financial irregularities. The Maharaja's death before the petition is heard would collapse the legal proceedings entirely.",
+                        "hi": "ट्रस्ट से औपचारिक हटाने की नोटिस उसे अलगाव के बाद बनाए रखी एकमात्र संस्थागत शक्ति से वंचित कर देगी। हाई कोर्ट याचिका, अगर सफल होती, तो ट्रस्ट का फोरेंसिक ऑडिट शुरू होता। महाराजा की मृत्यु से कानूनी कार्यवाही पूरी तरह ध्वस्त हो जाएगी।",
+                        "zh-CN": "信托基金的正式解除通知将剥夺她在分居后保留的唯一机构权力。高等法院的请愿如果成功，将触发对信托基金的法证审计，可能暴露她自己的财务不规则行为。大君在请愿被审理之前死亡将使法律程序完全崩溃。",
+                        "ko": "신탁에서의 공식 제거 통보는 별거 후 유지한 유일한 기관 권력을 박탈할 것입니다. 고등법원 청원이 성공하면 신탁에 대한 법의학 감사가 시작될 것입니다. 청원 심리 전 마하라자의 사망은 법적 절차를 완전히 무너뜨릴 것입니다.",
+                        "ja": "信託からの正式解任通知は、別居後に保持していた唯一の機関的権力を剥奪する。高裁申立が成功すれば信託の法医学監査が始まり、自身の財務不正が露呈する可能性がある。申立審理前のマハラジャの死は法的手続きを完全に崩壊させる。"
+                    }
+                },
+                {
+                    "id": "suspect_003",
+                    "name": "Dr. Priya Anand",
+                    "age": 47,
+                    "occupation": "Palace Physician & Toxicologist",
+                    "relationship": "Maharaja's personal doctor for 14 years",
+                    "photo": null,
+                    "profile": {
+                        "en": "Dr. Priya Anand is the Maharaja's personal physician, a trained toxicologist who completed her fellowship at AIIMS Delhi and a postdoctoral residency at the Tata Memorial Centre in Mumbai. She has unrestricted access to the palace's medical dispensary, which is stocked with pharmaceutical-grade compounds including several controlled substances used in oncology and palliative care. She is the only person present with professional expertise in lethal dosages of potassium cyanide and its interaction with alcohol. She was also the first to reach the Maharaja after his collapse and the first to declare the cause of death — before any official forensic examination.",
+                        "hi": "डॉ. प्रिया आनंद महाराजा की व्यक्तिगत चिकित्सक हैं, एक प्रशिक्षित विषविज्ञानी जिन्होंने एम्स दिल्ली में फेलोशिप और मुंबई में टाटा मेमोरियल सेंटर में पोस्टडॉक्टरल रेजीडेंसी पूरी की। वह महल के मेडिकल डिस्पेंसरी तक असीमित पहुंच रखती हैं। वह एकमात्र व्यक्ति हैं जिनके पास पोटेशियम साइनाइड की घातक खुराक और शराब के साथ इसकी प्रतिक्रिया में पेशेवर विशेषज्ञता है।",
+                        "zh-CN": "普里亚·阿南德博士是大君的私人医生，一位训练有素的毒理学家，曾在新德里全印医学科学研究所完成研究员培训，并在孟买塔塔纪念中心完成博士后住院医师培训。她对宫殿医疗药房有不受限制的访问权。她是现场唯一具备氰化钾致死剂量及其与酒精相互作用专业知识的人。",
+                        "ko": "프리야 아난드 박사는 마하라자의 주치의로, AIIMS 델리에서 펠로우십을 마치고 뭄바이 타타 기념 센터에서 박사 후 레지던시를 완료한 훈련된 독성학자입니다. 궁전 의료 조제실에 무제한 접근이 가능합니다. 시안화칼륨의 치사량과 알코올과의 상호작용에 대한 전문 지식을 가진 유일한 인물입니다.",
+                        "ja": "プリヤ・アナンド博士はマハラジャの主治医で、AIIMSデリーでフェローシップを修了しムンバイのタタ記念センターで博士後期研修を完了した訓練された毒物学者。宮殿の医療薬局に無制限のアクセスを持つ。シアン化カリウムの致死量とアルコールとの相互作用について専門知識を持つ唯一の人物。"
+                    },
+                    "alibi": {
+                        "en": "Claims she was in the palace medical dispensary on the second floor from 8:30 PM to 10:00 PM, reviewing the Maharaja's recent blood reports. However, a palace guard, Ramesh Tiwari, places her near the east wing corridor — adjacent to the private vault — at approximately 9:20 PM, alone, for nearly 18 minutes. She was not seen returning to the dispensary until 9:45 PM.",
+                        "hi": "दावा करती है कि वह रात 8:30 बजे से 10:00 बजे तक दूसरी मंजिल पर महल के मेडिकल डिस्पेंसरी में थी, महाराजा की हालिया रक्त रिपोर्ट की समीक्षा कर रही थी। हालांकि, एक महल के गार्ड, रमेश तिवारी, ने उन्हें लगभग रात 9:20 बजे पूर्वी विंग गलियारे के पास अकेले लगभग 18 मिनट के लिए देखा।",
+                        "zh-CN": "声称晚上8:30到10:00在二楼宫殿医疗药房审查大君最近的血液报告。然而，宫殿警卫拉梅什·蒂瓦里发现她在晚上9:20左右独自在东翼走廊附近待了近18分钟。",
+                        "ko": "오후 8시 30분부터 10시까지 2층 궁전 의료 조제실에서 마하라자의 최근 혈액 검사 결과를 검토했다고 주장합니다. 그러나 궁전 경비원 라메시 티와리가 오후 9시 20분경 동쪽 날개 복도 근처에서 혼자 약 18분간 있는 것을 목격했습니다.",
+                        "ja": "午後8時30分から10時まで2階の宮殿医療薬局でマハラジャの最近の血液検査報告を確認していたと主張。しかし、宮殿警備員のラメシュ・ティワリが午後9時20分頃、東翼廊下——個人金庫に隣接——の近くで一人で約18分間いたのを目撃している。"
+                    },
+                    "motive": {
+                        "en": "The Maharaja had recently discovered that Dr. Anand had been falsifying his medical records for three years — specifically suppressing a diagnosis of early-stage Parkinson's disease — at the request of Arjun Singh, who feared the diagnosis would trigger a premature succession process that would expose his embezzlement. In exchange, Arjun had been paying Dr. Anand ₹18 lakh annually into an offshore account. The Maharaja had confronted Dr. Anand the morning of the conclave, threatening to report her to the Medical Council of India and file a criminal complaint for medical fraud. Additionally, the Maharaja had amended his will to remove a ₹1.5 crore bequest previously promised to Dr. Anand.",
+                        "hi": "महाराजा ने हाल ही में पता लगाया था कि डॉ. आनंद तीन वर्षों से उनके चिकित्सा रिकॉर्ड में जालसाजी कर रही थीं — विशेष रूप से प्रारंभिक चरण के पार्किंसंस रोग के निदान को दबा रही थीं। महाराजा ने सभा की सुबह डॉ. आनंद का सामना किया था, उन्हें मेडिकल काउंसिल ऑफ इंडिया को रिपोर्ट करने और चिकित्सा धोखाधड़ी के लिए आपराधिक शिकायत दर्ज करने की धमकी दी थी।",
+                        "zh-CN": "大君最近发现阿南德博士三年来一直在伪造他的医疗记录——特别是压制早期帕金森病的诊断。大君在会议当天早上与阿南德博士对质，威胁要向印度医学委员会举报她并提起刑事投诉。此外，大君修改了遗嘱，删除了之前承诺给阿南德博士的150万卢比遗产。",
+                        "ko": "마하라자는 최근 아난드 박사가 3년간 그의 의료 기록을 위조했다는 것을 발견했습니다. 마하라자는 회의 당일 아침 아난드 박사와 대면하여 인도 의학 위원회에 신고하고 의료 사기 형사 고발을 위협했습니다. 또한 마하라자는 유언장을 수정하여 아난드 박사에게 약속했던 150만 루피 유산을 삭제했습니다.",
+                        "ja": "マハラジャはアナンド博士が3年間医療記録を偽造していたことを最近発見した——特に初期パーキンソン病の診断を隠蔽していた。マハラジャは会議当日の朝にアナンド博士と対峙し、インド医学評議会への告発と医療詐欺の刑事告訴を脅した。さらにマハラジャは遺言書を修正し、アナンド博士に約束されていた150万ルピーの遺贈を削除した。"
+                    }
+                },
+                {
+                    "id": "suspect_004",
+                    "name": "Rajendra Bhosale",
+                    "age": 58,
+                    "occupation": "Business Partner & Co-Director",
+                    "relationship": "25-year business partner of the victim",
+                    "photo": null,
+                    "profile": {
+                        "en": "Rajendra Bhosale is the co-founder and joint managing director of Raigarh Minerals & Power Ltd. He and the Maharaja built the mining empire from a single leased coal block in 1999 into a ₹8,400 crore conglomerate. However, a bitter boardroom war has been brewing for two years. The Maharaja had recently engaged SEBI investigators to examine a series of insider trading transactions traced to Bhosale's family holding company — transactions that netted Bhosale's family ₹94 crore in illegal profits. A formal SEBI show-cause notice had been issued three weeks before the conclave. The Maharaja was the primary complainant and the sole witness to a key board meeting where Bhosale had disclosed confidential mining data to a competitor.",
+                        "hi": "राजेंद्र भोसले रायगढ़ मिनरल्स एंड पावर लिमिटेड के सह-संस्थापक और संयुक्त प्रबंध निदेशक हैं। महाराजा ने हाल ही में सेबी जांचकर्ताओं को भोसले की पारिवारिक होल्डिंग कंपनी से जुड़े इनसाइडर ट्रेडिंग लेनदेन की जांच करने के लिए नियुक्त किया था। सभा से तीन सप्ताह पहले एक औपचारिक सेबी शो-कॉज नोटिस जारी किया गया था।",
+                        "zh-CN": "拉金德拉·博萨尔是赖加尔矿业与电力有限公司的联合创始人和联合执行董事。大君最近聘请了证券交易委员会调查人员调查与博萨尔家族控股公司相关的内幕交易。会议前三周发出了正式的证券交易委员会问询通知。",
+                        "ko": "라젠드라 보살레는 라이가르 광업 전력 주식회사의 공동 창업자이자 공동 상무이사입니다. 마하라자는 최근 보살레의 가족 지주회사와 관련된 내부자 거래를 조사하기 위해 SEBI 조사관을 고용했습니다. 회의 3주 전 공식 SEBI 소명 통보가 발부되었습니다.",
+                        "ja": "ラジェンドラ・ボサレはライガル・ミネラルズ・アンド・パワー社の共同創業者兼共同常務取締役。マハラジャは最近、ボサレの家族持株会社に関連するインサイダー取引を調査するためSEBI調査官を起用した。会議の3週間前に正式なSEBI弁明通知が発行された。"
+                    },
+                    "alibi": {
+                        "en": "Was confirmed present in the durbar hall at the time of the Maharaja's collapse, seated directly across the table, witnessed by all present. However, he was seen in a heated private exchange with the Maharaja in the palace courtyard at 7:45 PM, and palace staff overheard him say 'If you file that affidavit, I will make sure you don't live to see the verdict.' He denies making this statement.",
+                        "hi": "महाराजा के गिरने के समय दरबार हॉल में मौजूद होने की पुष्टि हुई, मेज के ठीक सामने बैठे, सभी उपस्थित लोगों द्वारा देखे गए। हालांकि, उन्हें शाम 7:45 बजे महल के आंगन में महाराजा के साथ गर्म निजी बातचीत में देखा गया था।",
+                        "zh-CN": "大君倒下时确认在觐见厅，坐在桌子正对面，所有在场人员均可作证。然而，他在晚上7:45被看到在宫殿庭院与大君进行激烈的私下交谈，宫殿工作人员听到他说'如果你提交那份证词，我会确保你活不到看到判决的那天。'",
+                        "ko": "마하라자가 쓰러질 때 알현실에 있었음이 확인되었으며, 테이블 바로 맞은편에 앉아 모든 참석자가 목격했습니다. 그러나 오후 7시 45분에 궁전 안뜰에서 마하라자와 격렬한 사적 대화를 나누는 것이 목격되었습니다.",
+                        "ja": "マハラジャが倒れた時にダルバールホールにいたことが確認され、テーブルの真向かいに座っており全員が目撃している。しかし午後7時45分に宮殿中庭でマハラジャと激しい私的な言い争いをしているのが目撃され、宮殿スタッフが「その宣誓供述書を提出したら、判決を見るまで生きていられないようにしてやる」と言うのを聞いた。"
+                    },
+                    "motive": {
+                        "en": "The Maharaja's testimony in the SEBI case would be the single most damaging piece of evidence against Bhosale. Without the Maharaja's affidavit and testimony, the SEBI case collapses. Bhosale also stood to lose his directorship and face criminal charges under SEBI regulations and the Prevention of Money Laundering Act, with a potential sentence of 7 years. His family's ₹94 crore in illegal profits would be seized.",
+                        "hi": "सेबी मामले में महाराजा की गवाही भोसले के खिलाफ सबसे हानिकारक सबूत होती। महाराजा के हलफनामे और गवाही के बिना, सेबी मामला ध्वस्त हो जाता। भोसले को अपनी निदेशकता खोने और सेबी नियमों के तहत आपराधिक आरोपों का सामना करना पड़ता।",
+                        "zh-CN": "大君在证券交易委员会案件中的证词将是对博萨尔最具破坏性的证据。没有大君的证词，证券交易委员会案件将崩溃。博萨尔还将面临失去董事职务和根据证券交易委员会法规及防止洗钱法的刑事指控，可能面临7年刑期。",
+                        "ko": "SEBI 사건에서 마하라자의 증언은 보살레에게 가장 치명적인 증거가 될 것입니다. 마하라자의 진술서와 증언 없이는 SEBI 사건이 붕괴됩니다. 보살레는 이사직 상실과 SEBI 규정 및 자금세탁방지법에 따른 형사 고발에 직면할 것입니다.",
+                        "ja": "SEBI案件でのマハラジャの証言はボサレに対する最も破壊的な証拠となる。マハラジャの宣誓供述書と証言なしにはSEBI案件は崩壊する。ボサレは取締役職の喪失とSEBI規制およびマネーロンダリング防止法に基づく刑事告発に直面し、最大7年の刑が予想される。"
+                    }
+                },
+                {
+                    "id": "suspect_005",
+                    "name": "Kavya Nair",
+                    "age": 31,
+                    "occupation": "Investigative Journalist",
+                    "relationship": "Journalist, met the Maharaja three weeks prior",
+                    "photo": null,
+                    "profile": {
+                        "en": "Kavya Nair is a senior investigative journalist with The Deccan Chronicle's special investigations unit, known for her explosive exposés on corporate malfeasance in India's mining sector. She was invited to the conclave under the guise of writing an authorised biography of the Maharaja. In reality, she had spent eight months building a dossier on the Raigarh Minerals' illegal encroachment of 1,400 acres of protected tribal forest land in the Hasdeo Arand region — a story that, if published, would trigger regulatory action, criminal investigations, and potentially the cancellation of the company's mining licenses worth ₹12,000 crore. The Maharaja had discovered her true agenda three days before the conclave and had engaged a senior advocate to file a ₹50 crore defamation and injunction suit against her and her publication.",
+                        "hi": "कव्या नायर द डेक्कन क्रॉनिकल की विशेष जांच इकाई की एक वरिष्ठ खोजी पत्रकार हैं। उन्हें महाराजा की अधिकृत जीवनी लिखने के बहाने सभा में आमंत्रित किया गया था। वास्तव में, उन्होंने हसदेव अरण्ड क्षेत्र में संरक्षित आदिवासी वन भूमि के 1,400 एकड़ के अवैध अतिक्रमण पर आठ महीने की फाइल बनाई थी। महाराजा ने सभा से तीन दिन पहले उनके असली एजेंडे की खोज की थी।",
+                        "zh-CN": "卡维亚·奈尔是《德干纪事报》特别调查部门的高级调查记者。她以撰写授权传记为幌子受邀参加会议。实际上，她花了八个月时间建立了一份关于赖加尔矿业非法侵占哈斯德奥·阿兰德地区1400英亩受保护部落森林土地的档案。大君在会议前三天发现了她的真实意图。",
+                        "ko": "카비야 나이르는 데칸 크로니클 특별 조사부의 수석 탐사 기자입니다. 마하라자의 공인 전기 작성을 구실로 회의에 초대되었습니다. 실제로는 하스데오 아란드 지역 보호 부족 삼림 1,400에이커 불법 침범에 관한 8개월간의 자료를 구축했습니다. 마하라자는 회의 3일 전 그녀의 진짜 의도를 발견했습니다.",
+                        "ja": "カヴィヤ・ナイルはデカン・クロニクルの特別調査部門のシニア調査報道記者。マハラジャの公認伝記執筆を口実に会議に招待された。実際には、ハスデオ・アランド地域の保護部族森林地1,400エーカーへのライガル・ミネラルズの違法侵入に関する8ヶ月分の資料を構築していた。マハラジャは会議の3日前に彼女の真の意図を発見した。"
+                    },
+                    "alibi": {
+                        "en": "Was in the durbar hall with Meenakshi Devi between 9:00 PM and 10:00 PM, which Meenakshi partially confirms. She was observed making extensive notes on her phone throughout the evening, which she claims were interview notes. Palace staff noted she excused herself to use the restroom at 9:15 PM and did not return for nearly 20 minutes. The restroom on the east wing ground floor is directly opposite the corridor leading to the private vault.",
+                        "hi": "रात 9:00 बजे से 10:00 बजे के बीच मीनाक्षी देवी के साथ दरबार हॉल में थी, जिसकी मीनाक्षी आंशिक रूप से पुष्टि करती है। महल के कर्मचारियों ने नोट किया कि वह रात 9:15 बजे वॉशरूम जाने के लिए बाहर गई और लगभग 20 मिनट तक वापस नहीं आई। पूर्वी विंग की ग्राउंड फ्लोर पर वॉशरूम सीधे निजी तिजोरी की ओर जाने वाले गलियारे के सामने है।",
+                        "zh-CN": "晚上9:00到10:00与米纳克希·黛维在觐见厅，米纳克希部分确认了这一点。宫殿工作人员注意到她在晚上9:15借口去洗手间离开，近20分钟后才回来。东翼一楼的洗手间正对着通往私人金库的走廊。",
+                        "ko": "오후 9시부터 10시까지 메에나크시 데비와 알현실에 있었으며, 메에나크시가 부분적으로 확인했습니다. 궁전 직원들은 그녀가 오후 9시 15분에 화장실을 이유로 자리를 비웠고 약 20분간 돌아오지 않았다고 했습니다. 동쪽 날개 1층 화장실은 개인 금고로 이어지는 복도 바로 맞은편에 있습니다.",
+                        "ja": "午後9時〜10時はメーナクシー・デーヴィーとダルバールホールにいたとメーナクシーが部分的に確認。宮殿スタッフは彼女が午後9時15分にトイレを理由に退席し、約20分間戻らなかったと述べた。東翼1階のトイレは個人金庫に続く廊下の真向かいにある。"
+                    },
+                    "motive": {
+                        "en": "The ₹50 crore defamation suit, if successful, would financially destroy Kavya and her publication. The Maharaja had also contacted her editor-in-chief directly, threatening to pull all advertising from the newspaper group's digital platforms through his corporate network — a move that would cost the publication ₹8 crore annually. Furthermore, the Maharaja had obtained a court injunction preventing her from publishing the Hasdeo story, effectively killing eight months of her investigative work.",
+                        "hi": "₹50 करोड़ का मानहानि मुकदमा, अगर सफल होता, तो कव्या और उनके प्रकाशन को वित्तीय रूप से बर्बाद कर देता। महाराजा ने हसदेव कहानी प्रकाशित करने से रोकने के लिए अदालती आदेश भी प्राप्त किया था, जिससे उनके आठ महीने के खोजी काम को प्रभावी ढंग से समाप्त कर दिया।",
+                        "zh-CN": "5000万卢比的诽谤诉讼如果成功，将在经济上摧毁卡维亚和她的出版物。大君还获得了法院禁令，阻止她发表哈斯德奥的报道，有效地扼杀了她八个月的调查工作。",
+                        "ko": "5000만 루피 명예훼손 소송이 성공하면 카비야와 그녀의 출판사를 재정적으로 파괴할 것입니다. 마하라자는 하스데오 기사 발행을 막는 법원 금지 명령도 받아냈으며, 이는 그녀의 8개월 탐사 작업을 사실상 무효화했습니다.",
+                        "ja": "5000万ルピーの名誉毀損訴訟が成功すればカヴィヤと出版社を財政的に破壊する。マハラジャはハスデオ記事の掲載を阻止する裁判所差し止め命令も取得しており、8ヶ月の調査作業を事実上無効にした。"
+                    }
+                }
+            ],
+            "weapons": [
+                {
+                    "id": "weapon_001",
+                    "name": "Potassium Cyanide",
+                    "type": "Poison",
+                    "image": null,
+                    "details": {
+                        "en": "A lethal white crystalline powder, odourless in solid form but releasing a faint bitter almond scent when dissolved in liquid — particularly in alcohol, where the reaction is accelerated. A dose of 1.5mg per kilogram of body weight is fatal within minutes. The poison was dissolved into the Maharaja's private 'Raigarh Amrit' whisky decanter, which had been stored in the east wing private vault. The high alcohol content of the single malt (52.3% ABV) partially masked the bitter almond odour until the glass was raised close to the nose.",
+                        "hi": "एक घातक सफेद क्रिस्टलीय पाउडर, ठोस रूप में गंधहीन लेकिन तरल में घुलने पर हल्की कड़वी बादाम की गंध छोड़ता है — विशेष रूप से शराब में, जहां प्रतिक्रिया तेज होती है। जहर महाराजा की निजी 'रायगढ़ अमृत' व्हिस्की डिकैंटर में घोला गया था।",
+                        "zh-CN": "一种致命的白色晶体粉末，固态时无味，溶于液体时散发淡淡的苦杏仁气味——尤其是在酒精中，反应会加速。毒药被溶入大君的私人'赖加尔甘露'威士忌酒壶中。单一麦芽的高酒精含量（52.3% ABV）部分掩盖了苦杏仁气味。",
+                        "ko": "치명적인 흰색 결정 분말로, 고체 상태에서는 무취이지만 액체, 특히 알코올에 용해되면 반응이 가속화되며 희미한 쓴 아몬드 향을 냅니다. 독약은 마하라자의 개인 '라이가르 아므리트' 위스키 디캔터에 녹아 있었습니다.",
+                        "ja": "致死性の白い結晶粉末で、固体では無臭だが液体——特にアルコール中では反応が加速する——に溶けると微かな苦いアーモンドの香りを放つ。毒はマハラジャの個人用「ライガル・アムリット」ウイスキーデカンターに溶かされていた。"
+                    },
+                    "forensics": {
+                        "en": "Trace amounts of potassium cyanide confirmed in the whisky decanter and in the Maharaja's stomach contents during post-mortem conducted by the State Forensic Science Laboratory, Raipur. No fingerprints found on the decanter's inner surface — it had been rinsed and wiped. A pharmaceutical-grade glass ampoule, 2ml capacity, was recovered from the palace medical dispensary's hazardous waste bin — it had been crushed but not fully destroyed. Lab analysis confirmed potassium cyanide residue consistent with dental-grade pharmaceutical supply.",
+                        "hi": "रायपुर की राज्य फोरेंसिक विज्ञान प्रयोगशाला द्वारा किए गए पोस्ट-मॉर्टम में व्हिस्की डिकैंटर और महाराजा के पेट की सामग्री में पोटेशियम साइनाइड के अंश की पुष्टि हुई। डिकैंटर की आंतरिक सतह पर कोई उंगलियों के निशान नहीं मिले। महल के मेडिकल डिस्पेंसरी के खतरनाक कचरे के डिब्बे से एक फार्मास्युटिकल-ग्रेड ग्लास एम्पुल बरामद किया गया।",
+                        "zh-CN": "赖浦州法证科学实验室进行的验尸确认了威士忌酒壶和大君胃内容物中的氰化钾痕迹。酒壶内表面没有指纹——已被冲洗和擦拭。从宫殿医疗药房的危险废物箱中发现了一个2毫升容量的药用级玻璃安瓿——已被压碎但未完全销毁。",
+                        "ko": "라이푸르 주 법의학 과학 연구소의 부검에서 위스키 디캔터와 마하라자의 위 내용물에서 시안화칼륨 흔적이 확인되었습니다. 디캔터 내부 표면에서 지문이 발견되지 않았습니다. 궁전 의료 조제실 위험 폐기물 통에서 2ml 용량의 약학 등급 유리 앰풀이 발견되었습니다.",
+                        "ja": "ライプル州法科学研究所が実施した解剖でウイスキーデカンターとマハラジャの胃内容物からシアン化カリウムの痕跡が確認された。デカンターの内表面に指紋はなく、洗浄・拭き取られていた。宮殿医療薬局の危険廃棄物箱から2ml容量の薬学グレードガラスアンプルが回収された——粉砕されていたが完全には破壊されていなかった。"
+                    }
+                },
+                {
+                    "id": "weapon_002",
+                    "name": "Ceremonial Kirpan (Silver-Handled Dagger)",
+                    "type": "Sharp Object",
+                    "image": null,
+                    "details": {
+                        "en": "An ornate ceremonial kirpan — a silver-handled ritual dagger from the Maharaja's personal armoury — found on the floor of the east wing corridor near the private vault. The blade bore a smear of blood later confirmed to be the Maharaja's blood group (B+). However, the wound was a shallow cut on the Maharaja's left palm, consistent with a defensive wound from an earlier altercation, not the cause of death. The kirpan was normally displayed on the armoury wall and had been removed by someone during the evening.",
+                        "hi": "एक अलंकृत औपचारिक कृपाण — महाराजा के व्यक्तिगत शस्त्रागार से एक चांदी के हत्थे वाला अनुष्ठान खंजर — निजी तिजोरी के पास पूर्वी विंग गलियारे में फर्श पर मिला। ब्लेड पर खून का धब्बा था जो बाद में महाराजा के रक्त समूह (B+) की पुष्टि हुई। यह मृत्यु का कारण नहीं था।",
+                        "zh-CN": "一把装饰精美的仪式用克里斯匕首——来自大君个人军械库的银柄仪式匕首——在私人金库附近的东翼走廊地板上被发现。刀刃上有血迹，后来确认是大君的血型（B+）。伤口是大君左手掌上的浅切口，与早期争执的防御性伤口一致，不是死亡原因。",
+                        "ko": "마하라자의 개인 무기고에서 가져온 은 손잡이 의식용 단검인 화려한 의식용 키르판이 개인 금고 근처 동쪽 날개 복도 바닥에서 발견되었습니다. 칼날에 마하라자의 혈액형(B+)으로 확인된 혈흔이 있었습니다. 이는 사망 원인이 아니었습니다.",
+                        "ja": "マハラジャの個人武器庫からの銀の柄の儀式用短剣——個人金庫近くの東翼廊下の床で発見された。刃にマハラジャの血液型（B+）と確認された血痕があった。傷は左掌の浅い切り傷で、以前の口論による防御傷と一致し、死因ではない。"
+                    },
+                    "forensics": {
+                        "en": "Partial fingerprint recovered from the silver handle — smudged and inconclusive, consistent with gloved handling. The blood is confirmed as the Maharaja's. The kirpan is considered a red herring — it did not cause death but indicates a prior physical confrontation in the east wing corridor, suggesting the Maharaja may have encountered the killer near the vault earlier in the evening, before the poison was administered.",
+                        "hi": "चांदी के हैंडल से आंशिक उंगलियों का निशान बरामद किया गया — धुंधला और अनिर्णायक। कृपाण को एक भ्रामक सुराग माना जाता है — इसने मृत्यु का कारण नहीं बनाया लेकिन पूर्वी विंग गलियारे में एक पूर्व शारीरिक टकराव का संकेत देता है।",
+                        "zh-CN": "从银柄上发现部分指纹——模糊且不确定，与戴手套处理一致。这把克里斯匕首被认为是误导线索——它没有导致死亡，但表明东翼走廊发生了之前的身体对抗。",
+                        "ko": "은 손잡이에서 부분 지문이 회수되었지만 불분명하며 장갑을 낀 처리와 일치합니다. 키르판은 레드 헤링으로 간주됩니다. 사망을 초래하지 않았지만 동쪽 날개 복도에서의 이전 신체적 대면을 나타냅니다.",
+                        "ja": "銀の柄から部分的な指紋が回収されたが不鮮明で、手袋での取り扱いと一致する。キルパンはレッドヘリングと見なされる——死因ではないが、東翼廊下での以前の身体的対峙を示している。"
+                    }
+                }
+            ],
+            "locations": [
+                {
+                    "id": "location_001",
+                    "name": "The East Wing Private Vault",
+                    "image": null,
+                    "description": {
+                        "en": "A climate-controlled private vault on the ground floor of the east wing of Raigarh Palace, accessible only via a heavy teak door with a brass combination lock. The vault housed the Maharaja's most prized personal possessions: rare manuscripts, jewellery, ancestral weapons, and his private liquor collection — including the 'Raigarh Amrit' whisky decanter. The combination was known only to the Maharaja, Arjun Singh, and — as discovered during investigation — Dr. Priya Anand, who had been given the combination during a medical emergency two years prior when the Maharaja had kept his cardiac medication inside the vault.",
+                        "hi": "रायगढ़ महल के पूर्वी विंग की भूतल पर एक जलवायु-नियंत्रित निजी तिजोरी, जो एक पीतल के संयोजन ताले वाले भारी सागौन दरवाजे के माध्यम से ही सुलभ थी। तिजोरी में महाराजा की सबसे कीमती व्यक्तिगत संपत्तियां थीं, जिनमें 'रायगढ़ अमृत' व्हिस्की डिकैंटर भी शामिल था। संयोजन केवल महाराजा, अर्जुन सिंह और — जांच के दौरान पता चला — डॉ. प्रिया आनंद को पता था।",
+                        "zh-CN": "赖加尔宫殿东翼一楼的气候控制私人金库，只能通过带有黄铜密码锁的厚重柚木门进入。金库存放着大君最珍贵的个人物品，包括'赖加尔甘露'威士忌酒壶。密码只有大君、阿尔琼·辛格和——在调查中发现——阿南德博士知道。",
+                        "ko": "황동 조합 자물쇠가 달린 무거운 티크 문을 통해서만 접근할 수 있는 라이가르 궁전 동쪽 날개 1층의 기후 제어 개인 금고입니다. 금고에는 '라이가르 아므리트' 위스키 디캔터를 포함한 마하라자의 가장 소중한 개인 소지품이 보관되어 있었습니다. 조합은 마하라자, 아르준 싱, 그리고 조사 중 밝혀진 아난드 박사만 알고 있었습니다.",
+                        "ja": "真鍮の組み合わせ錠付きの重いチーク材のドアからのみアクセスできるライガル宮殿東翼1階の気候制御個人金庫。金庫には「ライガル・アムリット」ウイスキーデカンターを含むマハラジャの最も貴重な個人所有品が保管されていた。組み合わせはマハラジャ、アルジュン・シン、そして調査で判明したアナンド博士のみが知っていた。"
+                    },
+                    "evidence_found": [
+                        "evidence_001",
+                        "evidence_002",
+                        "evidence_004"
+                    ]
+                },
+                {
+                    "id": "location_002",
+                    "name": "The Durbar Hall",
+                    "image": null,
+                    "description": {
+                        "en": "The grand ceremonial audience hall of Raigarh Palace — a vast room with 40-foot ceilings, ornate Rajput frescoes, and a long marble table set for six beneath a crystal chandelier. This is where the conclave was held and where the Maharaja collapsed. The overturned crystal whisky glass was found at the head of the table, beside the Maharaja's ivory throne chair. The faint bitter almond scent was first detected here by Dr. Priya Anand.",
+                        "hi": "रायगढ़ महल का भव्य औपचारिक दर्शक हॉल — 40 फुट की छत, अलंकृत राजपूत भित्तिचित्रों और एक क्रिस्टल झूमर के नीचे छह के लिए सेट एक लंबी संगमरमर की मेज वाला एक विशाल कमरा। यहीं पर सभा हुई और महाराजा गिरे।",
+                        "zh-CN": "赖加尔宫殿宏伟的仪式觐见厅——一个40英尺高天花板、精美拉杰普特壁画和水晶枝形吊灯下摆放六人大理石桌的宽敞房间。这是会议举行和大君倒下的地方。翻倒的水晶威士忌杯在桌子首位、大君象牙王座旁被发现。",
+                        "ko": "40피트 천장, 화려한 라지푸트 프레스코화, 수정 샹들리에 아래 6인용 대리석 테이블이 있는 라이가르 궁전의 웅장한 의식 알현실입니다. 회의가 열리고 마하라자가 쓰러진 곳입니다. 뒤집힌 수정 위스키 잔이 테이블 상석, 마하라자의 상아 왕좌 옆에서 발견되었습니다.",
+                        "ja": "40フィートの天井、精巧なラジプットのフレスコ画、クリスタルのシャンデリアの下に6人用大理石テーブルが設置されたライガル宮殿の壮大な儀式的謁見ホール。会議が行われマハラジャが倒れた場所。ひっくり返ったクリスタルのウイスキーグラスがテーブルの上座、マハラジャの象牙の玉座の隣で発見された。"
+                    },
+                    "evidence_found": [
+                        "evidence_003",
+                        "evidence_007"
+                    ]
+                },
+                {
+                    "id": "location_003",
+                    "name": "The Palace Medical Dispensary",
+                    "image": null,
+                    "description": {
+                        "en": "A fully equipped medical room on the second floor of the palace's north wing, maintained by Dr. Priya Anand. Stocked with standard medications, surgical supplies, and several pharmaceutical-grade controlled compounds used in the Maharaja's ongoing oncology monitoring and palliative care protocol. The dispensary is secured with a biometric lock to which only Dr. Anand has access. A hazardous waste disposal bin is located in the corner, and it was here that the crushed glass ampoule was discovered during the initial police sweep.",
+                        "hi": "महल के उत्तरी विंग की दूसरी मंजिल पर एक पूरी तरह से सुसज्जित चिकित्सा कक्ष, डॉ. प्रिया आनंद द्वारा रखरखाव किया जाता है। डिस्पेंसरी एक बायोमेट्रिक लॉक से सुरक्षित है जिसकी पहुंच केवल डॉ. आनंद के पास है। एक खतरनाक कचरा निपटान डिब्बा कोने में स्थित है, और यहीं पर प्रारंभिक पुलिस जांच के दौरान टूटा हुआ ग्लास एम्पुल खोजा गया था।",
+                        "zh-CN": "宫殿北翼二楼一间设备齐全的医疗室，由阿南德博士维护。药房由只有阿南德博士能访问的生物识别锁保护。在初始警方搜查中，在角落的危险废物处置箱中发现了破碎的玻璃安瓿。",
+                        "ko": "아난드 박사가 관리하는 궁전 북쪽 날개 2층의 완전히 갖춰진 의료실입니다. 조제실은 아난드 박사만 접근할 수 있는 생체 인식 잠금장치로 보안됩니다. 초기 경찰 수색 중 모서리의 위험 폐기물 처리 통에서 부서진 유리 앰풀이 발견되었습니다.",
+                        "ja": "アナンド博士が管理する宮殿北翼2階の完全装備の医療室。薬局はアナンド博士のみがアクセスできる生体認証ロックで保護されている。初期の警察捜索中に、角の危険廃棄物処理箱で粉砕されたガラスアンプルが発見された。"
+                    },
+                    "evidence_found": [
+                        "evidence_002"
+                    ]
+                },
+                {
+                    "id": "location_004",
+                    "name": "The East Wing Gallery",
+                    "image": null,
+                    "description": {
+                        "en": "A long portrait gallery on the ground floor of the east wing, lined with ancestral paintings of the Raigarh royal family dating back to the 1700s. Arjun Singh claims to have spent the critical evening hours here. The gallery connects directly to the corridor leading to the private vault, with only a single turning separating the two. A half-empty glass of imported mineral water was found on the gallery's reading bench, along with a crumpled printout of the Maharaja's revised will — specifically the page removing Arjun as primary heir.",
+                        "hi": "पूर्वी विंग की भूतल पर एक लंबी पोर्ट्रेट गैलरी, 1700 के दशक से रायगढ़ राजपरिवार के पैतृक चित्रों से सजी। गैलरी सीधे निजी तिजोरी की ओर जाने वाले गलियारे से जुड़ती है। गैलरी की रीडिंग बेंच पर आयातित खनिज पानी का एक आधा खाली गिलास और संशोधित वसीयत का एक मुड़ा हुआ प्रिंटआउट मिला।",
+                        "zh-CN": "东翼一楼的长廊，陈列着追溯至1700年代的赖加尔王室祖先画像。阿尔琼·辛格声称在关键的晚间时段在这里度过。画廊直接连接通往私人金库的走廊。画廊阅读长椅上发现了半空的进口矿泉水杯和大君修订遗嘱的皱巴巴打印件。",
+                        "ko": "1700년대로 거슬러 올라가는 라이가르 왕실 조상 그림이 늘어선 동쪽 날개 1층의 긴 초상화 갤러리입니다. 갤러리는 개인 금고로 이어지는 복도와 직접 연결됩니다. 갤러리 독서 벤치에서 반쯤 비어있는 수입 생수 잔과 아르준을 주요 상속인에서 제거하는 마하라자의 수정 유언장 구겨진 인쇄물이 발견되었습니다.",
+                        "ja": "1700年代に遡るライガル王家の祖先の肖像画が並ぶ東翼1階の長い肖像画ギャラリー。ギャラリーは個人金庫に続く廊下と直接つながっている。ギャラリーの読書ベンチで半分空の輸入ミネラルウォーターのグラスと、アルジュンを主要相続人から外すマハラジャの改訂遺言書のくしゃくしゃの印刷物が発見された。"
+                    },
+                    "evidence_found": [
+                        "evidence_008"
+                    ]
+                },
+                {
+                    "id": "location_005",
+                    "name": "The Palace Courtyard",
+                    "image": null,
+                    "description": {
+                        "en": "The central open-air courtyard of Raigarh Palace, surrounded by ornate carved stone arches and a centuries-old peepal tree at its centre. This is where Rajendra Bhosale was seen arguing with the Maharaja at 7:45 PM. The courtyard is accessible from the durbar hall and the east wing. During the initial police sweep, a crumpled business card was found near the peepal tree — the card of Bhosale's personal advocate, with a handwritten note on the back reading 'He knows about Hasdeo too. Deal with both.'",
+                        "hi": "रायगढ़ महल का केंद्रीय खुला आंगन, जहां राजेंद्र भोसले को शाम 7:45 बजे महाराजा के साथ बहस करते देखा गया था। प्रारंभिक पुलिस जांच के दौरान, पीपल के पेड़ के पास एक मुड़ा हुआ व्यवसाय कार्ड मिला — भोसले के व्यक्तिगत अधिवक्ता का, पीछे हस्तलिखित नोट के साथ: 'उसे हसदेव के बारे में भी पता है। दोनों से निपटो।'",
+                        "zh-CN": "赖加尔宫殿的中央露天庭院，拉金德拉·博萨尔在晚上7:45被看到与大君争论。初始警方搜查中，在菩提树附近发现了一张皱巴巴的名片——博萨尔私人律师的名片，背面有手写便条：'他也知道哈斯德奥的事。两个都处理掉。'",
+                        "ko": "라젠드라 보살레가 오후 7시 45분에 마하라자와 다투는 것이 목격된 라이가르 궁전의 중앙 야외 안뜰입니다. 초기 경찰 수색 중 핍팔 나무 근처에서 구겨진 명함이 발견되었습니다 — 보살레의 개인 변호사 명함으로, 뒷면에 손으로 쓴 메모가 있었습니다: '그도 하스데오에 대해 알고 있다. 둘 다 처리해라.'",
+                        "ja": "ラジェンドラ・ボサレが午後7時45分にマハラジャと口論しているのが目撃されたライガル宮殿の中央屋外中庭。初期警察捜索中、ピーパルの木の近くで皺くちゃの名刺が発見された——ボサレの個人弁護士の名刺で、裏に手書きのメモ：「彼もハスデオのことを知っている。両方とも処理しろ。」"
+                    },
+                    "evidence_found": [
+                        "evidence_009"
+                    ]
+                }
+            ],
+            "evidence": [
+                {
+                    "id": "evidence_001",
+                    "type": "physical",
+                    "name": "Poisoned Whisky Decanter ('Raigarh Amrit')",
+                    "image": null,
+                    "description": {
+                        "en": "The Maharaja's private crystal decanter of 'Raigarh Amrit' — a 1952 Speyside single malt Scotch whisky — found in the east wing private vault after the death. The decanter had been opened and resealed with its original crystal stopper. Forensic analysis confirmed potassium cyanide residue dissolved in the remaining whisky. The decanter's exterior had been wiped clean of fingerprints. The vault's combination lock showed no signs of forced entry.",
+                        "hi": "महाराजा का निजी क्रिस्टल डिकैंटर 'रायगढ़ अमृत' — एक 1952 स्पेसाइड सिंगल माल्ट स्कॉच व्हिस्की — मृत्यु के बाद पूर्वी विंग निजी तिजोरी में मिला। डिकैंटर खोला गया था और उसके मूल क्रिस्टल स्टॉपर से फिर से सील किया गया था। फोरेंसिक विश्लेषण ने शेष व्हिस्की में घुले पोटेशियम साइनाइड अवशेष की पुष्टि की।",
+                        "zh-CN": "大君的私人水晶酒壶'赖加尔甘露'——一瓶1952年斯佩塞单一麦芽苏格兰威士忌——死后在东翼私人金库中发现。酒壶已被打开并用原始水晶瓶塞重新密封。法证分析确认了剩余威士忌中溶解的氰化钾残留物。酒壶外部已被擦去指纹。",
+                        "ko": "마하라자의 개인 크리스탈 디캔터 '라이가르 아므리트' — 1952년 스페이사이드 싱글 몰트 스카치 위스키 — 가 사망 후 동쪽 날개 개인 금고에서 발견되었습니다. 디캔터는 열렸다가 원래 크리스탈 마개로 다시 밀봉되었습니다. 법의학 분석에서 남은 위스키에 용해된 시안화칼륨 잔류물이 확인되었습니다.",
+                        "ja": "マハラジャの個人用クリスタルデカンター「ライガル・アムリット」——1952年スペイサイドシングルモルトスコッチウイスキー——が死後東翼個人金庫で発見された。デカンターは開封され元のクリスタルストッパーで再封されていた。法医学分析で残留ウイスキーに溶解したシアン化カリウム残留物が確認された。"
+                    },
+                    "significance": {
+                        "en": "This is the primary murder weapon delivery mechanism. The poison was introduced into the decanter inside the locked vault. Only three people knew the vault combination: the Maharaja (the victim), Arjun Singh (who claims to have been in the gallery), and Dr. Priya Anand (who was seen near the vault corridor at 9:20 PM). The wiped fingerprints indicate premeditation.",
+                        "hi": "यह प्राथमिक हत्या हथियार वितरण तंत्र है। जहर बंद तिजोरी के अंदर डिकैंटर में डाला गया था। केवल तीन लोगों को तिजोरी का संयोजन पता था: महाराजा (पीड़ित), अर्जुन सिंह और डॉ. प्रिया आनंद।",
+                        "zh-CN": "这是主要的谋杀武器传递机制。毒药在锁定的金库内被放入酒壶。只有三个人知道金库密码：大君（受害者）、阿尔琼·辛格和阿南德博士。擦去的指纹表明有预谋。",
+                        "ko": "이것이 주요 살인 무기 전달 메커니즘입니다. 독약은 잠긴 금고 안의 디캔터에 주입되었습니다. 금고 조합을 알고 있는 세 사람은 마하라자(피해자), 아르준 싱, 아난드 박사뿐이었습니다.",
+                        "ja": "これが主要な殺人武器の投与メカニズム。毒は施錠された金庫内のデカンターに入れられた。金庫の組み合わせを知っていたのはマハラジャ（被害者）、アルジュン・シン、アナンド博士の3人のみ。拭き取られた指紋は計画性を示す。"
+                    }
+                },
+                {
+                    "id": "evidence_002",
+                    "type": "physical",
+                    "name": "Crushed Pharmaceutical Ampoule",
+                    "image": null,
+                    "description": {
+                        "en": "A 2ml pharmaceutical-grade glass ampoule recovered from the hazardous waste disposal bin inside the palace medical dispensary, crushed but not fully destroyed. Lab analysis confirmed potassium cyanide residue. The ampoule's partial label, reconstructed from fragments, bore the batch code of a consignment supplied to the dispensary six months prior. The biometric access log for the dispensary showed Dr. Anand had accessed the room at 8:28 PM — two minutes before she claims she 'arrived' to review blood reports.",
+                        "hi": "महल के मेडिकल डिस्पेंसरी के अंदर खतरनाक कचरा निपटान डिब्बे से बरामद एक 2ml फार्मास्युटिकल-ग्रेड ग्लास एम्पुल, टूटा हुआ लेकिन पूरी तरह से नष्ट नहीं। लैब विश्लेषण ने पोटेशियम साइनाइड अवशेष की पुष्टि की। डिस्पेंसरी के लिए बायोमेट्रिक एक्सेस लॉग से पता चला कि डॉ. आनंद ने रात 8:28 बजे कमरे तक पहुंच बनाई।",
+                        "zh-CN": "从宫殿医疗药房内危险废物处置箱中发现的2毫升药用级玻璃安瓿，已被压碎但未完全销毁。实验室分析确认了氰化钾残留物。药房的生物识别访问日志显示阿南德博士在晚上8:28访问了该房间。",
+                        "ko": "궁전 의료 조제실 내 위험 폐기물 처리 통에서 회수된 2ml 약학 등급 유리 앰풀로, 부서졌지만 완전히 파괴되지 않았습니다. 실험실 분석에서 시안화칼륨 잔류물이 확인되었습니다. 조제실의 생체 인식 접근 로그에 따르면 아난드 박사는 오후 8시 28분에 방에 접근했습니다.",
+                        "ja": "宮殿医療薬局内の危険廃棄物処理箱から回収された2ml薬学グレードガラスアンプル。粉砕されていたが完全には破壊されていなかった。実験室分析でシアン化カリウム残留物が確認された。薬局の生体認証アクセスログでアナンド博士が午後8時28分に部屋にアクセスしていたことが判明した。"
+                    },
+                    "significance": {
+                        "en": "Directly links the poison source to the palace medical dispensary — a room only Dr. Anand could access. The biometric log proves she entered the dispensary at 8:28 PM, contradicting her claim of arriving to 'review blood reports' at 8:30 PM. The two-minute discrepancy suggests she entered specifically to retrieve the cyanide ampoule. The crushed but not discarded ampoule suggests a rushed disposal attempt.",
+                        "hi": "जहर के स्रोत को सीधे महल के मेडिकल डिस्पेंसरी से जोड़ता है — एक कमरा जिसे केवल डॉ. आनंद ही एक्सेस कर सकती थीं। बायोमेट्रिक लॉग साबित करता है कि उन्होंने रात 8:28 बजे डिस्पेंसरी में प्रवेश किया।",
+                        "zh-CN": "直接将毒药来源与宫殿医疗药房联系起来——一个只有阿南德博士能访问的房间。生物识别日志证明她在晚上8:28进入了药房，与她声称在8:30到达'审查血液报告'相矛盾。",
+                        "ko": "독약 출처를 아난드 박사만 접근할 수 있는 궁전 의료 조제실과 직접 연결합니다. 생체 인식 로그는 그녀가 오후 8시 28분에 조제실에 들어갔음을 증명하며, 오후 8시 30분에 '혈액 검사 결과 검토'를 위해 도착했다는 주장과 모순됩니다.",
+                        "ja": "毒の出所をアナンド博士のみがアクセスできる宮殿医療薬局と直接結びつける。生体認証ログで午後8時28分に薬局に入ったことが証明され、8時30分に「血液検査報告確認のために到着した」という主張と矛盾する。"
+                    }
+                },
+                {
+                    "id": "evidence_003",
+                    "type": "physical",
+                    "name": "Overturned Crystal Whisky Glass",
+                    "image": null,
+                    "description": {
+                        "en": "The Maharaja's crystal whisky glass, found overturned at the head of the durbar hall table. Residual whisky in the glass tested positive for potassium cyanide. The glass bore only the Maharaja's fingerprints, confirming no one else handled it at the table. The bitter almond scent detected by Dr. Anand — and subsequently by palace staff — originated from this glass and the decanter.",
+                        "hi": "महाराजा का क्रिस्टल व्हिस्की गिलास, दरबार हॉल टेबल के शीर्ष पर उलटा पाया गया। गिलास में बचे व्हिस्की में पोटेशियम साइनाइड की पुष्टि हुई। गिलास पर केवल महाराजा के उंगलियों के निशान थे।",
+                        "zh-CN": "大君的水晶威士忌杯，在觐见厅桌子首位被发现翻倒。杯中残留威士忌检测出氰化钾阳性。杯子上只有大君的指纹，确认没有其他人在桌子上处理过它。",
+                        "ko": "알현실 테이블 상석에서 뒤집힌 채 발견된 마하라자의 크리스탈 위스키 잔입니다. 잔의 잔류 위스키에서 시안화칼륨 양성 반응이 나왔습니다. 잔에는 마하라자의 지문만 있어 테이블에서 다른 사람이 만지지 않았음을 확인합니다.",
+                        "ja": "ダルバールホールのテーブル上座でひっくり返った状態で発見されたマハラジャのクリスタルウイスキーグラス。グラスの残留ウイスキーからシアン化カリウムが検出された。グラスにはマハラジャの指紋のみで、テーブルで他の人が扱わなかったことを確認。"
+                    },
+                    "significance": {
+                        "en": "Confirms the method of poisoning — the cyanide was in the whisky. Confirms the whisky came from the private decanter in the vault. No evidence of tampering at the table itself, confirming the poison was introduced at the source — the decanter inside the locked vault.",
+                        "hi": "विषाक्तता की विधि की पुष्टि करता है — साइनाइड व्हिस्की में था। पुष्टि करता है कि व्हिस्की तिजोरी में निजी डिकैंटर से आई थी। जहर स्रोत पर — बंद तिजोरी के अंदर डिकैंटर में — डाला गया था।",
+                        "zh-CN": "确认了下毒方式——氰化物在威士忌中。确认威士忌来自金库中的私人酒壶。没有在桌子本身篡改的证据，确认毒药是在来源处——锁定金库内的酒壶中——被放入的。",
+                        "ko": "독살 방법을 확인합니다. 독약은 잠긴 금고 안의 디캔터에서 주입되었음을 확인합니다.",
+                        "ja": "毒殺の方法を確認——シアン化物はウイスキーの中にあった。ウイスキーが金庫内の個人用デカンターから来たことを確認。毒は源で、施錠された金庫内のデカンターに入れられたことを確認。"
+                    }
+                },
+                {
+                    "id": "evidence_004",
+                    "type": "witness",
+                    "name": "Palace Guard Testimony (Ramesh Tiwari)",
+                    "image": null,
+                    "description": {
+                        "en": "Ramesh Tiwari, a 22-year palace guard veteran, testified that at approximately 9:20 PM he observed Dr. Priya Anand walking alone in the east wing corridor — the corridor that leads directly to the private vault — and that she appeared to enter the vault anteroom. He noted she was carrying a small black leather medical bag, which she normally keeps in the dispensary. He did not see her exit as he was called away by another staff member. Dr. Anand was not seen returning to the main areas of the palace until approximately 9:45 PM.",
+                        "hi": "22 वर्षीय महल गार्ड अनुभवी रमेश तिवारी ने गवाही दी कि लगभग रात 9:20 बजे उन्होंने डॉ. प्रिया आनंद को पूर्वी विंग गलियारे में अकेले चलते देखा — वह गलियारा जो सीधे निजी तिजोरी की ओर जाता है। उन्होंने नोट किया कि वह एक छोटा काला चमड़े का मेडिकल बैग ले जा रही थीं।",
+                        "zh-CN": "22年宫殿警卫老兵拉梅什·蒂瓦里作证说，大约晚上9:20，他观察到阿南德博士独自在东翼走廊行走——直接通往私人金库的走廊——她似乎进入了金库前室。他注意到她携带着一个小黑色皮革医疗包。",
+                        "ko": "22년 경력의 궁전 경비원 라메시 티와리는 오후 9시 20분경 아난드 박사가 개인 금고로 직접 이어지는 동쪽 날개 복도에서 혼자 걷는 것을 목격했으며, 금고 전실로 들어가는 것처럼 보였다고 증언했습니다. 그녀가 작은 검은 가죽 의료 가방을 들고 있었다고 했습니다.",
+                        "ja": "22年のベテラン宮殿警備員ラメシュ・ティワリが、午後9時20分頃にアナンド博士が個人金庫に直接つながる東翼廊下を一人で歩いているのを目撃し、金庫の前室に入るように見えたと証言した。小さな黒い革の医療バッグを持っていたと述べた。"
+                    },
+                    "significance": {
+                        "en": "Places Dr. Anand at the vault — where the poisoned decanter was stored — at the precise critical window when the poison was most likely administered. Directly contradicts her alibi that she was in the medical dispensary reviewing blood reports. The medical bag she was carrying would have contained the cyanide ampoule.",
+                        "hi": "डॉ. आनंद को तिजोरी के पास रखता है — जहां जहरीला डिकैंटर रखा था — उस सटीक महत्वपूर्ण समय पर जब जहर सबसे अधिक संभावना दिया गया था। उनके बयान का सीधा खंडन करता है।",
+                        "zh-CN": "将阿南德博士置于金库——毒化酒壶存放处——在毒药最可能被投放的精确关键时间窗口。直接与她关于在医疗药房审查血液报告的证词相矛盾。",
+                        "ko": "독이 든 디캔터가 보관된 금고에 아난드 박사가 있었음을 독약이 주입된 정확한 핵심 시간대에 입증합니다. 의료 조제실에서 혈액 검사 결과를 검토했다는 그녀의 알리바이와 직접 모순됩니다.",
+                        "ja": "毒入りデカンターが保管されていた金庫に、毒が最も投与された可能性が高い正確な重要時間帯にアナンド博士がいたことを証明する。医療薬局で血液検査報告を確認していたというアリバイと直接矛盾する。"
+                    }
+                },
+                {
+                    "id": "evidence_005",
+                    "type": "document",
+                    "name": "Revised Will & Disinheritance Notice",
+                    "image": null,
+                    "description": {
+                        "en": "A formally notarised revised will found in the Maharaja's personal safe in the durbar hall, dated five days before the murder. The revised will removes Arjun Singh as primary heir, replacing him with the Raigarh Tribal Welfare Foundation. It removes Dr. Priya Anand entirely from the beneficiary list — a ₹1.5 crore bequest crossed out. It removes Meenakshi Devi as a beneficiary of the palace property. A separate sealed envelope, addressed to the CBI Director, was found alongside the will — containing a signed affidavit by the Maharaja detailing Arjun's embezzlement and Bhosale's insider trading.",
+                        "hi": "दरबार हॉल में महाराजा की व्यक्तिगत तिजोरी में मिली एक औपचारिक रूप से नोटरीकृत संशोधित वसीयत, हत्या से पांच दिन पहले दिनांकित। संशोधित वसीयत अर्जुन सिंह को प्राथमिक उत्तराधिकारी के रूप में हटाती है। यह डॉ. प्रिया आनंद को लाभार्थी सूची से पूरी तरह हटाती है — ₹1.5 करोड़ की विरासत काट दी गई। सीबीआई निदेशक को संबोधित एक अलग सीलबंद लिफाफा भी मिला।",
+                        "zh-CN": "在觐见厅大君个人保险箱中发现的正式公证修订遗嘱，日期为谋杀前五天。修订遗嘱将阿尔琼·辛格作为主要继承人删除，将阿南德博士从受益人名单中完全删除——划去了150万卢比遗产。还发现了一个寄给中央调查局局长的密封信封，包含大君详细说明阿尔琼挪用公款和博萨尔内幕交易的签署宣誓书。",
+                        "ko": "살인 5일 전 날짜가 적힌 알현실 마하라자의 개인 금고에서 발견된 공식 공증 개정 유언장입니다. 개정 유언장은 아르준 싱을 주요 상속인에서 제거하고 아난드 박사를 수혜자 목록에서 완전히 삭제했습니다. CBI 국장에게 보내는 별도의 봉인된 봉투에는 아르준의 횡령과 보살레의 내부자 거래를 상세히 기술한 마하라자의 서명된 선서 진술서가 들어 있었습니다.",
+                        "ja": "殺人の5日前の日付でダルバールホールのマハラジャの個人金庫で発見された正式公証済み改訂遺言書。改訂遺言書はアルジュン・シンを主要相続人から外し、アナンド博士を受益者リストから完全に削除——150万ルピーの遺贈が消されていた。CBI長官宛の別の封印された封筒にはアルジュンの横領とボサレのインサイダー取引を詳述したマハラジャの署名入り宣誓供述書が入っていた。"
+                    },
+                    "significance": {
+                        "en": "Provides definitive motive for Arjun Singh, Dr. Priya Anand, Meenakshi Devi, and Rajendra Bhosale simultaneously. The sealed CBI affidavit confirms that the Maharaja was actively moving to destroy all four of them legally. The person who committed the murder had the most to lose — and the most specific knowledge of how to do it undetected.",
+                        "hi": "एक साथ अर्जुन सिंह, डॉ. प्रिया आनंद, मीनाक्षी देवी और राजेंद्र भोसले के लिए निश्चित मकसद प्रदान करता है। सीलबंद सीबीआई हलफनामा पुष्टि करता है कि महाराजा सक्रिय रूप से उन सभी को कानूनी रूप से नष्ट करने के लिए आगे बढ़ रहे थे।",
+                        "zh-CN": "同时为阿尔琼·辛格、阿南德博士、米纳克希·黛维和拉金德拉·博萨尔提供了明确的动机。密封的中央调查局宣誓书确认大君正积极采取法律行动摧毁所有四人。",
+                        "ko": "아르준 싱, 아난드 박사, 메에나크시 데비, 라젠드라 보살레 모두에게 동시에 결정적 동기를 제공합니다. 봉인된 CBI 선서 진술서는 마하라자가 네 사람 모두를 법적으로 파괴하기 위해 적극적으로 움직이고 있었음을 확인합니다.",
+                        "ja": "アルジュン・シン、アナンド博士、メーナクシー・デーヴィー、ラジェンドラ・ボサレ全員に同時に決定的な動機を提供する。封印されたCBI宣誓供述書はマハラジャが積極的に全員を法的に破壊しようとしていたことを確認する。"
+                    }
+                },
+                {
+                    "id": "evidence_006",
+                    "type": "digital",
+                    "name": "Dr. Anand's Phone & Encrypted Search History",
+                    "image": null,
+                    "description": {
+                        "en": "Police forensics retrieved Dr. Anand's personal phone under court order. The device's DNS cache — retained despite private browsing mode — revealed searches conducted 14 days before the murder: 'potassium cyanide lethal dose per kg body weight alcohol interaction', 'cyanide poisoning symptoms vs cardiac arrest differential diagnosis', 'how to dissolve cyanide in whisky without visible residue', 'post mortem cyanide detection window alcohol'. Additionally, a deleted WhatsApp message thread was partially recovered, showing a conversation between Dr. Anand and an unregistered number, in which she wrote: 'The Amrit decanter is the only option. No one else touches it.'",
+                        "hi": "पुलिस फोरेंसिक ने अदालत के आदेश के तहत डॉ. आनंद का व्यक्तिगत फोन बरामद किया। डिवाइस के DNS कैश ने हत्या से 14 दिन पहले किए गए खोज प्रकट किए: 'पोटेशियम साइनाइड घातक खुराक प्रति किलो शरीर वजन शराब प्रतिक्रिया', 'व्हिस्की में साइनाइड को दृश्य अवशेष के बिना कैसे घोलें'। इसके अलावा, एक हटाए गए व्हाट्सएप संदेश थ्रेड को आंशिक रूप से पुनः प्राप्त किया गया, जिसमें डॉ. आनंद ने लिखा था: 'अमृत डिकैंटर ही एकमात्र विकल्प है। इसे कोई और नहीं छूता।'",
+                        "zh-CN": "警方法证在法院命令下找回了阿南德博士的个人手机。设备的DNS缓存——尽管使用了私人浏览模式仍被保留——揭示了谋杀前14天进行的搜索：'氰化钾致死剂量每公斤体重酒精相互作用'，'如何将氰化物溶于威士忌而不留可见残留物'。此外，部分恢复了一个删除的WhatsApp消息线程，显示阿南德博士写道：'甘露酒壶是唯一的选择。没有其他人碰它。'",
+                        "ko": "경찰 법의학팀이 법원 명령에 따라 아난드 박사의 개인 전화기를 회수했습니다. 기기의 DNS 캐시에 살인 14일 전 검색 내용이 남아 있었습니다: '시안화칼륨 체중 킬로그램당 치사량 알코올 상호작용', '위스키에 눈에 보이는 잔류물 없이 시안화물을 녹이는 방법'. 또한 삭제된 왓츠앱 메시지 스레드가 부분적으로 복구되어 아난드 박사가 '아므리트 디캔터가 유일한 선택입니다. 다른 사람은 그것을 건드리지 않습니다'라고 쓴 것이 확인되었습니다.",
+                        "ja": "警察の法科学チームが裁判所命令でアナンド博士の個人携帯電話を回収した。プライベートブラウジングモードにもかかわらず保持されたデバイスのDNSキャッシュが殺人14日前の検索を明らかにした：「シアン化カリウム致死量体重アルコール相互作用」「ウイスキーに目に見える残留物なしにシアン化物を溶かす方法」。さらに削除されたWhatsAppメッセージスレッドが部分的に復元され、アナンド博士が「アムリットデカンターが唯一の選択肢。他の誰も触れない」と書いていた。"
+                    },
+                    "significance": {
+                        "en": "This is the single most damning piece of evidence. It proves premeditation of at least 14 days. The specific search terms — particularly 'cyanide in whisky without visible residue' and 'cardiac arrest differential diagnosis' — demonstrate that the killer planned not only the method of murder but also the method of concealment. The WhatsApp message proves Dr. Anand had identified the decanter as the delivery mechanism in advance.",
+                        "hi": "यह सबसे निंदनीय सबूत है। यह कम से कम 14 दिनों की पूर्व-योजना साबित करता है। विशिष्ट खोज शब्द — विशेष रूप से 'व्हिस्की में साइनाइड बिना दृश्य अवशेष के' और 'हृदय गति रुकने का विभेदक निदान' — दर्शाते हैं कि हत्यारे ने न केवल हत्या की विधि बल्कि छुपाने की विधि की भी योजना बनाई। व्हाट्सएप संदेश साबित करता है कि डॉ. आनंद ने पहले से डिकैंटर को वितरण तंत्र के रूप में पहचाना था।",
+                        "zh-CN": "这是最有力的证据。它证明了至少14天的预谋。特定的搜索词——特别是'威士忌中的氰化物不留可见残留物'和'心脏骤停鉴别诊断'——表明凶手不仅计划了谋杀方法，还计划了隐瞒方法。WhatsApp消息证明阿南德博士提前将酒壶确定为投毒机制。",
+                        "ko": "이것이 가장 결정적인 증거입니다. 최소 14일간의 사전 계획을 증명합니다. 특정 검색어들 — 특히 '위스키에 눈에 보이는 잔류물 없이 시안화물'과 '심정지 감별 진단' — 은 살인자가 살인 방법뿐만 아니라 은폐 방법도 계획했음을 보여줍니다. 왓츠앱 메시지는 아난드 박사가 미리 디캔터를 투여 메커니즘으로 확인했음을 증명합니다.",
+                        "ja": "これが最も決定的な証拠。少なくとも14日前からの計画性を証明する。特定の検索語——特に「ウイスキーに目に見える残留物なしにシアン化物」と「心停止鑑別診断」——は、犯人が殺害方法だけでなく隠蔽方法も計画していたことを示す。WhatsAppメッセージはアナンド博士が事前にデカンターを投与メカニズムとして特定していたことを証明する。"
+                    }
+                },
+                {
+                    "id": "evidence_007",
+                    "type": "witness",
+                    "name": "Meenakshi Devi's Partial Alibi Confirmation",
+                    "image": null,
+                    "description": {
+                        "en": "Meenakshi Devi confirmed that Kavya Nair was seated beside her in the durbar hall between 9:00 PM and 10:00 PM, but noted that Kavya excused herself at 9:15 PM for approximately 20 minutes, claiming to use the restroom. Meenakshi also confirmed that she herself had supervised the decanting of the 'Raigarh Amrit' whisky in the east wing vault at 9:00 PM — but that the vault was already unlocked when she arrived, which she found unusual. She assumed the Maharaja had unlocked it earlier.",
+                        "hi": "मीनाक्षी देवी ने पुष्टि की कि कव्या नायर रात 9:00 बजे से 10:00 बजे के बीच दरबार हॉल में उनके बगल में बैठी थी, लेकिन नोट किया कि कव्या ने रात 9:15 बजे लगभग 20 मिनट के लिए वॉशरूम जाने का बहाना बनाया। मीनाक्षी ने यह भी पुष्टि की कि जब वह पहुंची तो तिजोरी पहले से खुली थी, जो उन्हें असामान्य लगा।",
+                        "zh-CN": "米纳克希·黛维确认卡维亚·奈尔在晚上9:00到10:00之间坐在她旁边，但注意到卡维亚在9:15 PM借口去洗手间离开了约20分钟。米纳克希还确认她在晚上9:00在东翼金库监督了威士忌的倒酒过程——但她到达时金库已经解锁，这让她感到不寻常。",
+                        "ko": "메에나크시 데비는 카비야 나이르가 오후 9시부터 10시까지 알현실에서 자신 옆에 앉아 있었지만, 카비야가 오후 9시 15분에 약 20분간 화장실을 이유로 자리를 비웠다고 확인했습니다. 메에나크시는 또한 오후 9시에 동쪽 날개 금고에서 위스키 디캔팅을 감독했는데 도착했을 때 금고가 이미 잠금 해제되어 있었다고 확인했습니다.",
+                        "ja": "メーナクシー・デーヴィーがカヴィヤ・ナイルが午後9時〜10時にダルバールホールで隣に座っていたことを確認したが、カヴィヤが9時15分にトイレを理由に約20分間退席したと述べた。メーナクシーはまた午後9時に東翼金庫でウイスキーのデカンティングを監督したが、到着時に金庫がすでに解錠されていたことを確認し、これを異常と感じたと述べた。"
+                    },
+                    "significance": {
+                        "en": "The vault being already unlocked at 9:00 PM when Meenakshi arrived confirms that someone with vault combination knowledge had been inside before 9:00 PM — consistent with Dr. Anand being seen near the vault corridor at 9:20 PM after already having poisoned the decanter. It also partially clears Kavya Nair for the 9:00–9:15 PM window but leaves her movements between 9:15–9:35 PM unaccounted for.",
+                        "hi": "मीनाक्षी के आने पर रात 9:00 बजे तिजोरी पहले से खुली होना पुष्टि करता है कि तिजोरी संयोजन ज्ञान वाला कोई व्यक्ति 9:00 बजे से पहले अंदर था — जो डॉ. आनंद को रात 9:20 बजे तिजोरी गलियारे के पास देखे जाने के अनुरूप है।",
+                        "zh-CN": "米纳克希到达时金库已在9:00 PM解锁，确认了在9:00 PM之前已有知道金库密码的人进入——与阿南德博士在9:20 PM被看到在金库走廊附近一致，那时她已经毒化了酒壶。",
+                        "ko": "메에나크시가 도착했을 때 오후 9시에 금고가 이미 잠금 해제되어 있었다는 것은 오후 9시 이전에 금고 조합 지식을 가진 누군가가 안에 있었음을 확인합니다. 이는 아난드 박사가 디캔터에 독을 넣은 후 오후 9시 20분에 금고 복도 근처에서 목격된 것과 일치합니다.",
+                        "ja": "メーナクシーが到着した午後9時に金庫がすでに解錠されていたことは、午後9時前に金庫の組み合わせを知る人物が内部にいたことを確認する——デカンターに毒を入れた後の午後9時20分に金庫廊下近くで目撃されたアナンド博士と一致する。"
+                    }
+                },
+                {
+                    "id": "evidence_008",
+                    "type": "document",
+                    "name": "Crumpled Will Printout (Arjun's Copy)",
+                    "image": null,
+                    "description": {
+                        "en": "A crumpled printout of the revised will's key page — specifically the page removing Arjun Singh as primary heir — found on the reading bench in the east wing gallery. The printout bore Arjun's fingerprints and a handwritten annotation in the margin in his handwriting: 'He can't do this. Not before Tuesday.' Tuesday was the scheduled date for the Maharaja's appointment with his legal team to formally execute the revised will.",
+                        "hi": "संशोधित वसीयत के मुख्य पृष्ठ का एक मुड़ा हुआ प्रिंटआउट — विशेष रूप से अर्जुन सिंह को प्राथमिक उत्तराधिकारी के रूप में हटाने वाला पृष्ठ — पूर्वी विंग गैलरी की रीडिंग बेंच पर मिला। प्रिंटआउट पर अर्जुन के उंगलियों के निशान थे और हाशिये पर उनकी लिखावट में हस्तलिखित टिप्पणी थी: 'वह ऐसा नहीं कर सकता। मंगलवार से पहले नहीं।'",
+                        "zh-CN": "修订遗嘱关键页面的皱巴巴打印件——特别是将阿尔琼·辛格作为主要继承人删除的页面——在东翼画廊阅读长椅上发现。打印件上有阿尔琼的指纹，页边空白处有他手写的注释：'他不能这样做。不能在周二之前。'周二是大君与法律团队正式执行修订遗嘱的预定日期。",
+                        "ko": "동쪽 날개 갤러리 독서 벤치에서 발견된 개정 유언장의 핵심 페이지 — 특히 아르준 싱을 주요 상속인에서 제거하는 페이지 — 의 구겨진 인쇄물입니다. 인쇄물에는 아르준의 지문이 있었고 여백에 그의 필체로 손으로 쓴 주석이 있었습니다: '그는 이렇게 할 수 없다. 화요일 전에는 안 된다.'",
+                        "ja": "東翼ギャラリーの読書ベンチで発見された改訂遺言書の重要ページ——特にアルジュン・シンを主要相続人から外すページ——のくしゃくしゃの印刷物。印刷物にはアルジュンの指紋があり、余白に彼の筆跡で手書きのメモ：「彼にはこんなことはできない。火曜日の前には。」火曜日はマハラジャが法律チームと改訂遺言書を正式に執行する予定日だった。"
+                    },
+                    "significance": {
+                        "en": "Establishes that Arjun Singh had obtained and read the revised will — confirming he was fully aware of his impending disinheritance. The annotation 'Not before Tuesday' reveals he knew the precise deadline and was desperate to prevent it. However, this evidence is a red herring in terms of the actual murder — Arjun had motive and opportunity proximity, but lacked the specific technical knowledge to execute the poisoning. It establishes him as a prime suspect, not the killer.",
+                        "hi": "स्थापित करता है कि अर्जुन सिंह ने संशोधित वसीयत प्राप्त की और पढ़ी थी — पुष्टि करता है कि वह अपनी आसन्न बेदखली के बारे में पूरी तरह से जानता था। टिप्पणी 'मंगलवार से पहले नहीं' से पता चलता है कि वह सटीक समय सीमा जानता था। हालांकि, यह सबूत वास्तविक हत्या के संदर्भ में एक भ्रामक सुराग है।",
+                        "zh-CN": "证明阿尔琼·辛格已获得并阅读了修订遗嘱——确认他完全知道即将到来的剥夺继承权。注释'周二之前不行'表明他知道确切的截止日期并迫切希望阻止它。然而，就实际谋杀而言，这一证据是误导线索——阿尔琼有动机和机会，但缺乏执行毒杀的具体技术知识。",
+                        "ko": "아르준 싱이 개정 유언장을 입수하고 읽었음을 확립하여 임박한 상속 박탈을 완전히 알고 있었음을 확인합니다. '화요일 전에는 안 된다'는 주석은 그가 정확한 마감일을 알고 있었음을 보여줍니다. 그러나 실제 살인 측면에서는 레드 헤링입니다.",
+                        "ja": "アルジュン・シンが改訂遺言書を入手し読んでいたことを確立し、廃嫡が差し迫っていることを完全に認識していたことを確認する。「火曜日の前には」というメモは正確な期限を知っていたことを示す。しかし、実際の殺人に関してはレッドヘリング——アルジュンには動機と機会の近接性があったが、毒殺を実行する具体的な技術的知識がなかった。"
+                    }
+                },
+                {
+                    "id": "evidence_009",
+                    "type": "physical",
+                    "name": "Bhosale's Advocate Business Card with Handwritten Note",
+                    "image": null,
+                    "description": {
+                        "en": "A crumpled business card belonging to Bhosale's personal advocate, Advocate Suresh Malhotra of Malhotra & Associates, New Delhi, found near the peepal tree in the palace courtyard. The reverse side bore a handwritten note in blue ink, in Bhosale's handwriting — confirmed by a graphology expert: 'He knows about Hasdeo too. Deal with both.' The card had Bhosale's fingerprints on both sides. The note was written before the conclave, as the ink had partially dried and smudged from the evening humidity.",
+                        "hi": "भोसले के व्यक्तिगत अधिवक्ता, अधिवक्ता सुरेश मल्होत्रा का एक मुड़ा हुआ व्यवसाय कार्ड, महल के आंगन में पीपल के पेड़ के पास मिला। पीछे की तरफ नीली स्याही में भोसले की लिखावट में हस्तलिखित नोट था — एक ग्राफोलॉजी विशेषज्ञ द्वारा पुष्टि की गई: 'उसे हसदेव के बारे में भी पता है। दोनों से निपटो।' कार्ड पर दोनों तरफ भोसले के उंगलियों के निशान थे।",
+                        "zh-CN": "博萨尔私人律师马尔霍特拉律师事务所苏雷什·马尔霍特拉的皱巴巴名片，在宫殿庭院菩提树附近发现。背面有博萨尔笔迹的蓝色墨水手写便条——经笔迹专家确认：'他也知道哈斯德奥的事。两个都处理掉。'名片两面都有博萨尔的指纹。",
+                        "ko": "궁전 안뜰 핍팔 나무 근처에서 발견된 보살레의 개인 변호사 말호트라 앤 어소시에이츠의 수레시 말호트라 변호사의 구겨진 명함입니다. 뒷면에는 필적 전문가가 확인한 보살레의 필체로 파란 잉크로 손으로 쓴 메모가 있었습니다: '그도 하스데오에 대해 알고 있다. 둘 다 처리해라.'",
+                        "ja": "宮殿中庭のピーパルの木の近くで発見されたボサレの個人弁護士マルホトラ・アンド・アソシエイツのスレシュ・マルホトラ弁護士の皺くちゃの名刺。裏面に筆跡鑑定家が確認したボサレの筆跡で青インクの手書きメモ：「彼もハスデオのことを知っている。両方とも処理しろ。」名刺の両面にボサレの指紋があった。"
+                    },
+                    "significance": {
+                        "en": "Establishes Bhosale's awareness that both the Maharaja and Kavya Nair posed threats to him simultaneously — the Maharaja through the SEBI affidavit, and Kavya through her Hasdeo investigative story. The phrase 'Deal with both' is deeply incriminating but ultimately ambiguous — it could mean legal action rather than murder. This evidence establishes Bhosale as a suspect with extreme motive but does not place him at the vault or link him to the poison. It is a red herring for the murder itself.",
+                        "hi": "भोसले की जागरूकता स्थापित करता है कि महाराजा और कव्या नायर दोनों एक साथ उसके लिए खतरा थे। 'दोनों से निपटो' वाक्यांश गहरा आरोपात्मक है लेकिन अंततः अस्पष्ट है — इसका मतलब हत्या के बजाय कानूनी कार्रवाई हो सकता है। यह सबूत भोसले को अत्यधिक मकसद वाले संदिग्ध के रूप में स्थापित करता है लेकिन उसे जहर से नहीं जोड़ता।",
+                        "zh-CN": "证明博萨尔意识到大君和卡维亚·奈尔同时对他构成威胁。'两个都处理掉'这句话极具罪证性，但最终含糊不清——可能意味着法律行动而非谋杀。这一证据将博萨尔确立为有极大动机的嫌疑人，但不能将他与金库或毒药联系起来。就谋杀本身而言，这是一个误导线索。",
+                        "ko": "마하라자와 카비야 나이르 모두 동시에 보살레에게 위협이 되었다는 보살레의 인식을 확립합니다. '둘 다 처리해라'는 문구는 매우 유죄를 시사하지만 궁극적으로 모호합니다. 이 증거는 보살레를 극도의 동기를 가진 용의자로 확립하지만 그를 금고나 독약과 연결하지는 않습니다.",
+                        "ja": "マハラジャとカヴィヤ・ナイルの両方が同時にボサレに脅威をもたらしていたことへのボサレの認識を確立する。「両方とも処理しろ」というフレーズは非常に有罪を示唆するが最終的には曖昧——殺人ではなく法的措置を意味する可能性がある。この証拠はボサレを極度の動機を持つ容疑者として確立するが、金庫や毒と結びつけない。殺人自体に関してはレッドヘリング。"
+                    }
+                }
+            ],
+            "timeline": [
+                {
+                    "time": "7:00 PM",
+                    "event": {
+                        "en": "All five guests arrive at Raigarh Palace. The district administration issues a flash flood warning, and the palace's outer gates are sealed by the Maharaja's order. No one can enter or leave. The 'Raigarh Amrit' whisky decanter is confirmed inside the east wing vault, sealed and untouched, by head steward Govind Prasad during his evening inventory check.",
+                        "hi": "सभी पांच मेहमान रायगढ़ महल पहुंचे। जिला प्रशासन ने अचानक बाढ़ की चेतावनी जारी की और महाराजा के आदेश से महल के बाहरी द्वार बंद कर दिए गए। 'रायगढ़ अमृत' व्हिस्की डिकैंटर को प्रमुख स्टीवर्ड गोविंद प्रसाद ने अपनी शाम की इन्वेंटरी जांच के दौरान पूर्वी विंग तिजोरी के अंदर सील और अछूता पुष्टि किया।",
+                        "zh-CN": "所有五位客人抵达赖加尔宫殿。区政府发布山洪警报，大君下令封闭宫殿外门。总管戈文德·普拉萨德在晚间库存检查中确认'赖加尔甘露'威士忌酒壶在东翼金库内，密封完好。",
+                        "ko": "다섯 손님 모두 라이가르 궁전에 도착했습니다. 지구 행정부가 갑작스러운 홍수 경보를 발령하고 마하라자의 명령으로 궁전 외부 문이 봉쇄되었습니다. 수석 집사 고빈드 프라사드가 저녁 재고 점검 중 '라이가르 아므리트' 위스키 디캔터가 동쪽 날개 금고 안에 봉인된 채 손대지 않은 상태임을 확인했습니다.",
+                        "ja": "5人のゲスト全員がライガル宮殿に到着。地区行政が突発的洪水警報を発令し、マハラジャの命令で宮殿の外門が封鎖された。首席スチュワードのゴヴィンド・プラサードが夕方の在庫確認で「ライガル・アムリット」ウイスキーデカンターが東翼金庫内に封印・未開封で保管されていることを確認した。"
+                    },
+                    "location": "location_001",
+                    "witnesses": [
+                        "Govind Prasad"
+                    ]
+                },
+                {
+                    "time": "7:45 PM",
+                    "event": {
+                        "en": "Rajendra Bhosale is seen arguing heatedly with the Maharaja in the palace courtyard. Palace staff member Sunita Rao overhears Bhosale say: 'If you file that affidavit, I will make sure you don't live to see the verdict.' The Maharaja dismisses him coldly and returns inside. Bhosale remains in the courtyard alone for approximately 10 minutes before rejoining the group.",
+                        "hi": "राजेंद्र भोसले को महल के आंगन में महाराजा के साथ गरमागरम बहस करते देखा गया। महल के कर्मचारी सुनीता राव ने भोसले को यह कहते सुना: 'अगर तुमने वह हलफनामा दाखिल किया, तो मैं यह सुनिश्चित करूंगा कि तुम फैसला देखने के लिए जीवित न रहो।' महाराजा ने उसे ठंडे तरीके से खारिज कर दिया।",
+                        "zh-CN": "拉金德拉·博萨尔在宫殿庭院与大君激烈争吵。宫殿工作人员苏尼塔·拉奥听到博萨尔说：'如果你提交那份宣誓书，我会确保你活不到看到判决的那天。'大君冷冷地驳斥了他。",
+                        "ko": "라젠드라 보살레가 궁전 안뜰에서 마하라자와 격렬하게 다투는 것이 목격되었습니다. 궁전 직원 수니타 라오가 보살레가 '그 선서 진술서를 제출하면 판결을 볼 때까지 살아있지 못하게 하겠다'고 말하는 것을 들었습니다.",
+                        "ja": "ラジェンドラ・ボサレが宮殿中庭でマハラジャと激しく口論しているのが目撃された。宮殿スタッフのスニータ・ラオがボサレが「その宣誓供述書を提出したら、判決を見るまで生きていられないようにしてやる」と言うのを聞いた。マハラジャは冷たく彼を退けた。"
+                    },
+                    "location": "location_005",
+                    "witnesses": [
+                        "Sunita Rao"
+                    ]
+                },
+                {
+                    "time": "8:28 PM",
+                    "event": {
+                        "en": "The palace medical dispensary's biometric access log records Dr. Priya Anand entering the dispensary. She later claims she arrived at 8:30 PM to review blood reports. The 2-minute discrepancy is critical — the biometric log cannot be falsified. This is the window in which she retrieved the potassium cyanide ampoule from the dispensary's controlled substances cabinet.",
+                        "hi": "महल के मेडिकल डिस्पेंसरी का बायोमेट्रिक एक्सेस लॉग डॉ. प्रिया आनंद के डिस्पेंसरी में प्रवेश को रिकॉर्ड करता है। वह बाद में दावा करती है कि वह रक्त रिपोर्ट की समीक्षा करने के लिए 8:30 बजे पहुंची। यह वह समय है जब उसने डिस्पेंसरी के नियंत्रित पदार्थ कैबिनेट से पोटेशियम साइनाइड एम्पुल प्राप्त किया।",
+                        "zh-CN": "宫殿医疗药房的生物识别访问日志记录阿南德博士进入药房。她后来声称在8:30到达审查血液报告。2分钟的差异至关重要——生物识别日志无法伪造。这是她从药房受控物质柜中取出氰化钾安瓿的时间窗口。",
+                        "ko": "궁전 의료 조제실의 생체 인식 접근 로그가 아난드 박사의 조제실 입장을 기록합니다. 그녀는 나중에 혈액 검사 결과 검토를 위해 8시 30분에 도착했다고 주장합니다. 2분의 불일치는 결정적입니다. 이것이 그녀가 조제실의 통제 물질 캐비닛에서 시안화칼륨 앰풀을 꺼낸 시간대입니다.",
+                        "ja": "宮殿医療薬局の生体認証アクセスログがアナンド博士の薬局入室を記録。彼女は後に血液検査報告確認のため8時30分に到着したと主張。2分の差異は重要——生体認証ログは改ざんできない。これが薬局の管理物質キャビネットからシアン化カリウムアンプルを取り出した時間帯。"
+                    },
+                    "location": "location_003",
+                    "witnesses": [
+                        "Biometric Access Log"
+                    ]
+                },
+                {
+                    "time": "9:00 PM",
+                    "event": {
+                        "en": "Meenakshi Devi proceeds to the east wing vault to oversee the ceremonial decanting of the 'Raigarh Amrit' whisky — a tradition she insists upon as former Maharani. She finds the vault already unlocked upon arrival, which she considers unusual but attributes to the Maharaja. The decanter has already been poisoned at this point. She decants the whisky into a serving crystal and has it placed on the durbar hall serving tray.",
+                        "hi": "मीनाक्षी देवी 'रायगढ़ अमृत' व्हिस्की की औपचारिक डिकैंटिंग की निगरानी के लिए पूर्वी विंग तिजोरी की ओर बढ़ती है। वह पहुंचने पर तिजोरी को पहले से खुला पाती है, जो उसे असामान्य लगता है। इस बिंदु तक डिकैंटर पहले ही जहरीला हो चुका है।",
+                        "zh-CN": "米纳克希·黛维前往东翼金库监督'赖加尔甘露'威士忌的仪式倒酒。她到达时发现金库已经解锁，觉得不寻常。此时酒壶已经被下毒。她将威士忌倒入服务水晶杯并放在觐见厅托盘上。",
+                        "ko": "메에나크시 데비가 '라이가르 아므리트' 위스키의 의식적 디캔팅을 감독하기 위해 동쪽 날개 금고로 향합니다. 도착 시 금고가 이미 잠금 해제되어 있는 것을 발견하고 이상하게 여깁니다. 이 시점에 디캔터는 이미 독이 들어 있습니다.",
+                        "ja": "メーナクシー・デーヴィーが「ライガル・アムリット」ウイスキーの儀式的デカンティングを監督するため東翼金庫へ向かう。到着時に金庫がすでに解錠されているのを発見し、異常と感じる。この時点でデカンターにはすでに毒が入っている。ウイスキーをサービス用クリスタルに注ぎダルバールホールのサービストレイに置かせた。"
+                    },
+                    "location": "location_001",
+                    "witnesses": [
+                        "Meenakshi Devi",
+                        "Govind Prasad"
+                    ]
+                },
+                {
+                    "time": "9:15 PM",
+                    "event": {
+                        "en": "Kavya Nair excuses herself from the durbar hall, claiming to use the restroom. She does not return for nearly 20 minutes. The east wing ground floor restroom is directly opposite the corridor leading to the private vault. Palace CCTV — partially functional due to a monsoon-related power fluctuation — shows a blurred figure in the east wing corridor at 9:18 PM, but the image is too degraded to identify.",
+                        "hi": "कव्या नायर दरबार हॉल से वॉशरूम जाने का बहाना बनाकर बाहर जाती है। वह लगभग 20 मिनट तक वापस नहीं आती। महल का सीसीटीवी — मानसून से संबंधित बिजली उतार-चढ़ाव के कारण आंशिक रूप से कार्यात्मक — रात 9:18 बजे पूर्वी विंग गलियारे में एक धुंधली आकृति दिखाता है, लेकिन छवि पहचानने के लिए बहुत खराब है।",
+                        "zh-CN": "卡维亚·奈尔借口去洗手间离开觐见厅。她近20分钟后才回来。宫殿闭路电视——由于季风相关电力波动而部分运作——在晚上9:18显示东翼走廊有一个模糊的身影，但图像太模糊无法识别。",
+                        "ko": "카비야 나이르가 화장실을 이유로 알현실에서 자리를 비웁니다. 약 20분간 돌아오지 않습니다. 몬순 관련 전력 변동으로 부분적으로 작동하는 궁전 CCTV가 오후 9시 18분에 동쪽 날개 복도에서 흐릿한 인물을 보여주지만 식별하기에는 너무 화질이 낮습니다.",
+                        "ja": "カヴィヤ・ナイルがトイレを理由にダルバールホールから退席。約20分間戻らない。モンスーン関連の電力変動で部分的にしか機能しない宮殿のCCTVが午後9時18分に東翼廊下で不鮮明な人物を映しているが、画像が劣化しすぎて識別できない。"
+                    },
+                    "location": "location_001",
+                    "witnesses": [
+                        "Meenakshi Devi",
+                        "CCTV (partial)"
+                    ]
+                },
+                {
+                    "time": "9:20 PM",
+                    "event": {
+                        "en": "Palace guard Ramesh Tiwari observes Dr. Priya Anand walking alone in the east wing corridor, carrying her small black leather medical bag, and appearing to enter the vault anteroom. This is the critical window — Dr. Anand had already retrieved the cyanide ampoule from the dispensary at 8:28 PM and is now at the vault to administer the poison into the decanter. She is not seen returning to the main hall until 9:45 PM.",
+                        "hi": "महल के गार्ड रमेश तिवारी डॉ. प्रिया आनंद को पूर्वी विंग गलियारे में अकेले चलते देखते हैं, अपना छोटा काला चमड़े का मेडिकल बैग लेकर, और तिजोरी के एंटीरूम में प्रवेश करते प्रतीत होते हैं। यह महत्वपूर्ण समय है — डॉ. आनंद पहले ही 8:28 बजे डिस्पेंसरी से साइनाइड एम्पुल प्राप्त कर चुकी हैं और अब डिकैंटर में जहर डालने के लिए तिजोरी में हैं।",
+                        "zh-CN": "宫殿警卫拉梅什·蒂瓦里看到阿南德博士独自在东翼走廊行走，携带她的小黑色皮革医疗包，似乎进入了金库前室。这是关键时间窗口——阿南德博士已在8:28从药房取出氰化钾安瓿，现在在金库向酒壶中投毒。",
+                        "ko": "궁전 경비원 라메시 티와리가 아난드 박사가 작은 검은 가죽 의료 가방을 들고 동쪽 날개 복도를 혼자 걷는 것을 목격하고 금고 전실로 들어가는 것처럼 보입니다. 이것이 핵심 시간대입니다. 아난드 박사는 이미 오후 8시 28분에 조제실에서 시안화물 앰풀을 꺼냈으며 이제 디캔터에 독을 주입하기 위해 금고에 있습니다.",
+                        "ja": "宮殿警備員ラメシュ・ティワリがアナンド博士が小さな黒い革の医療バッグを持って東翼廊下を一人で歩き、金庫の前室に入るように見えるのを目撃。これが重要な時間帯——アナンド博士はすでに8時28分に薬局からシアン化カリウムアンプルを取り出しており、今デカンターに毒を入れるため金庫にいる。"
+                    },
+                    "location": "location_001",
+                    "witnesses": [
+                        "Ramesh Tiwari"
+                    ]
+                },
+                {
+                    "time": "9:45 PM",
+                    "event": {
+                        "en": "Dr. Priya Anand reappears in the main durbar hall area, appearing composed. She returns to her seat. The poisoned whisky decanter has already been served to the Maharaja's glass by the head steward. The Maharaja is engaged in conversation with Rajendra Bhosale and Arjun Singh. Kavya Nair has also returned from her unexplained 20-minute absence.",
+                        "hi": "डॉ. प्रिया आनंद मुख्य दरबार हॉल क्षेत्र में शांत दिखते हुए फिर से प्रकट होती हैं। जहरीला व्हिस्की डिकैंटर पहले ही प्रमुख स्टीवर्ड द्वारा महाराजा के गिलास में परोसा जा चुका है। कव्या नायर भी अपनी अस्पष्टीकृत 20 मिनट की अनुपस्थिति से वापस आ गई है।",
+                        "zh-CN": "阿南德博士重新出现在主觐见厅区域，看起来镇定自若。毒化的威士忌酒壶已经由总管倒入大君的杯子。卡维亚·奈尔也从她无法解释的20分钟缺席中回来了。",
+                        "ko": "아난드 박사가 차분한 모습으로 주 알현실 구역에 다시 나타납니다. 독이 든 위스키 디캔터는 이미 수석 집사에 의해 마하라자의 잔에 따라져 있습니다. 카비야 나이르도 설명되지 않은 20분간의 부재에서 돌아왔습니다.",
+                        "ja": "アナンド博士が落ち着いた様子でメインのダルバールホールエリアに再び現れる。毒入りウイスキーデカンターはすでに首席スチュワードによってマハラジャのグラスに注がれている。カヴィヤ・ナイルも説明のつかない20分間の不在から戻っている。"
+                    },
+                    "location": "location_002",
+                    "witnesses": [
+                        "Govind Prasad",
+                        "Ramesh Tiwari"
+                    ]
+                },
+                {
+                    "time": "10:00 PM",
+                    "event": {
+                        "en": "The formal conclave begins in the durbar hall. The Maharaja addresses all five guests, announcing his intentions regarding the revised will, the CBI referral for Arjun's embezzlement, the SEBI affidavit against Bhosale, the Trust removal notice for Meenakshi, and the defamation suit against Kavya. The atmosphere is described by palace staff as 'electric with tension.' The Maharaja raises his whisky glass for a ceremonial toast.",
+                        "hi": "दरबार हॉल में औपचारिक सभा शुरू होती है। महाराजा सभी पांच मेहमानों को संबोधित करते हैं, संशोधित वसीयत, अर्जुन की हेराफेरी के लिए सीबीआई रेफरल, भोसले के खिलाफ सेबी हलफनामा, मीनाक्षी के लिए ट्रस्ट हटाने की नोटिस और कव्या के खिलाफ मानहानि मुकदमे के बारे में अपने इरादों की घोषणा करते हैं। महाराजा औपचारिक乾杯 के लिए अपना व्हिस्की गिलास उठाते हैं।",
+                        "zh-CN": "觐见厅正式会议开始。大君向所有五位客人宣布他关于修订遗嘱、阿尔琼挪用公款的中央调查局转介、针对博萨尔的证券交易委员会宣誓书、米纳克希的信托撤销通知和针对卡维亚的诽谤诉讼的意图。大君举起威士忌杯进行仪式性祝酒。",
+                        "ko": "알현실에서 공식 회의가 시작됩니다. 마하라자가 다섯 손님 모두에게 개정 유언장, 아르준의 횡령에 대한 CBI 의뢰, 보살레에 대한 SEBI 선서 진술서, 메에나크시에 대한 신탁 제거 통보, 카비야에 대한 명예훼손 소송에 관한 의도를 발표합니다. 마하라자가 의식적 건배를 위해 위스키 잔을 들어올립니다.",
+                        "ja": "ダルバールホールで正式な会議が始まる。マハラジャが5人のゲスト全員に改訂遺言書、アルジュンの横領のCBI告発、ボサレへのSEBI宣誓供述書、メーナクシーへの信託解任通知、カヴィヤへの名誉毀損訴訟についての意図を発表する。マハラジャが儀式的な乾杯のためウイスキーグラスを持ち上げる。"
+                    },
+                    "location": "location_002",
+                    "witnesses": [
+                        "All five suspects",
+                        "Govind Prasad",
+                        "Sunita Rao"
+                    ]
+                },
+                {
+                    "time": "10:23 PM",
+                    "event": {
+                        "en": "The Maharaja convulses violently mid-toast, clutching his chest and throat simultaneously. He collapses from his ivory throne chair onto the marble floor. Dr. Priya Anand is the first to reach him — within seconds — and declares him dead within three minutes, citing 'acute cardiac arrest.' She does this before any other examination is possible. Palace staff member Govind Prasad detects a faint bitter almond scent near the Maharaja's overturned glass and alerts the others. Arjun Singh immediately attempts to leave the durbar hall but is stopped by palace guards.",
+                        "hi": "महाराजा乾杯 के बीच में तेजी से कांपते हैं, एक साथ अपनी छाती और गले को थामते हुए। वह अपनी हाथीदांत सिंहासन कुर्सी से संगमरमर के फर्श पर गिर पड़ते हैं। डॉ. प्रिया आनंद सेकंड के भीतर सबसे पहले उनके पास पहुंचती हैं और तीन मिनट के भीतर 'तीव्र हृदय गति रुकने' का हवाला देते हुए उन्हें मृत घोषित करती हैं। महल के कर्मचारी गोविंद प्रसाद महाराजा के उलटे गिलास के पास हल्की कड़वी बादाम की गंध महसूस करते हैं।",
+                        "zh-CN": "大君在祝酒中途剧烈抽搐，同时捂住胸口和喉咙。他从象牙王座椅上倒在大理石地板上。阿南德博士在几秒钟内第一个赶到，在三分钟内宣布他死亡，称'急性心脏骤停'。宫殿工作人员戈文德·普拉萨德在大君翻倒的酒杯附近闻到淡淡的苦杏仁气味。阿尔琼·辛格立即试图离开觐见厅但被宫殿警卫拦住。",
+                        "ko": "마하라자가 건배 중에 격렬하게 경련을 일으키며 가슴과 목을 동시에 붙잡습니다. 상아 왕좌에서 대리석 바닥으로 쓰러집니다. 아난드 박사가 몇 초 안에 가장 먼저 달려가 3분 내에 '급성 심정지'를 이유로 사망을 선언합니다. 궁전 직원 고빈드 프라사드가 마하라자의 뒤집힌 잔 근처에서 희미한 쓴 아몬드 향을 감지합니다. 아르준 싱이 즉시 알현실을 떠나려 하지만 궁전 경비원에게 저지됩니다.",
+                        "ja": "マハラジャが乾杯の最中に激しく痙攣し、胸と喉を同時に押さえる。象牙の玉座から大理石の床に倒れる。アナンド博士が数秒以内に最初に駆けつけ、「急性心停止」を理由に3分以内に死亡を宣告。宮殿スタッフのゴヴィンド・プラサードがマハラジャのひっくり返ったグラス近くで微かな苦いアーモンドの臭いに気づく。アルジュン・シンが即座にダルバールホールを出ようとするが宮殿警備員に阻止される。"
+                    },
+                    "location": "location_002",
+                    "witnesses": [
+                        "All five suspects",
+                        "Govind Prasad",
+                        "Sunita Rao",
+                        "Ramesh Tiwari"
+                    ]
+                },
+                {
+                    "time": "11:00 PM",
+                    "event": {
+                        "en": "Police are contacted via satellite phone due to the flood cutting off road access. The Chhattisgarh CID's Special Crimes Unit dispatches Detective Inspector Nalini Sharma by helicopter, who arrives at 12:45 AM. The palace is sealed. All guests are detained. During the initial sweep, the crushed ampoule is found in the dispensary waste bin, the crumpled will printout is found in the gallery, and Bhosale's advocate card with the threatening note is found in the courtyard.",
+                        "hi": "बाढ़ के कारण सड़क पहुंच बंद होने के कारण सैटेलाइट फोन के माध्यम से पुलिस से संपर्क किया गया। छत्तीसगढ़ सीआईडी की विशेष अपराध इकाई ने डिटेक्टिव इंस्पेक्टर नलिनी शर्मा को हेलीकॉप्टर से भेजा, जो रात 12:45 बजे पहुंचती हैं। महल को सील कर दिया गया। सभी मेहमानों को हिरासत में लिया गया।",
+                        "zh-CN": "由于洪水切断道路，通过卫星电话联系警察。恰蒂斯加尔邦刑事调查局特别犯罪部门派遣纳利尼·夏尔马侦探长乘直升机，于凌晨12:45到达。宫殿被封锁。所有客人被拘留。初始搜查中发现了压碎的安瓿、皱巴巴的遗嘱打印件和带有威胁便条的博萨尔律师名片。",
+                        "ko": "홍수로 도로 접근이 차단되어 위성 전화로 경찰에 연락했습니다. 차티스가르 CID 특별 범죄 수사대가 날리니 샤르마 경감을 헬리콥터로 파견하여 오전 12시 45분에 도착합니다. 궁전이 봉쇄됩니다. 모든 손님이 구금됩니다.",
+                        "ja": "洪水で道路アクセスが遮断されたため衛星電話で警察に連絡。チャッティースガル州CIDの特別犯罪部門がナリニ・シャルマ警部補をヘリコプターで派遣し、午前0時45分に到着。宮殿が封鎖される。全ゲストが拘留される。初期捜索で粉砕されたアンプル、くしゃくしゃの遺言書印刷物、脅迫メモ付きのボサレの弁護士名刺が発見される。"
+                    },
+                    "location": "location_002",
+                    "witnesses": [
+                        "Govind Prasad",
+                        "Ramesh Tiwari",
+                        "All five suspects"
+                    ]
+                }
+            ],
+            "solution": {
+                "culprit": "suspect_003",
+                "weapon": "weapon_001",
+                "location": "location_001",
+                "motive": {
+                    "en": "Dr. Priya Anand murdered Maharaja Vikramaditya Singh Raigarh to prevent him from reporting her to the Medical Council of India for falsifying his medical records, to stop the criminal complaint for medical fraud, and to protect the ₹18 lakh annual payments she received from Arjun Singh — all of which would have destroyed her career, her freedom, and her financial security simultaneously. The removal of her ₹1.5 crore bequest from the will was the final trigger.",
+                    "hi": "डॉ. प्रिया आनंद ने महाराजा विक्रमादित्य सिंह रायगढ़ की हत्या इसलिए की ताकि वे उनके चिकित्सा रिकॉर्ड में जालसाजी के लिए उन्हें मेडिकल काउंसिल ऑफ इंडिया को रिपोर्ट करने से रोक सकें, चिकित्सा धोखाधड़ी के लिए आपराधिक शिकायत को रोक सकें, और अर्जुन सिंह से प्राप्त ₹18 लाख वार्षिक भुगतान की रक्षा कर सकें। वसीयत से उनकी ₹1.5 करोड़ की विरासत को हटाना अंतिम ट्रिगर था।",
+                    "zh-CN": "阿南德博士谋杀了大君，以阻止他向印度医学委员会举报她伪造医疗记录，阻止医疗欺诈刑事投诉，并保护她从阿尔琼·辛格处获得的每年18万卢比的付款——所有这些都将同时摧毁她的职业生涯、自由和财务安全。从遗嘱中删除她的150万卢比遗产是最后的导火索。",
+                    "ko": "아난드 박사는 마하라자가 의료 기록 위조로 인도 의학 위원회에 신고하는 것을 막고, 의료 사기 형사 고발을 저지하고, 아르준 싱으로부터 받은 연간 18만 루피 지불을 보호하기 위해 마하라자를 살해했습니다. 유언장에서 150만 루피 유산 삭제가 최후의 방아쇠였습니다.",
+                    "ja": "アナンド博士はマハラジャが医療記録偽造でインド医学評議会に告発するのを防ぎ、医療詐欺の刑事告訴を阻止し、アルジュン・シンから受け取っていた年間18万ルピーの支払いを守るためにマハラジャを殺害した。遺言書からの150万ルピーの遺贈削除が最後の引き金となった。"
+                },
+                "explanation": {
+                    "en": "Dr. Priya Anand had been planning the murder for at least 14 days, as evidenced by her phone's DNS cache search history. She identified the 'Raigarh Amrit' whisky decanter as the perfect delivery mechanism — it was stored in a locked vault, poured exclusively for the Maharaja, and its high alcohol content would partially mask the cyanide odour until it was too late.\n\nOn the evening of the conclave, she entered the palace medical dispensary at 8:28 PM — two minutes before she claims she arrived — and retrieved a 2ml pharmaceutical-grade potassium cyanide ampoule from the controlled substances cabinet. She placed the ampoule in her black leather medical bag.\n\nAt approximately 9:20 PM, she proceeded to the east wing vault using the combination the Maharaja had given her during a medical emergency two years prior. She opened the decanter, dissolved the cyanide into the whisky, resealed it, wiped the decanter clean of fingerprints, and exited. Palace guard Ramesh Tiwari witnessed her in the corridor.\n\nMeenakshi Devi had already decanted from the poisoned decanter at 9:00 PM, unknowingly serving the poisoned whisky. When the Maharaja drank from his glass at 10:23 PM and collapsed, Dr. Anand was the first to reach him — allowing her to control the cause of death narrative by declaring 'cardiac arrest' before any official examination.\n\nShe then returned to the dispensary and crushed the ampoule in the hazardous waste bin — but in her haste, failed to fully destroy it.\n\nThe convergence of four irrefutable pieces of evidence seals her guilt: her phone search history proving 14 days of premeditation; the biometric log proving she entered the dispensary at 8:28 PM to retrieve the poison; the guard's testimony placing her at the vault at 9:20 PM; and the crushed ampoule with cyanide residue in the dispensary only she could access.",
+                    "hi": "डॉ. प्रिया आनंद कम से कम 14 दिनों से हत्या की योजना बना रही थीं, जैसा कि उनके फोन के DNS कैश खोज इतिहास से स्पष्ट है। उन्होंने 'रायगढ़ अमृत' व्हिस्की डिकैंटर को सही वितरण तंत्र के रूप में पहचाना।\n\nसभा की शाम, उन्होंने 8:28 बजे महल के मेडिकल डिस्पेंसरी में प्रवेश किया और नियंत्रित पदार्थ कैबिनेट से एक 2ml फार्मास्युटिकल-ग्रेड पोटेशियम साइनाइड एम्पुल प्राप्त किया।\n\nलगभग रात 9:20 बजे, उन्होंने उस संयोजन का उपयोग करके पूर्वी विंग तिजोरी की ओर बढ़ीं जो महाराजा ने दो साल पहले एक चिकित्सा आपातकाल के दौरान उन्हें दिया था। उन्होंने डिकैंटर खोला, व्हिस्की में साइनाइड घोला, इसे फिर से सील किया, डिकैंटर को उंगलियों के निशान से साफ किया और बाहर निकल गईं।\n\nजब महाराजा ने रात 10:23 बजे अपने गिलास से पिया और गिर पड़े, डॉ. आनंद सबसे पहले उनके पास पहुंचीं — किसी भी आधिकारिक परीक्षा से पहले 'हृदय गति रुकने' की घोषणा करके मृत्यु के कारण की कहानी को नियंत्रित करने की अनुमति देते हुए।",
+                    "zh-CN": "阿南德博士至少提前14天就在计划谋杀，如她手机DNS缓存搜索历史所证明。她将'赖加尔甘露'威士忌酒壶确定为完美的投毒机制。\n\n会议当晚，她在8:28进入宫殿医疗药房，从受控物质柜中取出2毫升药用级氰化钾安瓿。\n\n大约在9:20，她使用大君两年前在医疗紧急情况下给她的密码前往东翼金库。她打开酒壶，将氰化物溶入威士忌，重新密封，擦去指纹，然后离开。\n\n当大君在10:23喝了他的酒杯并倒下时，阿南德博士第一个赶到——在任何官方检查之前宣布'心脏骤停'来控制死亡原因的叙述。\n\n四项无可辩驳的证据汇聚证明了她的罪行：证明14天预谋的手机搜索历史；证明她在8:28进入药房取毒的生物识别日志；将她置于9:20金库的警卫证词；以及只有她能访问的药房中带有氰化物残留的压碎安瓿。",
+                    "ko": "아난드 박사는 최소 14일 전부터 살인을 계획했으며, 이는 그녀의 전화기 DNS 캐시 검색 기록으로 입증됩니다. 그녀는 '라이가르 아므리트' 위스키 디캔터를 완벽한 투여 메커니즘으로 확인했습니다.\n\n회의 저녁, 그녀는 오후 8시 28분에 궁전 의료 조제실에 들어가 통제 물질 캐비닛에서 2ml 약학 등급 시안화칼륨 앰풀을 꺼냈습니다.\n\n오후 9시 20분경, 그녀는 2년 전 의료 응급 상황에서 마하라자가 준 조합을 사용하여 동쪽 날개 금고로 향했습니다. 디캔터를 열고, 위스키에 시안화물을 녹이고, 다시 밀봉하고, 지문을 닦아냈습니다.\n\n마하라자가 오후 10시 23분에 잔을 마시고 쓰러졌을 때, 아난드 박사가 가장 먼저 달려가 공식 검사 전에 '심정지'를 선언하여 사인 서사를 통제했습니다.\n\n네 가지 반박할 수 없는 증거가 그녀의 유죄를 확정합니다: 14일간의 사전 계획을 증명하는 전화 검색 기록; 독을 꺼내기 위해 오후 8시 28분에 조제실에 들어갔음을 증명하는 생체 인식 로그; 오후 9시 20분에 금고에 있었음을 증명하는 경비원 증언; 그녀만 접근할 수 있는 조제실의 시안화물 잔류물이 있는 부서진 앰풀.",
+                    "ja": "アナンド博士は少なくとも14日前から殺人を計画していた——携帯電話のDNSキャッシュ検索履歴が証明する。「ライガル・アムリット」ウイスキーデカンターを完璧な投与メカニズムとして特定した。\n\n会議の夜、午後8時28分に宮殿医療薬局に入り、管理物質キャビネットから2ml薬学グレードシアン化カリウムアンプルを取り出した。\n\n午後9時20分頃、2年前の医療緊急時にマハラジャから教えられた組み合わせを使って東翼金庫へ向かった。デカンターを開け、ウイスキーにシアン化物を溶かし、再封して指紋を拭き取り、退出した。\n\nマハラジャが午後10時23分にグラスを飲んで倒れた時、アナンド博士が最初に駆けつけ——公式検査前に「心停止」を宣告することで死因の物語を制御した。\n\n4つの反駁不可能な証拠が彼女の有罪を確定する：14日間の計画性を証明する電話検索履歴；毒を取り出すため8時28分に薬局に入ったことを証明する生体認証ログ；9時20分に金庫にいたことを証明する警備員の証言；彼女だけがアクセスできる薬局のシアン化物残留物付き粉砕アンプル。"
+                },
+                "key_evidence": [
+                    "evidence_006",
+                    "evidence_002",
+                    "evidence_004",
+                    "evidence_001"
+                ],
+                "red_herrings": [
+                    {
+                        "en": "The ceremonial kirpan with the Maharaja's blood — this indicated a prior physical altercation in the east wing corridor but was entirely unrelated to the actual method of murder. It suggests the Maharaja may have encountered someone near the vault earlier in the evening but was not killed by the blade.",
+                        "hi": "महाराजा के खून के साथ औपचारिक कृपाण — यह पूर्वी विंग गलियारे में एक पूर्व शारीरिक झड़प का संकेत देता है लेकिन हत्या की वास्तविक विधि से पूरी तरह से असंबंधित है।",
+                        "zh-CN": "带有大君血迹的仪式克里斯匕首——这表明东翼走廊发生了之前的身体争执，但与实际谋杀方式完全无关。",
+                        "ko": "마하라자의 혈흔이 있는 의식용 키르판 — 이는 동쪽 날개 복도에서 이전의 신체적 충돌을 나타내지만 실제 살인 방법과는 전혀 무관합니다.",
+                        "ja": "マハラジャの血痕がついた儀式用キルパン——東翼廊下での以前の身体的衝突を示すが、実際の殺害方法とは全く無関係。"
+                    },
+                    {
+                        "en": "Rajendra Bhosale's threatening statement in the courtyard — 'If you file that affidavit, I will make sure you don't live to see the verdict' — is deeply incriminating but Bhosale was confirmed at the dinner table by multiple witnesses at the time of death and had no access to the vault or knowledge of the poison.",
+                        "hi": "राजेंद्र भोसले का आंगन में धमकी भरा बयान गहरा आरोपात्मक है लेकिन मृत्यु के समय कई गवाहों द्वारा डिनर टेबल पर पुष्टि की गई और उसके पास तिजोरी तक पहुंच या जहर का ज्ञान नहीं था।",
+                        "zh-CN": "拉金德拉·博萨尔在庭院的威胁性陈述极具罪证性，但他在死亡时被多名证人确认在餐桌旁，且无法进入金库或了解毒药。",
+                        "ko": "라젠드라 보살레의 안뜰에서의 위협적인 발언은 매우 유죄를 시사하지만 사망 당시 여러 증인이 식탁에 있었음을 확인했으며 금고 접근이나 독약 지식이 없었습니다.",
+                        "ja": "ラジェンドラ・ボサレの中庭での脅迫的発言は非常に有罪を示唆するが、死亡時に複数の証人がテーブルにいたことを確認しており、金庫へのアクセスや毒の知識がなかった。"
+                    },
+                    {
+                        "en": "Arjun Singh's crumpled will printout with the annotation 'Not before Tuesday' — establishes desperate motive and opportunity proximity (his gallery adjoins the vault corridor), but Arjun lacked the pharmacological knowledge to source and administer potassium cyanide, and the vault combination he possessed was revoked by the Maharaja one month prior, as confirmed by the locksmith's records.",
+                        "hi": "अर्जुन सिंह का 'मंगलवार से पहले नहीं' टिप्पणी के साथ मुड़ा हुआ वसीयत प्रिंटआउट — हताश मकसद स्थापित करता है, लेकिन अर्जुन के पास पोटेशियम साइनाइड प्राप्त करने और देने का औषधीय ज्ञान नहीं था, और उसके पास जो तिजोरी संयोजन था वह एक महीने पहले महाराजा द्वारा रद्द कर दिया गया था।",
+                        "zh-CN": "阿尔琼·辛格带有'周二之前不行'注释的皱巴巴遗嘱打印件——确立了绝望的动机和机会接近性，但阿尔琼缺乏获取和施用氰化钾的药理学知识，而且他拥有的金库密码已被大君一个月前撤销。",
+                        "ko": "아르준 싱의 '화요일 전에는 안 된다' 주석이 있는 구겨진 유언장 인쇄물 — 절박한 동기를 확립하지만 아르준은 시안화칼륨을 구하고 투여할 약리학적 지식이 없었으며, 그가 가진 금고 조합은 한 달 전 마하라자에 의해 취소되었습니다.",
+                        "ja": "アルジュン・シンの「火曜日の前には」というメモ付きのくしゃくしゃの遺言書印刷物——絶望的な動機を確立するが、アルジュンはシアン化カリウムを入手・投与する薬理学的知識がなく、彼が持っていた金庫の組み合わせは1ヶ月前にマハラジャによって取り消されていた。"
+                    },
+                    {
+                        "en": "Kavya Nair's unexplained 20-minute absence during the critical 9:15–9:35 PM window, and the blurred CCTV figure in the east wing corridor — she had strong motive and suspicious movements, but she did not know the vault combination, had no access to pharmaceutical cyanide, and her movements are consistent with a journalist attempting to photograph documents in the study adjacent to the corridor, not poisoning the decanter.",
+                        "hi": "महत्वपूर्ण 9:15-9:35 बजे की खिड़की के दौरान कव्या नायर की अस्पष्टीकृत 20 मिनट की अनुपस्थिति — उसके पास मजबूत मकसद और संदिग्ध हरकतें थीं, लेकिन उसे तिजोरी का संयोजन नहीं पता था और उसके पास फार्मास्युटिकल साइनाइड तक पहुंच नहीं थी।",
+                        "zh-CN": "卡维亚·奈尔在关键9:15-9:35 PM窗口的无法解释的20分钟缺席，以及东翼走廊的模糊闭路电视人影——她有强烈动机和可疑行动，但她不知道金库密码，无法获得药用氰化物。",
+                        "ko": "카비야 나이르의 핵심 오후 9시 15분~9시 35분 구간 동안의 설명되지 않은 20분 부재와 동쪽 날개 복도의 흐릿한 CCTV 인물 — 강한 동기와 의심스러운 행동이 있었지만 금고 조합을 몰랐고 약학 시안화물에 접근할 수 없었습니다.",
+                        "ja": "重要な午後9時15分〜9時35分の時間帯でのカヴィヤ・ナイルの説明のつかない20分間の不在と東翼廊下の不鮮明なCCTV人物——強い動機と疑わしい行動があったが、金庫の組み合わせを知らず、薬学シアン化物へのアクセスがなかった。"
+                    },
+                    {
+                        "en": "Meenakshi Devi insisting on the ceremonial whisky serving and supervising the decanting at 9:00 PM — she had access to the decanter at this point, but the vault was already unlocked when she arrived, meaning the poison had already been administered before she touched the decanter. She was the unwitting delivery person, not the poisoner.",
+                        "hi": "मीनाक्षी देवी का औपचारिक व्हिस्की सेवा पर जोर देना और रात 9:00 बजे डिकैंटिंग की निगरानी करना — उसके पास इस बिंदु पर डिकैंटर तक पहुंच थी, लेकिन जब वह पहुंची तो तिजोरी पहले से खुली थी, जिसका अर्थ है कि जहर पहले ही दिया जा चुका था।",
+                        "zh-CN": "米纳克希·黛维坚持仪式性威士忌供应并在9:00 PM监督倒酒——她在这时可以接触酒壶，但她到达时金库已经解锁，意味着毒药在她触碰酒壶之前已经被投放。她是不知情的传递者，而非投毒者。",
+                        "ko": "메에나크시 데비가 의식적 위스키 서빙을 고집하고 오후 9시에 디캔팅을 감독한 것 — 이 시점에 디캔터에 접근할 수 있었지만 도착 시 금고가 이미 잠금 해제되어 있었으며, 이는 그녀가 디캔터를 만지기 전에 독이 이미 주입되었음을 의미합니다. 그녀는 무의식적인 전달자였습니다.",
+                        "ja": "メーナクシー・デーヴィーが儀式的なウイスキー供与を主張し午後9時にデカンティングを監督したこと——この時点でデカンターに触れることができたが、到着時に金庫がすでに解錠されており、毒は彼女がデカンターに触れる前にすでに投与されていたことを意味する。彼女は無意識の運搬者であり、毒を入れた人物ではない。"
+                    }
+                ]
+            },
+            "created_at": "2026-07-30T10:00:00Z",
+            "updated_at": "2026-07-30T10:00:00Z",
+            "is_active": true
+        }
+  }
+}

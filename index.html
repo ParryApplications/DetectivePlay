@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GiveJustice - A realistic detective mystery game where you solve complex murder cases using professional investigation techniques.">
+    <meta name="keywords" content="detective game, mystery, investigation, crime solving, forensics">
+    <title>GiveJustice - Detective Mystery Game</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="alternate icon" href="images/favicon.svg">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&family=Courier+Prime&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/mystery.css">
+    <link rel="stylesheet" href="css/investigation-board.css">
+    <link rel="stylesheet" href="css/cards.css">
+</head>
+<body>
+    <!-- Device Restriction Message -->
+    <div id="deviceRestriction" class="device-restriction">
+        <div class="restriction-content">
+            <i class="fas fa-user-secret fa-4x mb-4"></i>
+            <h1 data-i18n="restriction.title">Detective Work Requires a Bigger Screen</h1>
+            <p data-i18n="restriction.message">This investigation platform is optimized for desktop and laptop computers.</p>
+            <p data-i18n="restriction.requirement">Please access from a device with a screen width of at least 1024px.</p>
+            <div class="current-size mt-3">
+                <span data-i18n="restriction.current">Your screen:</span> 
+                <span id="screenWidth" class="fw-bold">0</span>px
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Application -->
+    <div id="mainApp" class="main-app">
+        <!-- Navigation Header -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="logoLink">
+                    <img src="images/logo.svg" alt="DetectivePlay Logo" class="navbar-logo me-2">
+                    <span data-i18n="app.name">GiveJustice</span>
+                </a>
+                <div class="navbar-nav ms-auto">
+                    <!-- Language Selector - Only visible on dashboard -->
+                    <div class="dropdown me-3" id="languageSelector">
+                        <button class="btn btn-outline-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown">
+                            <i class="fas fa-globe me-2"></i>
+                            <span id="currentLanguage">English</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item active" href="#" data-lang="en">English</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="hi">हिंदी (Hindi)</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="zh-CN">中文 (Chinese)</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="ko">한국어 (Korean)</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="ja">日本語 (Japanese)</a></li>
+                        </ul>
+                    </div>
+                    <!-- Subscribe Button -->
+                    <button class="btn btn-outline-warning" id="subscribeBtn">
+                        <i class="fas fa-envelope me-2"></i>
+                        <span data-i18n="nav.subscribe">Subscribe</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Dashboard -->
+        <section id="dashboard" class="dashboard">
+            <div class="container">
+                <div class="dashboard-header text-center">
+                    <h1 class="display-3 mb-3" data-i18n="dashboard.title">Welcome, Detective</h1>
+                    <p class="lead mb-5" data-i18n="dashboard.subtitle">Every clue matters. Every detail counts. Justice awaits.</p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <!-- As Detective Mode -->
+                    <div class="col-md-5">
+                        <div class="mode-card" id="asDetectiveCard">
+                            <div class="mode-icon">
+                                <i class="fas fa-user-secret"></i>
+                            </div>
+                            <h3 data-i18n="dashboard.asDetective.title">As Detective</h3>
+                            <p data-i18n="dashboard.asDetective.description">Test your investigative skills. Analyze evidence, connect clues, and solve the mystery on your own.</p>
+                            <button class="btn btn-primary btn-lg" id="startAsDetective">
+                                <i class="fas fa-play me-2"></i>
+                                <span data-i18n="dashboard.asDetective.button">Start Investigation</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Solved Mystery Mode -->
+                    <div class="col-md-5">
+                        <div class="mode-card" id="solvedMysteryCard">
+                            <div class="mode-icon">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <h3 data-i18n="dashboard.solvedMystery.title">Solved Mystery</h3>
+                            <p data-i18n="dashboard.solvedMystery.description">Learn from solved cases. Understand the investigation process and see how evidence led to the truth.</p>
+                            <button class="btn btn-secondary btn-lg" id="startSolvedMystery">
+                                <i class="fas fa-book-reader me-2"></i>
+                                <span data-i18n="dashboard.solvedMystery.button">Read Case</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mystery View -->
+        <section id="mysteryView" class="mystery-view d-none">
+
+            <!-- ─────────────────────────────────────────────────────────
+                 BUG FIX: Removed data-bs-backdrop="static" from storyModal.
+                 "static" backdrop prevented ALL clicks outside the modal
+                 from registering — including the "Begin Investigation"
+                 footer button — causing the stuck/unclickable screen.
+                 The modal is now dismissible normally.
+                 ───────────────────────────────────────────────────────── -->
+            <div class="modal fade" id="storyModal" tabindex="-1">
+                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="storyTitle">Case File</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="storyContent" class="story-content"></div>
+                            
+                            <!-- Audio Controls -->
+                            <div class="audio-controls mt-4">
+                                <h6 data-i18n="story.audioTitle">Listen to Case File</h6>
+                                <div class="d-flex align-items-center gap-3 flex-wrap">
+                                    <button class="btn btn-primary" id="audioPlay">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                    <button class="btn btn-secondary" id="audioPause" disabled>
+                                        <i class="fas fa-pause"></i>
+                                    </button>
+                                    <button class="btn btn-secondary" id="audioReset">
+                                        <i class="fas fa-redo"></i>
+                                    </button>
+                                    <div class="speed-control">
+                                        <label for="audioSpeed" class="form-label mb-0 me-2">Speed:</label>
+                                        <select class="form-select form-select-sm" id="audioSpeed" style="width: auto;">
+                                            <option value="0.5">0.5x</option>
+                                            <option value="0.75">0.75x</option>
+                                            <option value="1" selected>1x</option>
+                                            <option value="1.25">1.25x</option>
+                                            <option value="1.5">1.5x</option>
+                                            <option value="2">2x</option>
+                                        </select>
+                                    </div>
+                                    <div class="progress flex-grow-1" style="min-width:100px">
+                                        <div class="progress-bar" id="audioProgress" role="progressbar" style="width: 0%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <!-- data-bs-dismiss closes the modal and triggers hidden.bs.modal -->
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                                <i class="fas fa-search me-2"></i>
+                                <span data-i18n="story.beginInvestigation">Begin Investigation</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Investigation Interface -->
+            <div class="container-fluid investigation-interface">
+                <div class="row">
+                    <!-- Left Sidebar - Evidence Cards -->
+                    <div class="col-md-3 evidence-sidebar">
+                        <div class="sidebar-header">
+                            <h4 data-i18n="investigation.evidence">Evidence</h4>
+                            <div class="search-box">
+                                <input type="text" class="form-control" id="evidenceSearch" placeholder="Search evidence..." data-i18n-placeholder="investigation.searchEvidence">
+                            </div>
+                        </div>
+                        
+                        <!-- Category Tabs -->
+                        <ul class="nav nav-tabs evidence-tabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#suspectsTab" type="button" role="tab">
+                                    <i class="fas fa-users"></i>
+                                    <span data-i18n="investigation.suspects">Suspects</span>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#weaponsTab" type="button" role="tab">
+                                    <i class="fas fa-gun"></i>
+                                    <span data-i18n="investigation.weapons">Weapons</span>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#locationsTab" type="button" role="tab">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span data-i18n="investigation.locations">Locations</span>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#evidenceTab" type="button" role="tab">
+                                    <i class="fas fa-fingerprint"></i>
+                                    <span data-i18n="investigation.clues">Clues</span>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#timelineTab" type="button" role="tab">
+                                    <i class="fas fa-clock"></i>
+                                    <span data-i18n="investigation.timeline">Timeline</span>
+                                </button>
+                            </li>
+                        </ul>
+
+                        <!-- Tab Content -->
+                        <div class="tab-content evidence-content">
+                            <div class="tab-pane fade show active" id="suspectsTab" role="tabpanel">
+                                <div id="suspectsList" class="cards-container"></div>
+                            </div>
+                            <div class="tab-pane fade" id="weaponsTab" role="tabpanel">
+                                <div id="weaponsList" class="cards-container"></div>
+                            </div>
+                            <div class="tab-pane fade" id="locationsTab" role="tabpanel">
+                                <div id="locationsList" class="cards-container"></div>
+                            </div>
+                            <div class="tab-pane fade" id="evidenceTab" role="tabpanel">
+                                <div id="evidenceList" class="cards-container"></div>
+                            </div>
+                            <div class="tab-pane fade" id="timelineTab" role="tabpanel">
+                                <div id="timelineList" class="cards-container"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Area - Investigation Board -->
+                    <div class="col-md-6 investigation-board-container">
+                        <div class="board-header">
+                            <h4 data-i18n="investigation.board">Investigation Board</h4>
+                            <div class="board-tools">
+                                <button class="btn btn-sm btn-outline-light" id="clearBoard" title="Clear Board">
+                                    <i class="fas fa-eraser"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-light" id="toggleConnections" title="Toggle Connection Mode">
+                                    <i class="fas fa-project-diagram"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <canvas id="investigationBoard" class="investigation-board"></canvas>
+                    </div>
+
+                    <!-- Right Sidebar - Notes & Solution -->
+                    <div class="col-md-3 notes-sidebar" id="notesSidebar">
+                        <button class="sidebar-collapse-btn" id="toggleSidebarBtn" title="Collapse Sidebar">
+                            <i class="fas fa-angles-right"></i>
+                        </button>
+                        <div class="sidebar-header">
+                            <h4 data-i18n="investigation.notes">Notes</h4>
+                        </div>
+                        <textarea id="notesArea" class="form-control notes-textarea" placeholder="Write your investigation notes here..."></textarea>
+                        
+                        <div class="solution-section mt-4 collapsed" id="solutionSection">
+                            <div class="solution-header" id="solutionHeader">
+                                <h5 data-i18n="investigation.submitSolution">Submit Solution</h5>
+                                <button type="button" class="btn btn-sm btn-outline-warning" id="toggleSolutionBtn">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <form id="solutionForm" class="solution-form-content">
+                                <div class="mb-3">
+                                    <label for="culpritSelect" class="form-label" data-i18n="solution.culprit">Culprit</label>
+                                    <select class="form-select" id="culpritSelect" required>
+                                        <option value="">Select suspect...</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="weaponSelect" class="form-label" data-i18n="solution.weapon">Weapon</label>
+                                    <select class="form-select" id="weaponSelect" required>
+                                        <option value="">Select weapon...</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="locationSelect" class="form-label" data-i18n="solution.location">Location</label>
+                                    <select class="form-select" id="locationSelect" required>
+                                        <option value="">Select location...</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="motiveText" class="form-label" data-i18n="solution.motive">Motive (Optional)</label>
+                                    <textarea class="form-control" id="motiveText" rows="3" placeholder="Explain the motive..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-warning w-100">
+                                    <i class="fas fa-gavel me-2"></i>
+                                    <span data-i18n="solution.submit">Submit Solution</span>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="mt-3">
+                            <button class="btn btn-outline-light w-100" id="backToDashboard">
+                                <i class="fas fa-arrow-left me-2"></i>
+                                <span data-i18n="investigation.back">Back to Dashboard</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Subscribe Modal -->
+    <div class="modal fade" id="subscribeModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" data-i18n="subscribe.title">Join Our Detective Community</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="subscribeForm">
+                        <div class="mb-3">
+                            <label for="subscriberEmail" class="form-label" data-i18n="subscribe.email">Email Address</label>
+                            <input type="email" class="form-control" id="subscriberEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subscriberName" class="form-label" data-i18n="subscribe.name">Name (Optional)</label>
+                            <input type="text" class="form-control" id="subscriberName">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" data-i18n="subscribe.preferences">Preferred Mystery Types</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="historical" id="prefHistorical">
+                                <label class="form-check-label" for="prefHistorical" data-i18n="subscribe.historical">Historical</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="modern" id="prefModern">
+                                <label class="form-check-label" for="prefModern" data-i18n="subscribe.modern">Modern</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="forensic" id="prefForensic">
+                                <label class="form-check-label" for="prefForensic" data-i18n="subscribe.forensic">Forensic</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="psychological" id="prefPsychological">
+                                <label class="form-check-label" for="prefPsychological" data-i18n="subscribe.psychological">Psychological</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subscriberFeedback" class="form-label" data-i18n="subscribe.feedback">Feedback/Suggestions (Optional)</label>
+                            <textarea class="form-control" id="subscriberFeedback" rows="3"></textarea>
+                        </div>
+                        <p class="text-muted small" data-i18n="subscribe.privacy">We respect your privacy. No spam, ever.</p>
+                        <button type="submit" class="btn btn-warning w-100">
+                            <i class="fas fa-paper-plane me-2"></i>
+                            <span data-i18n="subscribe.button">Subscribe</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div class="modal fade" id="confirmModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmModalTitle">Confirm Action</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="confirmModalBody">
+                    Are you sure?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="confirmModalCancel">
+                        <i class="fas fa-times me-2"></i>
+                        <span>Cancel</span>
+                    </button>
+                    <button type="button" class="btn btn-warning" id="confirmModalConfirm">
+                        <i class="fas fa-check me-2"></i>
+                        <span>Confirm</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Solution Result Modal -->
+    <div class="modal fade" id="resultModal" tabindex="-1" data-bs-backdrop="static">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header" id="resultHeader">
+                    <h5 class="modal-title" id="resultTitle">Result</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="resultBody">
+                    <!-- Result content inserted by JS -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="newMysteryBtn">
+                        <i class="fas fa-redo me-2"></i>
+                        <span data-i18n="result.newMystery">Try Another Mystery</span>
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <span data-i18n="result.close">Close</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="loading-spinner d-none">
+        <div class="spinner-border text-warning" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-3" data-i18n="loading">Loading mystery...</p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Firebase (initialises db, exports helpers) -->
+    <script type="module" src="js/firebase-config.js"></script>
+    
+    <!-- Application Scripts -->
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

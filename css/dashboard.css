@@ -1,0 +1,306 @@
+/* ===================================
+   Dashboard Styles
+   =================================== */
+
+.dashboard {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-xl) var(--spacing-md);
+    position: relative;
+    z-index: 1;
+}
+
+.dashboard-header {
+    margin-bottom: var(--spacing-xl);
+    animation: fadeIn 1s ease;
+}
+
+.dashboard-header h1 {
+    color: var(--warm-amber);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: var(--spacing-md);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.dashboard-header .lead {
+    color: var(--cream);
+    opacity: 0.9;
+    font-size: 1.3rem;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* ===================================
+   Mode Cards
+   =================================== */
+.mode-card {
+    background: linear-gradient(135deg, rgba(45, 49, 66, 0.9) 0%, rgba(26, 31, 46, 0.9) 100%);
+    border: 2px solid var(--steel-blue);
+    border-radius: 15px;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    text-align: center;
+    transition: all var(--transition-normal);
+    box-shadow: var(--shadow-md);
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mode-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, rgba(212, 165, 116, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+    pointer-events: none;
+}
+
+.mode-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--warm-amber);
+    box-shadow: 0 12px 24px rgba(212, 165, 116, 0.3);
+}
+
+.mode-card:hover::before {
+    opacity: 1;
+}
+
+.mode-icon {
+    font-size: 5rem;
+    color: var(--warm-amber);
+    margin-bottom: var(--spacing-md);
+    transition: all var(--transition-normal);
+}
+
+.mode-card:hover .mode-icon {
+    transform: scale(1.1);
+    color: var(--gold);
+}
+
+.mode-card h3 {
+    color: var(--cream);
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+    font-weight: 700;
+}
+
+.mode-card p {
+    color: var(--cream);
+    opacity: 0.85;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-lg);
+    flex-grow: 1;
+    padding: 0 var(--spacing-sm);
+}
+
+.mode-card .btn {
+    margin-top: auto;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+}
+
+/* Specific card styling */
+#asDetectiveCard {
+    animation: slideInLeft 0.8s ease;
+}
+
+#asDetectiveCard .mode-icon {
+    color: var(--warning);
+}
+
+#asDetectiveCard:hover {
+    border-color: var(--warning);
+}
+
+#solvedMysteryCard {
+    animation: slideInRight 0.8s ease;
+}
+
+#solvedMysteryCard .mode-icon {
+    color: var(--steel-blue);
+}
+
+#solvedMysteryCard:hover {
+    border-color: var(--steel-blue);
+}
+
+/* ===================================
+   Atmospheric Effects
+   =================================== */
+.dashboard::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(212, 165, 116, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ===================================
+   Responsive Design
+   =================================== */
+@media (max-width: 1400px) {
+    .mode-card {
+        min-height: 380px;
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+    
+    .mode-icon {
+        font-size: 4.5rem;
+    }
+    
+    .mode-card h3 {
+        font-size: 1.8rem;
+    }
+    
+    .mode-card p {
+        font-size: 1rem;
+        padding: 0 var(--spacing-xs);
+    }
+}
+
+@media (max-width: 1200px) {
+    .dashboard-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .dashboard-header .lead {
+        font-size: 1.2rem;
+    }
+    
+    .mode-card {
+            min-height: 360px;
+            padding: var(--spacing-md);
+        }
+    
+    .mode-icon {
+        font-size: 4rem;
+    }
+    
+    .mode-card h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .mode-card {
+        min-height: 420px;
+    }
+}
+
+/* ===================================
+   Loading State
+   =================================== */
+.mode-card.loading {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.mode-card.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--warm-amber);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* ===================================
+   Hover Effects for Buttons
+   =================================== */
+.mode-card .btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.mode-card .btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.mode-card .btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* ===================================
+   Decorative Elements
+   =================================== */
+.mode-card::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(212, 165, 116, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* ===================================
+   Accessibility
+   =================================== */
+@media (prefers-reduced-motion: reduce) {
+    .mode-card,
+    .dashboard-header,
+    #asDetectiveCard,
+    #solvedMysteryCard {
+        animation: none;
+    }
+    
+    .mode-card:hover {
+        transform: none;
+    }
+    
+    .mode-icon {
+        transition: none;
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .mode-card {
+        border-width: 3px;
+    }
+    
+    .mode-card:hover {
+        border-width: 4px;
+    }
+}

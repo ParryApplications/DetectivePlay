@@ -1,0 +1,736 @@
+/* ===================================
+   Evidence Cards Styles
+   =================================== */
+
+.evidence-card {
+    background: linear-gradient(135deg, rgba(45, 49, 66, 0.95) 0%, rgba(26, 31, 46, 0.95) 100%);
+    border: 1px solid var(--steel-blue);
+    border-radius: 8px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.evidence-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--warm-amber);
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+}
+
+.evidence-card:hover {
+    transform: translateX(5px);
+    border-color: var(--warm-amber);
+    box-shadow: var(--shadow-md);
+}
+
+.evidence-card:hover::before {
+    opacity: 1;
+}
+
+.evidence-card.dragging {
+    opacity: 0.5;
+    cursor: grabbing;
+}
+
+/* ===================================
+   Card Header
+   =================================== */
+.card-header-custom {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
+}
+
+.card-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.card-icon.suspect {
+    background: linear-gradient(135deg, #ff6b6b 0%, #c92a2a 100%);
+    color: white;
+}
+
+.card-icon.weapon {
+    background: linear-gradient(135deg, #4dabf7 0%, #1971c2 100%);
+    color: white;
+}
+
+.card-icon.location {
+    background: linear-gradient(135deg, #51cf66 0%, #2f9e44 100%);
+    color: white;
+}
+
+.card-icon.evidence {
+    background: linear-gradient(135deg, #ffd43b 0%, #f59f00 100%);
+    color: #333;
+    padding: 0.5rem;
+}
+
+.card-icon.timeline {
+    background: linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%);
+    color: white;
+}
+
+.card-title-custom {
+    flex: 1;
+}
+
+.card-title-custom h6 {
+    color: var(--cream);
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card-title-custom .card-subtitle {
+    color: var(--warm-amber);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+}
+
+/* ===================================
+   Card Body
+   =================================== */
+.card-body-custom {
+    color: var(--cream);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.card-body-custom p {
+    margin-bottom: var(--spacing-xs);
+    opacity: 0.9;
+}
+
+.card-body-custom .card-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    border-bottom: 1px solid rgba(79, 93, 117, 0.3);
+}
+
+.card-body-custom .card-detail:last-child {
+    border-bottom: none;
+}
+
+.card-body-custom .detail-label {
+    color: var(--warm-amber);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.card-body-custom .detail-value {
+    color: var(--cream);
+    font-size: 0.85rem;
+    text-align: right;
+}
+
+/* ===================================
+   Card Image
+   =================================== */
+.card-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: var(--spacing-xs);
+    border: 1px solid var(--steel-blue);
+}
+
+.card-image-placeholder {
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(135deg, var(--charcoal) 0%, var(--deep-navy) 100%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-xs);
+    border: 1px solid var(--steel-blue);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image-placeholder::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(79, 93, 117, 0.3) 0%, transparent 70%);
+    animation: pulse-glow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(1.1);
+    }
+}
+
+.card-image-placeholder i {
+    font-size: 3rem;
+    color: var(--steel-blue);
+    opacity: 0.7;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Suspect-specific placeholder */
+.suspect-card .card-image-placeholder {
+    background: linear-gradient(135deg, #2d1b1b 0%, #4a1f1f 50%, #2d1b1b 100%);
+    border: 1px solid rgba(255, 107, 107, 0.3);
+}
+
+.suspect-card .card-image-placeholder::before {
+    background: radial-gradient(circle, rgba(255, 107, 107, 0.2) 0%, transparent 70%);
+}
+
+.suspect-card .card-image-placeholder i {
+    color: #ff6b6b;
+    opacity: 0.8;
+}
+
+/* Weapon-specific placeholder */
+.weapon-card .card-image-placeholder {
+    background: linear-gradient(135deg, #1a2332 0%, #2a3f5f 50%, #1a2332 100%);
+    border: 1px solid rgba(77, 171, 247, 0.3);
+}
+
+.weapon-card .card-image-placeholder::before {
+    background: radial-gradient(circle, rgba(77, 171, 247, 0.2) 0%, transparent 70%);
+}
+
+.weapon-card .card-image-placeholder i {
+    color: #4dabf7;
+    opacity: 0.8;
+}
+
+/* Location-specific placeholder */
+.location-card .card-image-placeholder {
+    background: linear-gradient(135deg, #1a2e1a 0%, #2d4a2d 50%, #1a2e1a 100%);
+    border: 1px solid rgba(81, 207, 102, 0.3);
+}
+
+.location-card .card-image-placeholder::before {
+    background: radial-gradient(circle, rgba(81, 207, 102, 0.2) 0%, transparent 70%);
+}
+
+.location-card .card-image-placeholder i {
+    color: #51cf66;
+    opacity: 0.8;
+}
+
+/* Evidence-specific placeholder (general evidence cards) */
+.evidence-card:not(.suspect-card):not(.weapon-card):not(.location-card):not(.timeline-card-custom) .card-image-placeholder {
+    background: linear-gradient(135deg, #332a1a 0%, #4a3f2a 50%, #332a1a 100%);
+    border: 1px solid rgba(255, 212, 59, 0.3);
+}
+
+.evidence-card:not(.suspect-card):not(.weapon-card):not(.location-card):not(.timeline-card-custom) .card-image-placeholder::before {
+    background: radial-gradient(circle, rgba(255, 212, 59, 0.2) 0%, transparent 70%);
+}
+
+.evidence-card:not(.suspect-card):not(.weapon-card):not(.location-card):not(.timeline-card-custom) .card-image-placeholder i {
+    color: #ffd43b;
+    opacity: 0.8;
+}
+
+/* Timeline-specific placeholder */
+.timeline-card-custom .card-image-placeholder {
+    background: linear-gradient(135deg, #2a1f3a 0%, #3f2a5f 50%, #2a1f3a 100%);
+    border: 1px solid rgba(167, 139, 250, 0.3);
+}
+
+.timeline-card-custom .card-image-placeholder::before {
+    background: radial-gradient(circle, rgba(167, 139, 250, 0.2) 0%, transparent 70%);
+}
+
+.timeline-card-custom .card-image-placeholder i {
+    color: #a78bfa;
+    opacity: 0.8;
+}
+
+/* ===================================
+   Card Actions
+   =================================== */
+.card-actions {
+    display: flex;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-sm);
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid var(--steel-blue);
+}
+
+.card-action-btn {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    background: rgba(79, 93, 117, 0.3);
+    border: 1px solid var(--steel-blue);
+    border-radius: 4px;
+    color: var(--cream);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card-action-btn:hover {
+    background: var(--warm-amber);
+    color: var(--deep-navy);
+    border-color: var(--warm-amber);
+}
+
+.card-action-btn i {
+    font-size: 0.9rem;
+}
+
+/* ===================================
+   Expanded Card Modal
+   =================================== */
+.card-modal .modal-dialog {
+    max-width: 700px;
+}
+
+.card-modal .modal-body {
+    padding: var(--spacing-lg);
+}
+
+.card-detail-section {
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-xs) 0;
+}
+
+.card-detail-section h6 {
+    color: var(--warm-amber);
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 2px solid var(--steel-blue);
+}
+
+.card-detail-section p {
+    color: var(--cream);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-sm);
+}
+
+.card-detail-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card-detail-section li {
+    padding: var(--spacing-xs);
+    margin-bottom: var(--spacing-xs);
+    background: rgba(79, 93, 117, 0.2);
+    border-left: 3px solid var(--warm-amber);
+    padding-left: var(--spacing-sm);
+    color: var(--cream);
+}
+
+.card-detail-section li i {
+    margin-right: var(--spacing-xs);
+    color: var(--warm-amber);
+}
+
+/* ===================================
+   Suspect Card Specific
+   =================================== */
+.suspect-card .card-profile {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    padding: var(--spacing-xs);
+}
+
+.suspect-card .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--crimson);
+}
+
+.suspect-card .profile-info {
+    flex: 1;
+}
+
+.suspect-card .profile-name {
+    color: var(--cream);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.suspect-card .profile-meta {
+    color: var(--warm-amber);
+    font-size: 0.85rem;
+}
+
+.suspect-card .motive-badge {
+    display: inline-block;
+    padding: 0.4rem 0.75rem;
+    background: rgba(139, 0, 0, 0.3);
+    border: 1px solid var(--crimson);
+    border-radius: 12px;
+    color: var(--crimson);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: var(--spacing-xs);
+}
+
+/* ===================================
+   Weapon Card Specific
+   =================================== */
+.weapon-card .weapon-specs {
+    background: rgba(26, 31, 46, 0.5);
+    padding: var(--spacing-sm);
+    border-radius: 5px;
+    margin-top: var(--spacing-xs);
+}
+
+.weapon-card .spec-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    font-size: 0.85rem;
+}
+
+.weapon-card .spec-label {
+    color: var(--warm-amber);
+    font-weight: 600;
+}
+
+.weapon-card .spec-value {
+    color: var(--cream);
+}
+
+.weapon-card .forensics-tag {
+    display: inline-block;
+    padding: 0.35rem 0.6rem;
+    background: rgba(77, 171, 247, 0.2);
+    border: 1px solid #4dabf7;
+    border-radius: 3px;
+    color: #4dabf7;
+    font-size: 0.7rem;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+/* ===================================
+   Location Card Specific
+   =================================== */
+.location-card .location-address {
+    font-family: var(--font-mono);
+    color: var(--cream);
+    font-size: 0.85rem;
+    padding: var(--spacing-xs);
+    background: rgba(26, 31, 46, 0.5);
+    border-radius: 4px;
+    margin-bottom: var(--spacing-xs);
+}
+
+.location-card .evidence-found {
+    margin-top: var(--spacing-sm);
+}
+
+.location-card .evidence-tag {
+    display: inline-block;
+    padding: 0.4rem 0.75rem;
+    background: rgba(81, 207, 102, 0.2);
+    border: 1px solid #51cf66;
+    border-radius: 12px;
+    color: #51cf66;
+    font-size: 0.75rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* ===================================
+   Evidence Card Specific
+   =================================== */
+.evidence-type-badge {
+    display: inline-block;
+    padding: 0.4rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-xs);
+}
+
+.evidence-type-badge.physical {
+    background: rgba(255, 215, 67, 0.2);
+    border: 1px solid #ffd43b;
+    color: #ffd43b;
+}
+
+.evidence-type-badge.document {
+    background: rgba(77, 171, 247, 0.2);
+    border: 1px solid #4dabf7;
+    color: #4dabf7;
+}
+
+.evidence-type-badge.digital {
+    background: rgba(167, 139, 250, 0.2);
+    border: 1px solid #a78bfa;
+    color: #a78bfa;
+}
+
+.evidence-type-badge.witness {
+    background: rgba(81, 207, 102, 0.2);
+    border: 1px solid #51cf66;
+    color: #51cf66;
+}
+
+.significance-level {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: var(--spacing-xs);
+}
+
+.significance-level .label {
+    color: var(--warm-amber);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.significance-level .stars {
+    color: var(--gold);
+}
+
+/* ===================================
+   Timeline Card Specific
+   =================================== */
+.timeline-card-custom {
+    position: relative;
+    padding-left: var(--spacing-md);
+}
+
+.timeline-card-custom::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, var(--warning) 0%, transparent 100%);
+}
+
+.timeline-time-custom {
+    font-family: var(--font-mono);
+    color: var(--warning);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs);
+}
+
+.timeline-event-custom {
+    color: var(--cream);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-xs);
+}
+
+.timeline-location-custom {
+    color: var(--warm-amber);
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.timeline-witnesses {
+    margin-top: var(--spacing-xs);
+    font-size: 0.8rem;
+    color: var(--cream);
+    opacity: 0.8;
+}
+
+/* ===================================
+   Card Flip Animation
+   =================================== */
+.card-flip-container {
+    perspective: 1000px;
+}
+
+.card-flip-inner {
+    position: relative;
+    width: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card-flip-container.flipped .card-flip-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+}
+
+/* ===================================
+   Drag and Drop States
+   =================================== */
+.evidence-card[draggable="true"] {
+    cursor: grab;
+}
+
+.evidence-card[draggable="true"]:active {
+    cursor: grabbing;
+}
+
+.evidence-card.drag-over {
+    border-color: var(--warning);
+    background: rgba(247, 127, 0, 0.1);
+}
+
+/* ===================================
+   Empty State
+   =================================== */
+.cards-container.empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    color: rgba(244, 241, 222, 0.5);
+    text-align: center;
+    font-style: italic;
+}
+
+.cards-container.empty i {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+    opacity: 0.3;
+}
+
+/* ===================================
+   Loading State
+   =================================== */
+.card-skeleton {
+    background: linear-gradient(
+        90deg,
+        rgba(45, 49, 66, 0.5) 25%,
+        rgba(79, 93, 117, 0.5) 50%,
+        rgba(45, 49, 66, 0.5) 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 8px;
+    height: 150px;
+    margin-bottom: var(--spacing-sm);
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* ===================================
+   Responsive Design
+   =================================== */
+@media (max-width: 1400px) {
+    .card-image,
+    .card-image-placeholder {
+        height: 100px;
+    }
+    
+    .suspect-card .profile-image {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .evidence-card {
+        padding: 0.75rem;
+    }
+    
+    .card-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .card-title-custom h6 {
+        font-size: 0.9rem;
+    }
+    
+    .card-body-custom {
+        font-size: 0.85rem;
+    }
+}
+
+/* ===================================
+   Accessibility
+   =================================== */
+.evidence-card:focus {
+    outline: 2px solid var(--warning);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .evidence-card,
+    .card-flip-inner,
+    .card-skeleton {
+        transition: none;
+        animation: none;
+    }
+}
+
+/* ===================================
+   Print Styles
+   =================================== */
+@media print {
+    .evidence-card {
+        break-inside: avoid;
+        border: 1px solid #000;
+        background: white;
+        color: black;
+    }
+    
+    .card-actions {
+        display: none;
+    }
+}

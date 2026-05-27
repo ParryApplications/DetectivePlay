@@ -1,0 +1,129 @@
+{
+  "app": {
+    "name": "GiveJustice",
+    "tagline": "寻求真相。伸张正义。"
+  },
+  "nav": {
+    "subscribe": "订阅",
+    "language": "语言"
+  },
+  "restriction": {
+    "title": "侦探工作需要更大的屏幕",
+    "message": "此调查平台针对台式机和笔记本电脑进行了优化。",
+    "requirement": "请从屏幕宽度至少为1024像素的设备访问。",
+    "current": "您的屏幕："
+  },
+  "dashboard": {
+    "title": "欢迎，侦探",
+    "subtitle": "每条线索都很重要。每个细节都很重要。正义在等待。",
+    "asDetective": {
+      "title": "作为侦探",
+      "description": "测试您的调查技能。分析证据，连接线索，独自解开谜团。",
+      "button": "开始调查"
+    },
+    "solvedMystery": {
+      "title": "已解决的谜团",
+      "description": "从已解决的案件中学习。了解调查过程，看看证据如何引向真相。",
+      "button": "阅读案件"
+    }
+  },
+  "story": {
+    "title": "案件档案",
+    "audioTitle": "收听案件档案",
+    "beginInvestigation": "开始调查",
+    "viewSolution": "查看解决方案"
+  },
+  "investigation": {
+    "evidence": "证据",
+    "suspects": "嫌疑人",
+    "weapons": "武器",
+    "locations": "地点",
+    "clues": "线索",
+    "timeline": "时间线",
+    "board": "调查板",
+    "notes": "笔记",
+    "submitSolution": "提交解决方案",
+    "back": "返回仪表板"
+  },
+  "solution": {
+    "culprit": "罪犯",
+    "weapon": "武器",
+    "location": "地点",
+    "motive": "动机（可选）",
+    "submit": "提交解决方案"
+  },
+  "result": {
+    "correct": "正确！干得好，侦探！",
+    "incorrect": "不正确。请查看证据。",
+    "solution": "解决方案",
+    "newMystery": "尝试另一个谜团",
+    "close": "关闭",
+    "explanation": "解释",
+    "actualCulprit": "真正的罪犯",
+    "howItHappened": "事情经过",
+    "keyEvidence": "关键证据",
+    "redHerrings": "误导性线索"
+  },
+  "subscribe": {
+    "title": "加入我们的侦探社区",
+    "email": "电子邮件地址",
+    "name": "姓名（可选）",
+    "preferences": "首选谜团类型",
+    "historical": "历史",
+    "modern": "现代",
+    "forensic": "法医",
+    "psychological": "心理",
+    "feedback": "反馈/建议（可选）",
+    "privacy": "我们尊重您的隐私。绝不发送垃圾邮件。",
+    "button": "订阅",
+    "success": "感谢您的订阅！",
+    "error": "订阅失败。请重试。",
+    "alreadySubscribed": "您已使用此电子邮件地址订阅！"
+  },
+  "loading": "正在加载谜团...",
+  "error": {
+    "general": "发生错误。请重试。",
+    "noMystery": "目前没有可用的谜团。",
+    "loadFailed": "加载谜团失败。请刷新页面。"
+  },
+  "cards": {
+    "viewDetails": "查看详情",
+    "addToBoard": "添加到板上",
+    "suspect": "嫌疑人",
+    "weapon": "武器",
+    "location": "地点",
+    "evidence": "证据",
+    "timeline": "时间线事件"
+  },
+  "board": {
+    "clear": "清除板",
+    "connections": "切换连接",
+    "empty": "将证据卡拖到这里开始调查",
+    "connectionMode": "连接模式已激活 - 点击两个项目以连接它们",
+    "clearConfirm": {
+      "title": "清除调查板？",
+      "message": "所有证据卡和连接将从您的板上永久删除。此操作无法撤消。",
+      "confirmButton": "是的，清除所有内容",
+      "cancelButton": "保留我的工作"
+    }
+  },
+  "common": {
+    "yes": "是",
+    "no": "否",
+    "ok": "确定",
+    "cancel": "取消",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "view": "查看",
+    "close": "关闭",
+    "search": "搜索",
+    "filter": "筛选",
+    "all": "全部",
+    "none": "无"
+  },
+  "alerts": {
+    "selectAllFields": "请选择所有必填字段",
+    "ttsNotSupported": "您的浏览器不支持文本转语音"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "app": {
+    "name": "GiveJustice",
+    "tagline": "真実を求めよ。正義を実現せよ。"
+  },
+  "nav": {
+    "subscribe": "購読",
+    "language": "言語"
+  },
+  "restriction": {
+    "title": "探偵作業にはより大きな画面が必要です",
+    "message": "この調査プラットフォームは、デスクトップおよびノートパソコン用に最適化されています。",
+    "requirement": "画面幅が少なくとも1024pxのデバイスからアクセスしてください。",
+    "current": "現在の画面："
+  },
+  "dashboard": {
+    "title": "ようこそ、探偵",
+    "subtitle": "すべての手がかりが重要です。すべての詳細が重要です。正義が待っています。",
+    "asDetective": {
+      "title": "探偵として",
+      "description": "調査スキルをテストしてください。証拠を分析し、手がかりをつなぎ、自分でミステリーを解決してください。",
+      "button": "調査を開始"
+    },
+    "solvedMystery": {
+      "title": "解決済みミステリー",
+      "description": "解決された事件から学びましょう。調査プロセスを理解し、証拠がどのように真実につながったかを確認してください。",
+      "button": "事件を読む"
+    }
+  },
+  "story": {
+    "title": "事件ファイル",
+    "audioTitle": "事件ファイルを聞く",
+    "beginInvestigation": "調査を開始",
+    "viewSolution": "解決策を表示"
+  },
+  "investigation": {
+    "evidence": "証拠",
+    "suspects": "容疑者",
+    "weapons": "武器",
+    "locations": "場所",
+    "clues": "手がかり",
+    "timeline": "タイムライン",
+    "board": "調査ボード",
+    "notes": "メモ",
+    "submitSolution": "解決策を提出",
+    "back": "ダッシュボードに戻る"
+  },
+  "solution": {
+    "culprit": "犯人",
+    "weapon": "武器",
+    "location": "場所",
+    "motive": "動機（任意）",
+    "submit": "解決策を提出"
+  },
+  "result": {
+    "correct": "正解です！よくできました、探偵！",
+    "incorrect": "不正解です。証拠を見直してください。",
+    "solution": "解決策",
+    "newMystery": "別のミステリーを試す",
+    "close": "閉じる",
+    "explanation": "説明",
+    "actualCulprit": "実際の犯人",
+    "howItHappened": "事件の経緯",
+    "keyEvidence": "主要な証拠",
+    "redHerrings": "ミスリード"
+  },
+  "subscribe": {
+    "title": "探偵コミュニティに参加",
+    "email": "メールアドレス",
+    "name": "名前（任意）",
+    "preferences": "好みのミステリータイプ",
+    "historical": "歴史的",
+    "modern": "現代的",
+    "forensic": "法医学",
+    "psychological": "心理的",
+    "feedback": "フィードバック/提案（任意）",
+    "privacy": "プライバシーを尊重します。スパムは一切ありません。",
+    "button": "購読",
+    "success": "ご購読ありがとうございます！",
+    "error": "購読に失敗しました。もう一度お試しください。",
+    "alreadySubscribed": "このメールアドレスは既に登録されています！"
+  },
+  "loading": "ミステリーを読み込み中...",
+  "error": {
+    "general": "エラーが発生しました。もう一度お試しください。",
+    "noMystery": "現在利用可能なミステリーはありません。",
+    "loadFailed": "ミステリーの読み込みに失敗しました。ページを更新してください。"
+  },
+  "cards": {
+    "viewDetails": "詳細を表示",
+    "addToBoard": "ボードに追加",
+    "suspect": "容疑者",
+    "weapon": "武器",
+    "location": "場所",
+    "evidence": "証拠",
+    "timeline": "タイムラインイベント"
+  },
+  "board": {
+    "clear": "ボードをクリア",
+    "connections": "接続を切り替え",
+    "empty": "調査を開始するには、証拠カードをここにドラッグしてください",
+    "connectionMode": "接続モードがアクティブ - 2つのアイテムをクリックして接続します",
+    "clearConfirm": {
+      "title": "調査ボードをクリアしますか？",
+      "message": "すべての証拠カードと接続がボードから完全に削除されます。この操作は元に戻せません。",
+      "confirmButton": "はい、すべてクリア",
+      "cancelButton": "作業を保持"
+    }
+  },
+  "common": {
+    "yes": "はい",
+    "no": "いいえ",
+    "ok": "OK",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "view": "表示",
+    "close": "閉じる",
+    "search": "検索",
+    "filter": "フィルター",
+    "all": "すべて",
+    "none": "なし"
+  },
+  "alerts": {
+    "selectAllFields": "すべての必須フィールドを選択してください",
+    "ttsNotSupported": "お使いのブラウザではテキスト読み上げがサポートされていません"
+  }
+}

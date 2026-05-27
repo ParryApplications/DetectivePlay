@@ -1,0 +1,163 @@
+{
+  "app": {
+    "name": "GiveJustice",
+    "tagline": "Seek Truth. Deliver Justice."
+  },
+  "nav": {
+    "subscribe": "Subscribe",
+    "language": "Language"
+  },
+  "restriction": {
+    "title": "Detective Work Requires a Bigger Screen",
+    "message": "This investigation platform is optimized for desktop and laptop computers.",
+    "requirement": "Please access from a device with a screen width of at least 1024px.",
+    "current": "Your screen:"
+  },
+  "dashboard": {
+    "title": "Welcome, Detective",
+    "subtitle": "Every clue matters. Every detail counts. Justice awaits.",
+    "asDetective": {
+      "title": "As Detective",
+      "description": "Test your investigative skills. Analyze evidence, connect clues, and solve the mystery on your own.",
+      "button": "Start Investigation"
+    },
+    "solvedMystery": {
+      "title": "Solved Mystery",
+      "description": "Learn from solved cases. Understand the investigation process and see how evidence led to the truth.",
+      "button": "Read Case"
+    }
+  },
+  "story": {
+    "title": "Case File",
+    "audioTitle": "Listen to Case File",
+    "beginInvestigation": "Begin Investigation",
+    "viewSolution": "View Solution"
+  },
+  "investigation": {
+    "evidence": "Evidence",
+    "suspects": "Suspects",
+    "weapons": "Weapons",
+    "locations": "Locations",
+    "clues": "Clues",
+    "timeline": "Timeline",
+    "board": "Investigation Board",
+    "notes": "Notes",
+    "submitSolution": "Submit Solution",
+    "back": "Back to Dashboard",
+    "searchEvidence": "Search evidence..."
+  },
+  "solution": {
+    "culprit": "Culprit",
+    "weapon": "Weapon",
+    "location": "Location",
+    "motive": "Motive (Optional)",
+    "submit": "Submit Solution"
+  },
+  "result": {
+    "correct": "Correct! Well Done, Detective!",
+    "incorrect": "Incorrect. Review the Evidence.",
+    "solution": "The Solution",
+    "newMystery": "Try Another Mystery",
+    "close": "Close",
+    "explanation": "Explanation",
+    "actualCulprit": "The Actual Culprit",
+    "howItHappened": "How It Happened",
+    "keyEvidence": "Key Evidence",
+    "redHerrings": "Red Herrings"
+  },
+  "subscribe": {
+    "title": "Join Our Detective Community",
+    "email": "Email Address",
+    "name": "Name (Optional)",
+    "preferences": "Preferred Mystery Types",
+    "historical": "Historical",
+    "modern": "Modern",
+    "forensic": "Forensic",
+    "psychological": "Psychological",
+    "feedback": "Feedback/Suggestions (Optional)",
+    "privacy": "We respect your privacy. No spam, ever.",
+    "button": "Subscribe",
+    "success": "Thank you for subscribing!",
+    "error": "Subscription failed. Please try again.",
+    "alreadySubscribed": "You are already subscribed with this email address!"
+  },
+  "loading": "Loading mystery...",
+  "error": {
+    "general": "An error occurred. Please try again.",
+    "noMystery": "No mysteries available at the moment.",
+    "loadFailed": "Failed to load mystery. Please refresh the page."
+  },
+  "cards": {
+    "viewDetails": "View Details",
+    "addToBoard": "Add to Board",
+    "suspect": "Suspect",
+    "weapon": "Weapon",
+    "location": "Location",
+    "evidence": "Evidence",
+    "timeline": "Timeline Event"
+  },
+  "board": {
+    "clear": "Clear Board",
+    "connections": "Toggle Connections",
+    "empty": "Drag evidence cards here to start your investigation",
+    "connectionMode": "Connection Mode Active - Click two items to connect them",
+    "clearConfirm": {
+      "title": "Clear Investigation Board?",
+      "message": "All evidence cards and connections will be permanently removed from your board. This action cannot be undone.",
+      "confirmButton": "Yes, Clear Everything",
+      "cancelButton": "Keep My Work"
+    }
+  },
+  "admin": {
+    "title": "Admin Panel",
+    "login": "Login",
+    "logout": "Logout",
+    "password": "Password",
+    "addMystery": "Add New Mystery",
+    "editMystery": "Edit Mystery",
+    "deleteMystery": "Delete Mystery",
+    "viewSubscribers": "View Subscribers",
+    "mysteryTitle": "Mystery Title",
+    "category": "Category",
+    "difficulty": "Difficulty",
+    "story": "Story",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "confirm": "Are you sure?"
+  },
+  "difficulty": {
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard"
+  },
+  "category": {
+    "asDetective": "As Detective",
+    "solvedMystery": "Solved Mystery"
+  },
+  "evidenceTypes": {
+    "physical": "Physical Evidence",
+    "document": "Document",
+    "digital": "Digital Evidence",
+    "witness": "Witness Statement"
+  },
+  "common": {
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "close": "Close",
+    "search": "Search",
+    "filter": "Filter",
+    "all": "All",
+    "none": "None"
+  },
+  "alerts": {
+    "selectAllFields": "Please select all required fields",
+    "ttsNotSupported": "Text-to-speech is not supported in your browser"
+  }
+}

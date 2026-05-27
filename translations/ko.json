@@ -1,0 +1,129 @@
+{
+  "app": {
+    "name": "GiveJustice",
+    "tagline": "진실을 찾아라. 정의를 실현하라."
+  },
+  "nav": {
+    "subscribe": "구독",
+    "language": "언어"
+  },
+  "restriction": {
+    "title": "탐정 작업에는 더 큰 화면이 필요합니다",
+    "message": "이 조사 플랫폼은 데스크톱 및 노트북 컴퓨터에 최적화되어 있습니다.",
+    "requirement": "화면 너비가 최소 1024px인 기기에서 접속해 주세요.",
+    "current": "현재 화면:"
+  },
+  "dashboard": {
+    "title": "환영합니다, 탐정님",
+    "subtitle": "모든 단서가 중요합니다. 모든 세부 사항이 중요합니다. 정의가 기다립니다.",
+    "asDetective": {
+      "title": "탐정으로서",
+      "description": "조사 기술을 테스트하세요. 증거를 분석하고 단서를 연결하여 스스로 미스터리를 해결하세요.",
+      "button": "조사 시작"
+    },
+    "solvedMystery": {
+      "title": "해결된 미스터리",
+      "description": "해결된 사건에서 배우세요. 조사 과정을 이해하고 증거가 어떻게 진실로 이어지는지 확인하세요.",
+      "button": "사건 읽기"
+    }
+  },
+  "story": {
+    "title": "사건 파일",
+    "audioTitle": "사건 파일 듣기",
+    "beginInvestigation": "조사 시작",
+    "viewSolution": "해결책 보기"
+  },
+  "investigation": {
+    "evidence": "증거",
+    "suspects": "용의자",
+    "weapons": "무기",
+    "locations": "장소",
+    "clues": "단서",
+    "timeline": "타임라인",
+    "board": "조사 보드",
+    "notes": "메모",
+    "submitSolution": "해결책 제출",
+    "back": "대시보드로 돌아가기"
+  },
+  "solution": {
+    "culprit": "범인",
+    "weapon": "무기",
+    "location": "장소",
+    "motive": "동기 (선택사항)",
+    "submit": "해결책 제출"
+  },
+  "result": {
+    "correct": "정답입니다! 잘하셨습니다, 탐정님!",
+    "incorrect": "오답입니다. 증거를 검토하세요.",
+    "solution": "해결책",
+    "newMystery": "다른 미스터리 시도",
+    "close": "닫기",
+    "explanation": "설명",
+    "actualCulprit": "실제 범인",
+    "howItHappened": "사건 경위",
+    "keyEvidence": "주요 증거",
+    "redHerrings": "미끼 단서"
+  },
+  "subscribe": {
+    "title": "탐정 커뮤니티에 가입하세요",
+    "email": "이메일 주소",
+    "name": "이름 (선택사항)",
+    "preferences": "선호하는 미스터리 유형",
+    "historical": "역사적",
+    "modern": "현대적",
+    "forensic": "법의학",
+    "psychological": "심리적",
+    "feedback": "피드백/제안 (선택사항)",
+    "privacy": "귀하의 개인정보를 존중합니다. 스팸은 절대 없습니다.",
+    "button": "구독",
+    "success": "구독해 주셔서 감사합니다!",
+    "error": "구독에 실패했습니다. 다시 시도해 주세요.",
+    "alreadySubscribed": "이미 이 이메일 주소로 구독하셨습니다!"
+  },
+  "loading": "미스터리 로딩 중...",
+  "error": {
+    "general": "오류가 발생했습니다. 다시 시도해 주세요.",
+    "noMystery": "현재 사용 가능한 미스터리가 없습니다.",
+    "loadFailed": "미스터리 로드에 실패했습니다. 페이지를 새로고침해 주세요."
+  },
+  "cards": {
+    "viewDetails": "세부정보 보기",
+    "addToBoard": "보드에 추가",
+    "suspect": "용의자",
+    "weapon": "무기",
+    "location": "장소",
+    "evidence": "증거",
+    "timeline": "타임라인 이벤트"
+  },
+  "board": {
+    "clear": "보드 지우기",
+    "connections": "연결 전환",
+    "empty": "조사를 시작하려면 증거 카드를 여기로 드래그하세요",
+    "connectionMode": "연결 모드 활성화 - 두 항목을 클릭하여 연결하세요",
+    "clearConfirm": {
+      "title": "조사 보드를 지우시겠습니까?",
+      "message": "모든 증거 카드와 연결이 보드에서 영구적으로 제거됩니다. 이 작업은 취소할 수 없습니다.",
+      "confirmButton": "예, 모두 지우기",
+      "cancelButton": "작업 유지"
+    }
+  },
+  "common": {
+    "yes": "예",
+    "no": "아니오",
+    "ok": "확인",
+    "cancel": "취소",
+    "save": "저장",
+    "delete": "삭제",
+    "edit": "편집",
+    "view": "보기",
+    "close": "닫기",
+    "search": "검색",
+    "filter": "필터",
+    "all": "전체",
+    "none": "없음"
+  },
+  "alerts": {
+    "selectAllFields": "모든 필수 필드를 선택해 주세요",
+    "ttsNotSupported": "브라우저에서 텍스트 음성 변환을 지원하지 않습니다"
+  }
+}
