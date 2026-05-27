@@ -9,9 +9,8 @@
   },
   "restriction": {
     "title": "侦探工作需要更大的屏幕",
-    "message": "此调查平台针对台式机和笔记本电脑进行了优化。",
-    "requirement": "请从屏幕宽度至少为1024像素的设备访问。",
-    "current": "您的屏幕："
+    "message": "此调查平台专为台式机和笔记本电脑设计。",
+    "requirement": "请从更大屏幕的设备访问。"
   },
   "dashboard": {
     "title": "欢迎，侦探",
@@ -125,5 +124,8 @@
   "alerts": {
     "selectAllFields": "请选择所有必填字段",
     "ttsNotSupported": "您的浏览器不支持文本转语音"
+  },
+  "footer": {
+    "developedBy": "开发者"
   }
 }

@@ -40,13 +40,8 @@ class DetectiveApp {
     
     checkScreenSize() {
         const width = window.innerWidth;
-        const screenWidthElement = document.getElementById('screenWidth');
         const deviceRestriction = document.getElementById('deviceRestriction');
         const mainApp = document.getElementById('mainApp');
-        
-        if (screenWidthElement) {
-            screenWidthElement.textContent = width;
-        }
         
         if (width < 1024) {
             if (deviceRestriction) deviceRestriction.style.display = 'flex';

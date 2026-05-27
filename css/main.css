@@ -137,17 +137,43 @@ a:hover {
     margin-bottom: var(--spacing-sm);
 }
 
-.current-size {
+.restriction-footer {
     margin-top: var(--spacing-md);
-    padding: var(--spacing-sm);
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    font-family: var(--font-mono);
-    font-size: 1.1rem;
+    padding-top: var(--spacing-md);
+    border-top: 1px solid rgba(212, 165, 116, 0.3);
+    text-align: center;
 }
 
-.current-size .fw-bold {
-    color: var(--warning);
+.restriction-footer p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+.restriction-footer i {
+    color: var(--warm-amber);
+    font-size: 0.9rem;
+    vertical-align: baseline;
+    margin-right: 0.25rem;
+}
+
+.restriction-footer span {
+    vertical-align: baseline;
+}
+
+.restriction-link {
+    color: var(--warm-amber);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+}
+
+.restriction-link:hover {
+    color: var(--gold);
+    background: rgba(212, 165, 116, 0.1);
+    transform: translateY(-1px);
 }
 
 /* Show restriction on small screens */
@@ -647,13 +673,78 @@ textarea:focus {
 }
 
 /* ===================================
+   Footer
+   =================================== */
+.app-footer {
+    background: rgba(26, 31, 46, 0.95);
+    backdrop-filter: blur(10px);
+    border-top: 2px solid var(--warm-amber);
+    padding: var(--spacing-md) 0;
+    margin-top: auto;
+    position: relative;
+    z-index: 1000;
+}
+
+.footer-content {
+    text-align: center;
+    color: var(--cream);
+    font-size: 0.95rem;
+}
+
+.footer-content p {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.footer-content i {
+    color: var(--warm-amber);
+}
+
+.footer-link {
+    color: var(--warm-amber);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    position: relative;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+}
+
+.footer-link:hover {
+    color: var(--gold);
+    background: rgba(212, 165, 116, 0.1);
+    transform: translateY(-1px);
+}
+
+.footer-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--gold);
+    transition: all var(--transition-normal);
+    transform: translateX(-50%);
+}
+
+.footer-link:hover::after {
+    width: 100%;
+}
+
+/* ===================================
    Print Styles
    =================================== */
 @media print {
     .navbar,
     .btn,
     .modal,
-    .loading-spinner {
+    .loading-spinner,
+    .app-footer {
         display: none !important;
     }
     

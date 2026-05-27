@@ -9,9 +9,8 @@
   },
   "restriction": {
     "title": "Detective Work Requires a Bigger Screen",
-    "message": "This investigation platform is optimized for desktop and laptop computers.",
-    "requirement": "Please access from a device with a screen width of at least 1024px.",
-    "current": "Your screen:"
+    "message": "This investigation platform is specifically designed for use on desktop and laptop computers.",
+    "requirement": "Please access from a device with a larger screen."
   },
   "dashboard": {
     "title": "Welcome, Detective",
@@ -159,5 +158,8 @@
   "alerts": {
     "selectAllFields": "Please select all required fields",
     "ttsNotSupported": "Text-to-speech is not supported in your browser"
+  },
+  "footer": {
+    "developedBy": "Developed by"
   }
 }
