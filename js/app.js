@@ -7,6 +7,7 @@ import { InvestigationBoard } from './investigation-board.js';
 import { AudioPlayer } from './audio-player.js';
 import { SoundEffects } from './sound-effects.js';
 import { BackgroundMusic } from './background-music.js';
+import { MysteryListManager } from './mystery-list-manager.js';
 
 class DetectiveApp {
     constructor() {
@@ -14,6 +15,7 @@ class DetectiveApp {
         this.currentMode = null;
         this.languageManager = new LanguageManager();
         this.mysteryLoader = null;
+        this.mysteryListManager = null;
         this.cardManager = null;
         this.investigationBoard = null;
         this.audioPlayer = null;
@@ -210,6 +212,9 @@ class DetectiveApp {
         // Initialize mystery loader
         this.mysteryLoader = new MysteryLoader();
         
+        // Initialize mystery list manager
+        this.mysteryListManager = new MysteryListManager(this.languageManager);
+        
         // Initialize sound effects
         this.soundEffects = new SoundEffects();
         window.soundEffects = this.soundEffects;
@@ -272,12 +277,16 @@ class DetectiveApp {
     }
     
     async startMystery(mode) {
+        // Show mystery list instead of loading random mystery
+        this.mysteryListManager.showMysteryList(mode, (selectedMystery) => {
+            this.loadSelectedMystery(selectedMystery, mode);
+        });
+    }
+    
+    async loadSelectedMystery(mystery, mode) {
         try {
             this.currentMode = mode;
             this.showLoading(true);
-            
-            // Fetch random mystery
-            let mystery = await getRandomMystery(mode);
             
             if (!mystery) {
                 this.showError(this.languageManager.translate('error.noMystery'));

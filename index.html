@@ -187,6 +187,29 @@
             </div>
         </section>
 
+        <!-- Mystery List Modal -->
+        <div class="modal fade" id="mysteryListModal" tabindex="-1">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" data-i18n="mysteryList.title">Select a Mystery</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="mysteryListContainer" class="mystery-list-container">
+                            <!-- Mystery cards will be inserted here -->
+                        </div>
+                        <!-- Pagination -->
+                        <nav aria-label="Mystery list pagination" class="mt-4">
+                            <ul class="pagination justify-content-center" id="mysteryPagination">
+                                <!-- Pagination buttons will be inserted here -->
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Mystery View -->
         <section id="mysteryView" class="mystery-view d-none">
 

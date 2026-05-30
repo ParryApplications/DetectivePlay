@@ -160,6 +160,11 @@
     "selectAllFields": "Please select all required fields",
     "ttsNotSupported": "Text-to-speech is not supported in your browser"
   },
+  "mysteryList": {
+    "title": "Select a Mystery",
+    "start": "Start Investigation",
+    "continue": "Continue"
+  },
   "footer": {
     "developedBy": "Developed by"
   }
