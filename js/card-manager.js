@@ -341,6 +341,7 @@ export class CardManager {
     // ── DRAG & DROP ───────────────────────────────────────────────────
     setupDragAndDrop(card) {
         card.addEventListener('dragstart', (e) => {
+            window.soundEffects?.playCardDrag();
             e.dataTransfer.effectAllowed = 'copy';
             const dragData = {
                 type: card.dataset.type,
@@ -352,8 +353,14 @@ export class CardManager {
         });
         
         card.addEventListener('dragend', (e) => {
+            window.soundEffects?.playCardDrop();
             card.classList.remove('dragging');
             console.log('Drag ended');
+        });
+        
+        // Add hover sound effect
+        card.addEventListener('mouseenter', () => {
+            window.soundEffects?.playHover();
         });
     }
     
@@ -362,6 +369,7 @@ export class CardManager {
     // BUG FIX — viewDetails now shows a proper Bootstrap modal with full
     // details instead of a bare alert() that blocked the UI.
     viewDetails(type, id) {
+        window.soundEffects?.playCardFlip();
         if (!this.currentMystery) return;
 
         let item   = null;
@@ -459,11 +467,19 @@ export class CardManager {
         document.getElementById('cardDetailModalTitle').textContent = title;
         document.getElementById('cardDetailModalBody').innerHTML    = bodyHTML;
 
+        window.soundEffects?.playModalOpen();
+        
+        // Add modal close sound listener
+        detailModal.addEventListener('hidden.bs.modal', () => {
+            window.soundEffects?.playModalClose();
+        }, { once: true });
+
         const modal = new bootstrap.Modal(detailModal);
         modal.show();
     }
     
     addToBoard(type, id) {
+        window.soundEffects?.playCardDrop();
         if (window.detectiveApp && window.detectiveApp.investigationBoard) {
             window.detectiveApp.investigationBoard.addElement(type, id);
         }

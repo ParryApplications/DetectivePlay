@@ -131,6 +131,11 @@
                             <li><a class="dropdown-item" href="#" data-lang="ja">日本語 (Japanese)</a></li>
                         </ul>
                     </div>
+                    <!-- Background Music Toggle -->
+                    <button class="btn btn-outline-light me-3" id="musicToggleBtn" title="Toggle Background Music">
+                        <i class="fas fa-music me-2"></i>
+                        <span data-i18n="nav.music">Music</span>
+                    </button>
                     <!-- Subscribe Button -->
                     <button class="btn btn-outline-warning" id="subscribeBtn">
                         <i class="fas fa-envelope me-2"></i>
@@ -258,31 +263,31 @@
                         <!-- Category Tabs -->
                         <ul class="nav nav-tabs evidence-tabs" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#suspectsTab" type="button" role="tab">
+                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#suspectsTab" type="button" role="tab" onclick="window.soundEffects?.playTabSwitch()">
                                     <i class="fas fa-users"></i>
                                     <span data-i18n="investigation.suspects">Suspects</span>
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#weaponsTab" type="button" role="tab">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#weaponsTab" type="button" role="tab" onclick="window.soundEffects?.playTabSwitch()">
                                     <i class="fas fa-gun"></i>
                                     <span data-i18n="investigation.weapons">Weapons</span>
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#locationsTab" type="button" role="tab">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#locationsTab" type="button" role="tab" onclick="window.soundEffects?.playTabSwitch()">
                                     <i class="fas fa-map-marker-alt"></i>
                                     <span data-i18n="investigation.locations">Locations</span>
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#evidenceTab" type="button" role="tab">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#evidenceTab" type="button" role="tab" onclick="window.soundEffects?.playTabSwitch()">
                                     <i class="fas fa-fingerprint"></i>
                                     <span data-i18n="investigation.clues">Clues</span>
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#timelineTab" type="button" role="tab">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#timelineTab" type="button" role="tab" onclick="window.soundEffects?.playTabSwitch()">
                                     <i class="fas fa-clock"></i>
                                     <span data-i18n="investigation.timeline">Timeline</span>
                                 </button>
@@ -314,10 +319,10 @@
                         <div class="board-header">
                             <h4 data-i18n="investigation.board">Investigation Board</h4>
                             <div class="board-tools">
-                                <button class="btn btn-sm btn-outline-light" id="clearBoard" title="Clear Board">
+                                <button class="btn btn-sm btn-outline-light" id="clearBoard" title="Clear Board" onmouseenter="window.soundEffects?.playHover()">
                                     <i class="fas fa-eraser"></i>
                                 </button>
-                                <button class="btn btn-sm btn-outline-light" id="toggleConnections" title="Toggle Connection Mode">
+                                <button class="btn btn-sm btn-outline-light" id="toggleConnections" title="Toggle Connection Mode" onmouseenter="window.soundEffects?.playHover()">
                                     <i class="fas fa-project-diagram"></i>
                                 </button>
                             </div>
@@ -333,7 +338,7 @@
                         <div class="sidebar-header">
                             <h4 data-i18n="investigation.notes">Notes</h4>
                         </div>
-                        <textarea id="notesArea" class="form-control notes-textarea" placeholder="Write your investigation notes here..."></textarea>
+                        <textarea id="notesArea" class="form-control notes-textarea" placeholder="Write your investigation notes here..." onkeydown="if(event.key.length === 1) window.soundEffects?.playTypewriter()"></textarea>
                         
                         <div class="solution-section mt-4 collapsed" id="solutionSection">
                             <div class="solution-header" id="solutionHeader">

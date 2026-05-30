@@ -315,6 +315,71 @@ a:hover {
     color: var(--deep-navy);
 }
 
+/* Music Toggle Button Styles */
+#musicToggleBtn {
+    position: relative;
+    transition: all var(--transition-normal);
+    border-width: 2px;
+}
+
+/* Active state - Music is ON */
+#musicToggleBtn.active {
+    background: linear-gradient(135deg, var(--warm-amber) 0%, var(--gold) 100%);
+    color: var(--deep-navy);
+    border-color: var(--gold);
+    box-shadow: 0 0 15px rgba(212, 165, 116, 0.6), inset 0 2px 4px rgba(255, 255, 255, 0.3);
+    font-weight: 600;
+}
+
+#musicToggleBtn.active i {
+    animation: pulse 2s ease-in-out infinite;
+    color: var(--deep-navy);
+}
+
+#musicToggleBtn.active::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, var(--warm-amber), var(--gold));
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0.3;
+    filter: blur(8px);
+}
+
+/* Inactive state - Music is OFF */
+#musicToggleBtn:not(.active) {
+    background: transparent;
+    border-color: rgba(244, 241, 222, 0.4);
+    color: rgba(244, 241, 222, 0.6);
+}
+
+#musicToggleBtn:not(.active) i {
+    color: rgba(244, 241, 222, 0.6);
+}
+
+#musicToggleBtn:not(.active):hover {
+    background: rgba(244, 241, 222, 0.1);
+    border-color: var(--cream);
+    color: var(--cream);
+}
+
+#musicToggleBtn:not(.active):hover i {
+    color: var(--cream);
+}
+
+/* Add a subtle icon change for better visual feedback */
+#musicToggleBtn.active .fa-music::before {
+    content: "\f001"; /* music note icon */
+}
+
+#musicToggleBtn:not(.active) .fa-music::before {
+    content: "\f6a9"; /* music slash icon for muted state */
+}
+
 /* ===================================
    Loading Spinner
    =================================== */

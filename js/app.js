@@ -5,6 +5,8 @@ import { MysteryLoader } from './mystery-loader.js';
 import { CardManager } from './card-manager.js';
 import { InvestigationBoard } from './investigation-board.js';
 import { AudioPlayer } from './audio-player.js';
+import { SoundEffects } from './sound-effects.js';
+import { BackgroundMusic } from './background-music.js';
 
 class DetectiveApp {
     constructor() {
@@ -15,6 +17,8 @@ class DetectiveApp {
         this.cardManager = null;
         this.investigationBoard = null;
         this.audioPlayer = null;
+        this.soundEffects = null;
+        this.backgroundMusic = null;
         
         this.init();
     }
@@ -57,11 +61,17 @@ class DetectiveApp {
         const startSolvedMystery = document.getElementById('startSolvedMystery');
         
         if (startAsDetective) {
-            startAsDetective.addEventListener('click', () => this.startMystery('as_detective'));
+            startAsDetective.addEventListener('click', () => {
+                this.soundEffects?.playClick();
+                this.startMystery('as_detective');
+            });
         }
         
         if (startSolvedMystery) {
-            startSolvedMystery.addEventListener('click', () => this.startMystery('solved_mystery'));
+            startSolvedMystery.addEventListener('click', () => {
+                this.soundEffects?.playClick();
+                this.startMystery('solved_mystery');
+            });
         }
         
         // Language selector
@@ -69,15 +79,28 @@ class DetectiveApp {
         languageDropdown.forEach(item => {
             item.addEventListener('click', (e) => {
                 e.preventDefault();
+                this.soundEffects?.playClick();
                 const lang = item.getAttribute('data-lang');
                 this.languageManager.switchLanguage(lang);
             });
         });
         
+        // Music toggle button
+        const musicToggleBtn = document.getElementById('musicToggleBtn');
+        if (musicToggleBtn) {
+            musicToggleBtn.addEventListener('click', () => {
+                this.soundEffects?.playClick();
+                this.toggleBackgroundMusic();
+            });
+        }
+        
         // Subscribe button
         const subscribeBtn = document.getElementById('subscribeBtn');
         if (subscribeBtn) {
-            subscribeBtn.addEventListener('click', () => this.showSubscribeModal());
+            subscribeBtn.addEventListener('click', () => {
+                this.soundEffects?.playClick();
+                this.showSubscribeModal();
+            });
         }
         
         // Subscribe form
@@ -89,7 +112,10 @@ class DetectiveApp {
         // Back to dashboard
         const backToDashboard = document.getElementById('backToDashboard');
         if (backToDashboard) {
-            backToDashboard.addEventListener('click', () => this.returnToDashboard());
+            backToDashboard.addEventListener('click', () => {
+                this.soundEffects?.playClick();
+                this.returnToDashboard();
+            });
         }
         
         // Solution form
@@ -102,6 +128,7 @@ class DetectiveApp {
         const newMysteryBtn = document.getElementById('newMysteryBtn');
         if (newMysteryBtn) {
             newMysteryBtn.addEventListener('click', () => {
+                this.soundEffects?.playClick();
                 const resultModalEl = document.getElementById('resultModal');
                 const resultModal = bootstrap.Modal.getInstance(resultModalEl);
                 if (resultModal) resultModal.hide();
@@ -125,6 +152,7 @@ class DetectiveApp {
         const solutionHeader = document.getElementById('solutionHeader');
         if (toggleSolutionBtn && solutionHeader) {
             const toggleSolution = () => {
+                this.soundEffects?.playClick();
                 const solutionSection = document.getElementById('solutionSection');
                 const notesTextarea = document.getElementById('notesArea');
                 
@@ -150,6 +178,7 @@ class DetectiveApp {
         const toggleSidebarBtn = document.getElementById('toggleSidebarBtn');
         if (toggleSidebarBtn) {
             toggleSidebarBtn.addEventListener('click', () => {
+                this.soundEffects?.playClick();
                 const notesSidebar = document.getElementById('notesSidebar');
                 const boardContainer = document.querySelector('.investigation-board-container');
                 
@@ -180,6 +209,22 @@ class DetectiveApp {
     initializeComponents() {
         // Initialize mystery loader
         this.mysteryLoader = new MysteryLoader();
+        
+        // Initialize sound effects
+        this.soundEffects = new SoundEffects();
+        window.soundEffects = this.soundEffects;
+        
+        // Initialize background music
+        this.backgroundMusic = new BackgroundMusic();
+        window.backgroundMusic = this.backgroundMusic;
+        
+        // Update music button state based on saved preference
+        this.updateMusicButtonState();
+        
+        // Auto-start music if it was enabled
+        if (this.backgroundMusic.isEnabled()) {
+            this.backgroundMusic.start();
+        }
         
         // Initialize card manager — also expose globally for inline onclick handlers
         this.cardManager = new CardManager();
@@ -296,6 +341,7 @@ class DetectiveApp {
             this.showLoading(false);
 
             // Show story modal AFTER loading is hidden so it's clearly visible
+            this.soundEffects?.playInvestigationStart();
             this.showStoryModal(mystery, mode);
             
         } catch (error) {
@@ -352,6 +398,14 @@ class DetectiveApp {
             };
             storyModalEl.addEventListener('hidden.bs.modal', onHidden);
         }
+        
+        // Play modal open sound
+        this.soundEffects?.playModalOpen();
+        
+        // Add modal close sound listener
+        storyModalEl.addEventListener('hidden.bs.modal', () => {
+            this.soundEffects?.playModalClose();
+        }, { once: true });
         
         // BUG FIX #2a — Remove backdrop entirely to prevent any interference with clicks
         // The modal can still be dismissed via the close button or "Begin Investigation" button
@@ -416,6 +470,14 @@ class DetectiveApp {
         }
         
         const isCorrect = this.checkSolution(culprit, weapon, location);
+        
+        // Play appropriate sound
+        if (isCorrect) {
+            this.soundEffects?.playSuccess();
+        } else {
+            this.soundEffects?.playFailure();
+        }
+        
         this.showResult(isCorrect);
     }
     
@@ -564,7 +626,15 @@ class DetectiveApp {
     }
     
     showSubscribeModal() {
-        const subscribeModal = new bootstrap.Modal(document.getElementById('subscribeModal'));
+        this.soundEffects?.playModalOpen();
+        const subscribeModalEl = document.getElementById('subscribeModal');
+        
+        // Add modal close sound listener
+        subscribeModalEl.addEventListener('hidden.bs.modal', () => {
+            this.soundEffects?.playModalClose();
+        }, { once: true });
+        
+        const subscribeModal = new bootstrap.Modal(subscribeModalEl);
         subscribeModal.show();
     }
     
@@ -630,6 +700,28 @@ class DetectiveApp {
             } else {
                 notesArea.value = '';
             }
+        }
+    }
+    
+    toggleBackgroundMusic() {
+        if (!this.backgroundMusic) return;
+        
+        const isEnabled = this.backgroundMusic.toggle();
+        this.updateMusicButtonState();
+        
+        console.log(`Background music ${isEnabled ? 'enabled' : 'disabled'}`);
+    }
+    
+    updateMusicButtonState() {
+        const musicToggleBtn = document.getElementById('musicToggleBtn');
+        if (!musicToggleBtn || !this.backgroundMusic) return;
+        
+        if (this.backgroundMusic.isEnabled()) {
+            musicToggleBtn.classList.add('active');
+            musicToggleBtn.title = 'Turn Off Background Music';
+        } else {
+            musicToggleBtn.classList.remove('active');
+            musicToggleBtn.title = 'Turn On Background Music';
         }
     }
 }

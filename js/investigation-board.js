@@ -88,13 +88,19 @@ export class InvestigationBoard {
         // Clear board button
         const clearBtn = document.getElementById('clearBoard');
         if (clearBtn) {
-            clearBtn.addEventListener('click', () => this.clear());
+            clearBtn.addEventListener('click', () => {
+                window.soundEffects?.playClick();
+                this.clear();
+            });
         }
         
         // Toggle connections button
         const toggleBtn = document.getElementById('toggleConnections');
         if (toggleBtn) {
-            toggleBtn.addEventListener('click', () => this.toggleConnectionMode());
+            toggleBtn.addEventListener('click', () => {
+                window.soundEffects?.playClick();
+                this.toggleConnectionMode();
+            });
         }
     }
     
@@ -110,10 +116,12 @@ export class InvestigationBoard {
             if (this.connectionMode) {
                 // Connection mode: select element for connection
                 if (!this.selectedElement) {
+                    window.soundEffects?.playClick();
                     this.selectedElement = element;
                     element.selected = true;
                 } else if (this.selectedElement !== element) {
                     // Create connection
+                    window.soundEffects?.playConnection();
                     this.addConnection(this.selectedElement, element);
                     this.selectedElement.selected = false;
                     this.selectedElement = null;
@@ -121,6 +129,7 @@ export class InvestigationBoard {
                 this.draw();
             } else {
                 // Drag mode: start dragging
+                window.soundEffects?.playCardDrag();
                 this.isDragging = true;
                 this.draggedElement = element;
                 this.offsetX = x - element.x;
@@ -153,6 +162,7 @@ export class InvestigationBoard {
     
     handleMouseUp(e) {
         if (this.isDragging) {
+            window.soundEffects?.playCardDrop();
             this.isDragging = false;
             this.draggedElement = null;
             this.canvas.style.cursor = 'default';
@@ -198,6 +208,7 @@ export class InvestigationBoard {
             const y = e.clientY - rect.top;
             
             console.log(`Dropping ${data.type} ${data.id} at (${x}, ${y})`);
+            window.soundEffects?.playCardDrop();
             this.addElement(data.type, data.id, x, y);
         } catch (error) {
             console.error('Error handling drop:', error);
@@ -626,6 +637,7 @@ export class InvestigationBoard {
             title,
             message,
             () => {
+                window.soundEffects?.playClear();
                 this.elements = [];
                 this.connections = [];
                 this.selectedElement = null;
@@ -804,6 +816,7 @@ export class InvestigationBoard {
             return;
         }
         
+        window.soundEffects?.playCardFlip();
         if (window.cardManager) {
             console.log(`Viewing details for ${element.type}: ${element.dataId}`);
             window.cardManager.viewDetails(element.type, element.dataId);
