@@ -1,14 +1,15 @@
 // Background Music Manager
-// Provides ominous ambient background music for the detective game
+// Provides mysterious, noir-style ambient background music for the detective game
 
 export class BackgroundMusic {
     constructor() {
         this.audioContext = null;
         this.enabled = false;
-        this.volume = 0.15; // Lower volume for background music
+        this.volume = 0.18; // Slightly higher volume for richer sound
         this.oscillators = [];
         this.gainNodes = [];
         this.isPlaying = false;
+        this.intervalIds = [];
         
         // Load saved state from localStorage
         const savedState = localStorage.getItem('detective_background_music');
@@ -27,7 +28,7 @@ export class BackgroundMusic {
         return this.audioContext;
     }
     
-    // Start playing ominous background music
+    // Start playing mysterious noir-style background music
     start() {
         if (this.isPlaying || !this.enabled) return;
         
@@ -46,107 +47,177 @@ export class BackgroundMusic {
             masterGain.gain.value = this.volume;
             masterGain.connect(ctx.destination);
             
-            // Create ominous ambient layers
-            this.createDroneLayer(ctx, masterGain, 55, 0.3);      // Deep bass drone (A1)
-            this.createDroneLayer(ctx, masterGain, 82.5, 0.2);    // Low drone (E2)
-            this.createDroneLayer(ctx, masterGain, 110, 0.15);    // Mid-low drone (A2)
-            this.createPulsingLayer(ctx, masterGain, 220, 0.1);   // Pulsing mid layer (A3)
-            this.createShimmerLayer(ctx, masterGain);             // High shimmer/tension
-            this.createNoiseLayer(ctx, masterGain);               // Subtle noise texture
+            // Create mysterious noir atmosphere with multiple layers
+            this.createDeepBassLayer(ctx, masterGain);           // Deep mysterious bass
+            this.createMinorChordProgression(ctx, masterGain);   // Haunting chord progression
+            this.createPianoMelody(ctx, masterGain);             // Sparse noir piano notes
+            this.createStringPad(ctx, masterGain);               // Eerie string pad
+            this.createClockTicking(ctx, masterGain);            // Subtle ticking for tension
+            this.createRainAmbience(ctx, masterGain);            // Rain/noir atmosphere
+            this.createMysteryBells(ctx, masterGain);            // Occasional mysterious bells
             
-            console.log('Background music started');
+            console.log('Mysterious background music started');
         } catch (error) {
             console.error('Error starting background music:', error);
             this.isPlaying = false;
         }
     }
     
-    // Create a continuous drone layer
-    createDroneLayer(ctx, destination, frequency, volume) {
-        const oscillator = ctx.createOscillator();
-        const gainNode = ctx.createGain();
-        const filter = ctx.createBiquadFilter();
+    // Create deep mysterious bass layer
+    createDeepBassLayer(ctx, destination) {
+        // Use minor key bass notes for mystery (D minor)
+        const bassNotes = [73.42, 82.41, 87.31]; // D2, E2, F2
         
-        oscillator.type = 'sine';
-        oscillator.frequency.value = frequency;
-        
-        // Add slight detuning for richness
-        oscillator.detune.value = Math.random() * 10 - 5;
-        
-        filter.type = 'lowpass';
-        filter.frequency.value = frequency * 4;
-        filter.Q.value = 1;
-        
-        gainNode.gain.value = 0;
-        gainNode.gain.linearRampToValueAtTime(volume, ctx.currentTime + 3); // Fade in over 3 seconds
-        
-        oscillator.connect(filter);
-        filter.connect(gainNode);
-        gainNode.connect(destination);
-        
-        oscillator.start(ctx.currentTime);
-        
-        this.oscillators.push(oscillator);
-        this.gainNodes.push(gainNode);
+        bassNotes.forEach((freq, index) => {
+            const oscillator = ctx.createOscillator();
+            const gainNode = ctx.createGain();
+            const filter = ctx.createBiquadFilter();
+            
+            oscillator.type = 'sine';
+            oscillator.frequency.value = freq;
+            oscillator.detune.value = Math.random() * 5 - 2.5;
+            
+            filter.type = 'lowpass';
+            filter.frequency.value = freq * 3;
+            filter.Q.value = 2;
+            
+            gainNode.gain.value = 0;
+            gainNode.gain.linearRampToValueAtTime(0.25, ctx.currentTime + 2 + index);
+            
+            oscillator.connect(filter);
+            filter.connect(gainNode);
+            gainNode.connect(destination);
+            
+            oscillator.start(ctx.currentTime);
+            
+            this.oscillators.push(oscillator);
+            this.gainNodes.push(gainNode);
+        });
     }
     
-    // Create a pulsing layer for tension
-    createPulsingLayer(ctx, destination, frequency, volume) {
-        const oscillator = ctx.createOscillator();
-        const gainNode = ctx.createGain();
-        const lfo = ctx.createOscillator(); // Low Frequency Oscillator for pulsing
-        const lfoGain = ctx.createGain();
+    // Create haunting minor chord progression
+    createMinorChordProgression(ctx, destination) {
+        // D minor chord progression: Dm - Am - Bb - F
+        const chordProgression = [
+            [146.83, 174.61, 220.00], // Dm (D3, F3, A3)
+            [110.00, 130.81, 164.81], // Am (A2, C3, E3)
+            [116.54, 146.83, 174.61], // Bb (Bb2, D3, F3)
+            [87.31, 130.81, 174.61]   // F  (F2, C3, F3)
+        ];
         
-        oscillator.type = 'triangle';
-        oscillator.frequency.value = frequency;
+        let chordIndex = 0;
+        const playChord = () => {
+            if (!this.isPlaying) return;
+            
+            const chord = chordProgression[chordIndex];
+            const startTime = ctx.currentTime;
+            
+            chord.forEach((freq, noteIndex) => {
+                const oscillator = ctx.createOscillator();
+                const gainNode = ctx.createGain();
+                const filter = ctx.createBiquadFilter();
+                
+                oscillator.type = 'triangle';
+                oscillator.frequency.value = freq;
+                
+                filter.type = 'lowpass';
+                filter.frequency.value = freq * 6;
+                filter.Q.value = 1.5;
+                
+                // Fade in and out for smooth transitions
+                gainNode.gain.value = 0;
+                gainNode.gain.linearRampToValueAtTime(0.08, startTime + 0.5);
+                gainNode.gain.linearRampToValueAtTime(0.08, startTime + 7);
+                gainNode.gain.linearRampToValueAtTime(0, startTime + 8);
+                
+                oscillator.connect(filter);
+                filter.connect(gainNode);
+                gainNode.connect(destination);
+                
+                oscillator.start(startTime);
+                oscillator.stop(startTime + 8);
+            });
+            
+            chordIndex = (chordIndex + 1) % chordProgression.length;
+        };
         
-        // LFO for amplitude modulation (pulsing effect)
-        lfo.type = 'sine';
-        lfo.frequency.value = 0.2; // Slow pulse (0.2 Hz = one pulse every 5 seconds)
+        // Play first chord immediately
+        playChord();
         
-        lfoGain.gain.value = volume * 0.5; // Pulse depth
-        
-        gainNode.gain.value = volume * 0.5; // Base volume
-        
-        lfo.connect(lfoGain);
-        lfoGain.connect(gainNode.gain);
-        
-        oscillator.connect(gainNode);
-        gainNode.connect(destination);
-        
-        oscillator.start(ctx.currentTime);
-        lfo.start(ctx.currentTime);
-        
-        this.oscillators.push(oscillator);
-        this.oscillators.push(lfo);
-        this.gainNodes.push(gainNode);
+        // Continue playing chords every 8 seconds
+        const intervalId = setInterval(playChord, 8000);
+        this.intervalIds.push(intervalId);
     }
     
-    // Create a shimmering high layer for eerie atmosphere
-    createShimmerLayer(ctx, destination) {
-        const shimmerFrequencies = [880, 1320, 1760]; // A5, E6, A6
+    // Create sparse noir piano melody
+    createPianoMelody(ctx, destination) {
+        // Mysterious melody notes in D minor scale
+        const melodyNotes = [293.66, 349.23, 392.00, 349.23, 329.63, 293.66, 261.63];
         
-        shimmerFrequencies.forEach((freq, index) => {
+        let noteIndex = 0;
+        const playNote = () => {
+            if (!this.isPlaying) return;
+            
+            const freq = melodyNotes[noteIndex];
+            const startTime = ctx.currentTime;
+            
+            // Create piano-like sound with multiple harmonics
+            for (let harmonic = 1; harmonic <= 3; harmonic++) {
+                const oscillator = ctx.createOscillator();
+                const gainNode = ctx.createGain();
+                
+                oscillator.type = 'sine';
+                oscillator.frequency.value = freq * harmonic;
+                
+                const harmonicVolume = 0.12 / harmonic;
+                gainNode.gain.value = 0;
+                gainNode.gain.linearRampToValueAtTime(harmonicVolume, startTime + 0.01);
+                gainNode.gain.exponentialRampToValueAtTime(0.001, startTime + 2);
+                
+                oscillator.connect(gainNode);
+                gainNode.connect(destination);
+                
+                oscillator.start(startTime);
+                oscillator.stop(startTime + 2);
+            }
+            
+            noteIndex = (noteIndex + 1) % melodyNotes.length;
+        };
+        
+        // Start after 3 seconds, play every 4 seconds
+        setTimeout(() => {
+            playNote();
+            const intervalId = setInterval(playNote, 4000);
+            this.intervalIds.push(intervalId);
+        }, 3000);
+    }
+    
+    // Create eerie string pad
+    createStringPad(ctx, destination) {
+        const stringFreqs = [146.83, 220.00, 293.66]; // D3, A3, D4
+        
+        stringFreqs.forEach((freq, index) => {
             const oscillator = ctx.createOscillator();
             const gainNode = ctx.createGain();
             const lfo = ctx.createOscillator();
             const lfoGain = ctx.createGain();
             const filter = ctx.createBiquadFilter();
             
-            oscillator.type = 'sine';
+            oscillator.type = 'sawtooth';
             oscillator.frequency.value = freq;
-            oscillator.detune.value = Math.random() * 20 - 10;
+            oscillator.detune.value = Math.random() * 8 - 4;
             
-            // LFO for tremolo effect
+            // LFO for vibrato
             lfo.type = 'sine';
-            lfo.frequency.value = 0.1 + (index * 0.05); // Slightly different rates
+            lfo.frequency.value = 0.15 + (index * 0.03);
+            lfoGain.gain.value = 0.06;
             
-            lfoGain.gain.value = 0.03; // Subtle shimmer
+            filter.type = 'lowpass';
+            filter.frequency.value = freq * 4;
+            filter.Q.value = 2;
             
-            filter.type = 'highpass';
-            filter.frequency.value = 800;
-            
-            gainNode.gain.value = 0.03;
+            gainNode.gain.value = 0;
+            gainNode.gain.linearRampToValueAtTime(0.05, ctx.currentTime + 4 + index);
             
             lfo.connect(lfoGain);
             lfoGain.connect(gainNode.gain);
@@ -164,13 +235,40 @@ export class BackgroundMusic {
         });
     }
     
-    // Create subtle noise layer for texture
-    createNoiseLayer(ctx, destination) {
-        const bufferSize = ctx.sampleRate * 2; // 2 seconds of noise
+    // Create subtle clock ticking for tension
+    createClockTicking(ctx, destination) {
+        const playTick = () => {
+            if (!this.isPlaying) return;
+            
+            const startTime = ctx.currentTime;
+            const oscillator = ctx.createOscillator();
+            const gainNode = ctx.createGain();
+            
+            oscillator.type = 'sine';
+            oscillator.frequency.value = 800;
+            
+            gainNode.gain.value = 0.03;
+            gainNode.gain.exponentialRampToValueAtTime(0.001, startTime + 0.05);
+            
+            oscillator.connect(gainNode);
+            gainNode.connect(destination);
+            
+            oscillator.start(startTime);
+            oscillator.stop(startTime + 0.05);
+        };
+        
+        // Tick every 1.2 seconds
+        const intervalId = setInterval(playTick, 1200);
+        this.intervalIds.push(intervalId);
+    }
+    
+    // Create rain/noir atmosphere
+    createRainAmbience(ctx, destination) {
+        const bufferSize = ctx.sampleRate * 3;
         const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
         const data = buffer.getChannelData(0);
         
-        // Generate pink noise (more natural than white noise)
+        // Generate filtered noise for rain effect
         let b0 = 0, b1 = 0, b2 = 0, b3 = 0, b4 = 0, b5 = 0, b6 = 0;
         for (let i = 0; i < bufferSize; i++) {
             const white = Math.random() * 2 - 1;
@@ -180,7 +278,7 @@ export class BackgroundMusic {
             b3 = 0.86650 * b3 + white * 0.3104856;
             b4 = 0.55000 * b4 + white * 0.5329522;
             b5 = -0.7616 * b5 - white * 0.0168980;
-            data[i] = (b0 + b1 + b2 + b3 + b4 + b5 + b6 + white * 0.5362) * 0.11;
+            data[i] = (b0 + b1 + b2 + b3 + b4 + b5 + b6 + white * 0.5362) * 0.08;
             b6 = white * 0.115926;
         }
         
@@ -191,12 +289,12 @@ export class BackgroundMusic {
         source.buffer = buffer;
         source.loop = true;
         
-        filter.type = 'lowpass';
-        filter.frequency.value = 300;
-        filter.Q.value = 1;
+        filter.type = 'bandpass';
+        filter.frequency.value = 2000;
+        filter.Q.value = 0.5;
         
         gainNode.gain.value = 0;
-        gainNode.gain.linearRampToValueAtTime(0.05, ctx.currentTime + 4); // Fade in slowly
+        gainNode.gain.linearRampToValueAtTime(0.06, ctx.currentTime + 5);
         
         source.connect(filter);
         filter.connect(gainNode);
@@ -208,6 +306,56 @@ export class BackgroundMusic {
         this.gainNodes.push(gainNode);
     }
     
+    // Create occasional mysterious bells
+    createMysteryBells(ctx, destination) {
+        const bellFreqs = [523.25, 659.25, 783.99]; // C5, E5, G5
+        
+        const playBell = () => {
+            if (!this.isPlaying) return;
+            
+            const freq = bellFreqs[Math.floor(Math.random() * bellFreqs.length)];
+            const startTime = ctx.currentTime;
+            
+            // Create bell-like sound with inharmonic partials
+            const partials = [1, 2.4, 3.8, 5.2];
+            partials.forEach((partial, index) => {
+                const oscillator = ctx.createOscillator();
+                const gainNode = ctx.createGain();
+                const filter = ctx.createBiquadFilter();
+                
+                oscillator.type = 'sine';
+                oscillator.frequency.value = freq * partial;
+                
+                filter.type = 'highpass';
+                filter.frequency.value = 400;
+                
+                const partialVolume = 0.04 / (index + 1);
+                gainNode.gain.value = 0;
+                gainNode.gain.linearRampToValueAtTime(partialVolume, startTime + 0.02);
+                gainNode.gain.exponentialRampToValueAtTime(0.001, startTime + 3);
+                
+                oscillator.connect(filter);
+                filter.connect(gainNode);
+                gainNode.connect(destination);
+                
+                oscillator.start(startTime);
+                oscillator.stop(startTime + 3);
+            });
+        };
+        
+        // Play bells randomly every 12-20 seconds
+        const scheduleBell = () => {
+            if (!this.isPlaying) return;
+            playBell();
+            const nextBellTime = 12000 + Math.random() * 8000;
+            const timeoutId = setTimeout(scheduleBell, nextBellTime);
+            this.intervalIds.push(timeoutId);
+        };
+        
+        // Start first bell after 8 seconds
+        setTimeout(scheduleBell, 8000);
+    }
+    
     // Stop all background music
     stop() {
         if (!this.isPlaying) return;
@@ -216,9 +364,16 @@ export class BackgroundMusic {
             const ctx = this.audioContext;
             if (!ctx) return;
             
+            // Clear all intervals and timeouts
+            this.intervalIds.forEach(id => {
+                clearInterval(id);
+                clearTimeout(id);
+            });
+            this.intervalIds = [];
+            
             // Fade out all gain nodes
             this.gainNodes.forEach(gainNode => {
-                gainNode.gain.linearRampToValueAtTime(0, ctx.currentTime + 1);
+                gainNode.gain.linearRampToValueAtTime(0, ctx.currentTime + 1.5);
             });
             
             // Stop all oscillators after fade out
@@ -236,7 +391,7 @@ export class BackgroundMusic {
                 this.isPlaying = false;
                 
                 console.log('Background music stopped');
-            }, 1100);
+            }, 1600);
             
         } catch (error) {
             console.error('Error stopping background music:', error);
@@ -268,7 +423,7 @@ export class BackgroundMusic {
             const ctx = this.audioContext;
             this.gainNodes.forEach(gainNode => {
                 gainNode.gain.linearRampToValueAtTime(
-                    gainNode.gain.value * (this.volume / 0.15),
+                    gainNode.gain.value * (this.volume / 0.18),
                     ctx.currentTime + 0.5
                 );
             });
